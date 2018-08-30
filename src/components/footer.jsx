@@ -49,15 +49,15 @@ export default () => (
       </Item> */}
         <table style={{ width: '100%' }}>
           <tr>
-            <th id="div1" style={{ paddingRight: '15%' }}>
-              <span id="span1" style={{ ...FooterText, width: '50%' }}>
-                Powered By{' '}
-              </span>
-              <span style={{ ...FooterText }}>Proalera</span>
-            </th>
-            <th id="div2" style={{ ...FooterText }}>
+            {/* <th id="div1" style={{ paddingRight: '15%' }}> */}
+            <td id="span1" style={{ ...FooterText, width: '50%' }}>
+              Powered By <span style={{ ...FooterText }}>Prolaera</span>
+            </td>
+            {/* <td style={{ ...FooterText, width: '25%' }}>Prolaera</td> */}
+            {/* </th> */}
+            <td id="div2" style={{ ...FooterText, width: '50%' }}>
               © Prolaera {now.getFullYear()}
-            </th>
+            </td>
           </tr>
         </table>
       </Item>
