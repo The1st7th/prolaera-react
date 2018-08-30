@@ -20,7 +20,7 @@ class Header extends React.Component {
     const resizedHeight = 47;
 
     return (
-      <Box className="emailHeader" align="center" width="70%" style={{ backgroundColor: '#F7F7F7' }}>
+      <Box className="emailHeader" align="center" width="100%" style={{ backgroundColor: '#F7F7F7' }}>
         <Item align="center">
           <table
             align="center"
