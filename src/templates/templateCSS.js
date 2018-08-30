@@ -217,7 +217,6 @@ only screen and (max-width: 768px)  {
 			white-space: nowrap;
 		}
 	
-<<<<<<< HEAD
 		.green {
 			height: 100%;
 			padding: 14px 14px 14px 14px;
@@ -266,36 +265,6 @@ only screen and (max-width: 768px)  {
 		padding-top:20px;
 		padding-bottom:0px;
 	}
-=======
-		.customButton:hover {
-			color:black;
-		
-	  	}
-		#div1 {
-			float:left;
-			margin-left:5%;
-		}
-		#span1{
-			float:left;
-			padding:10px 5px 10px 10px;
-		}
-		#div2{
-			text-align:right;
-			padding:10px 10px 10px 10px;
-			margin-left:5%
-		}
-		#one{
-			paddingTop: 5px;
-			height:23px;
-			width:100px;
-			position:relative;
-			top:5px;
-		}
-		#footerId{
-			padding-top:20px;
-			padding-bottom:0px;
-		}
->>>>>>> 9d38c4704193380558cfd8fc43bfc82103cb8f93
 	
 /*End of media query*/
 }
