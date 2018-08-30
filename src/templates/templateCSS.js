@@ -26,16 +26,6 @@ html {
 	margin-top: 10px;
 }
 
-<<<<<<< HEAD
-=======
-button.buttonWidths {
-	-webkit-appearance: none;
-	-moz-appearance: none;
-}
-button {
-	cursor: pointer;
-}
->>>>>>> 9d38c4704193380558cfd8fc43bfc82103cb8f93
 @media
 only screen and (max-width: 768px)  {
 	html {

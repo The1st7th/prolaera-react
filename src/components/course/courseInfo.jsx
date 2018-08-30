@@ -43,7 +43,7 @@ class CourseInfo extends React.Component {
           backgroundColor: '#FFFFFF'
         }}
       >
-        <Box align="center" width="100%">
+        <Box align="center" width="70%">
           <Item align="center" width="100%">
             <div
               style={{
