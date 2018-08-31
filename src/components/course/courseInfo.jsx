@@ -127,7 +127,7 @@ class CourseInfo extends React.Component {
             </div>
           </Item>
           <Item align="center" style={{ width: '100%', paddingBottom: '20px' }}>
-            <div
+            {/* <div
               className="customButton"
               style={{
                 display: 'inline-block',
@@ -140,18 +140,44 @@ class CourseInfo extends React.Component {
                   display: 'block',
                   width: '115px',
                   height: '25px',
-                  background: '#4E9CAF',
-                  paddingRight: '10px',
+                  backgroundColor: '#2F4050',
+                  padding: '14px',
                   textAlign: 'center',
-                  borderRadius: '5px',
-                  color: 'white',
-                  fontWeight: 'bold'
+                  borderRadius: '3px',
+                  color: '#FFFFFF',
+                  // fontWeight: 'bold'
                 }}
                 href={'https://app.prolaera.com/#/' + newButtonLink}
               >
                 {buttonText}
               </a>
-            </div>
+            </div> */}
+            <table cellSpacing="0" cellPadding="0">
+              <tr>
+                <td
+                  align="center"
+                  width="300"
+                  height="40"
+                  bgcolor="#000091"
+                  style={{ borderRadius: '5px', color: '#ffffff', display: 'block' }}
+                >
+                  <a
+                    href="http://www.EXAMPLE.com/"
+                    style={{
+                      fontSize: '16px',
+                      fontWeight: 'bold',
+                      fontFamily: 'sans-serif',
+                      textDecoration: 'none',
+                      lineHeight: '40px',
+                      width: '100%',
+                      display: 'inline-block'
+                    }}
+                  >
+                    <span style={{ color: '#FFFFFF' }}>{buttonText}</span>
+                  </a>
+                </td>
+              </tr>
+            </table>
           </Item>
         </Box>
       </div>
