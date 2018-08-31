@@ -8,7 +8,7 @@ class Button extends React.Component {
       <div>
         <div align="center" style={{ textAlign: 'center', height: '100%', width: '100%' }}>
           <a href={link}>
-            <button style={Colorpick()}>{text}</button>
+            <button style={Colorpick(this.props.color)}>{text}</button>
           </a>
         </div>
       </div>
