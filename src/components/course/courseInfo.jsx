@@ -141,7 +141,7 @@ class CourseInfo extends React.Component {
                   width: '115px',
                   height: '25px',
                   background: '#4E9CAF',
-                  padding: '10px',
+                  paddingRight: '10px',
                   textAlign: 'center',
                   borderRadius: '5px',
                   color: 'white',
@@ -149,7 +149,7 @@ class CourseInfo extends React.Component {
                 }}
                 href={'https://app.prolaera.com/#/' + newButtonLink}
               >
-                hello
+                {buttonText}
               </a>
             </div>
           </Item>
