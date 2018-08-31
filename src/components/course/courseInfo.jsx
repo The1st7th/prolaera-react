@@ -135,7 +135,22 @@ class CourseInfo extends React.Component {
                 padding: '20px'
               }}
             >
-              <button color={'#72C02C'} text={buttonText} link={'https://app.prolaera.com/#/' + newButtonLink} />
+              <a
+                style={{
+                  display: 'block',
+                  width: '115px',
+                  height: '25px',
+                  background: '#4E9CAF',
+                  padding: '10px',
+                  textAlign: 'center',
+                  borderRadius: '5px',
+                  color: 'white',
+                  fontWeight: 'bold'
+                }}
+                href={'https://app.prolaera.com/#/' + newButtonLink}
+              >
+                hello
+              </a>
             </div>
           </Item>
         </Box>
