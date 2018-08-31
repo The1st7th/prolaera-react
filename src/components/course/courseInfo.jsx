@@ -135,7 +135,7 @@ class CourseInfo extends React.Component {
                 padding: '20px'
               }}
             >
-              <Button color={'#72C02C'} text={buttonText} link={'https://app.prolaera.com/#/' + newButtonLink} />
+              <button color={'#72C02C'} text={buttonText} link={'https://app.prolaera.com/#/' + newButtonLink} />
             </div>
           </Item>
         </Box>
