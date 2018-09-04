@@ -40,6 +40,7 @@ export default () => (
       <Item align="center" style={{ fontSize: '12px', ...FooterText }}>
         © Prolaera 2017
       </Item> */}
+
         <table style={{ ...FooterText, width: '100%' }}>
           <tr>
             {/* <th id="div1" style={{ paddingRight: '15%' }}> */}
