@@ -42,7 +42,8 @@ class ActivityInfo extends React.Component {
               style={{
                 display: 'inline-block',
                 margin: 'auto',
-                padding: '20px'
+                padding: '20px',
+                textAlign: 'center'
               }}
             >
               <Button color={'#72C02C'} text={buttonText} link={button1Link} />

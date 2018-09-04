@@ -158,7 +158,7 @@ class CourseInfo extends React.Component {
                   align="center"
                   width="300"
                   height="40"
-                  bgcolor="#000091"
+                  bgcolor="#2F4050"
                   style={{ borderRadius: '5px', color: '#ffffff', display: 'block' }}
                 >
                   <a

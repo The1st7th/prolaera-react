@@ -53,8 +53,10 @@ class CourseCertificate extends React.Component {
                   fontWeight: '500'
                 }}
               >
-                <p style={{ fontSize: '28px', letterSpacing: '3px', marginBottom: '0px' }}>{name}</p>
-                <p style={{ fontSize: '18px', letterSpacing: '3px' }}>{PrettyDate(now)}</p>
+                <p style={{ textAlign: 'center', fontSize: '28px', letterSpacing: '3px', marginBottom: '0px' }}>
+                  {name}
+                </p>
+                <p style={{ textAlign: 'center', fontSize: '18px', letterSpacing: '3px' }}>{PrettyDate(now)}</p>
               </div>
             </a>
           </Item>

@@ -31,7 +31,7 @@ class SubHeader extends React.Component {
         }}
       >
         <Box className="subHeader" align="center" width="100%">
-          <Item>
+          <Item style={{ textAlign: 'center' }}>
             <table id="subHeaderTable" style={{ textAlign: 'center', marginLeft: 'auto', marginRight: 'auto' }}>
               <tr>
                 <td>
