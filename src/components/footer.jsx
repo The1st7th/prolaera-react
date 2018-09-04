@@ -10,6 +10,11 @@ const FooterText = {
 var now = new Date();
 export default () => (
   <div>
+    <table>
+      <tr>
+        <td className="space" height="15px" />
+      </tr>
+    </table>
     <Box
       className="emailFooter"
       align="center"
@@ -46,16 +51,27 @@ export default () => (
       <Item align="center" style={{ fontSize: '12px', ...FooterText }}>
         © Prolaera 2017
       </Item> */}
+
         <table style={{ ...FooterText, width: '100%' }}>
           <tr>
             {/* <th id="div1" style={{ paddingRight: '15%' }}> */}
             <td align="left" style={{}}>
-              Powered By <span style={{}}>Prolaera</span>
+              <table>
+                <tr>
+                  <td>
+                    Powered By <span style={{}}>Prolaera</span>
+                  </td>
+                </tr>
+              </table>
             </td>
             {/* <td style={{ ...FooterText, width: '25%' }}>Prolaera</td> */}
             {/* </th> */}
             <td align="right" style={{}}>
-              © Prolaera {now.getFullYear()}
+              <table>
+                <tr>
+                  <td>© Prolaera {now.getFullYear()}</td>
+                </tr>
+              </table>
             </td>
           </tr>
         </table>
