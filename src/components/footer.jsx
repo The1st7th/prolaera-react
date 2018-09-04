@@ -10,18 +10,7 @@ const FooterText = {
 var now = new Date();
 export default () => (
   <div>
-    <table>
-      <tr>
-        <td className="space" height="15px" />
-      </tr>
-    </table>
-    <Box
-      className="emailFooter"
-      align="center"
-      cellSpacing={20}
-      style={{ backgroundColor: '#333333', width: '100%' }}
-      height="100%"
-    >
+    <Box className="emailFooter" align="center" cellSpacing={10} style={{ backgroundColor: '#333333', width: '100%' }}>
       <Item width="100%" align="center">
         {/* <Item align="center" style={{ fontSize: '19px', ...FooterText }}>
         Something not right?{' '}
@@ -55,23 +44,12 @@ export default () => (
         <table style={{ ...FooterText, width: '100%' }}>
           <tr>
             {/* <th id="div1" style={{ paddingRight: '15%' }}> */}
-            <td align="left" style={{}}>
-              <table>
-                <tr>
-                  <td>
-                    Powered By <span style={{}}>Prolaera</span>
-                  </td>
-                </tr>
-              </table>
+            <td className="position" align="center">
+              Powered By <span>Prolaera</span>
             </td>
-            {/* <td style={{ ...FooterText, width: '25%' }}>Prolaera</td> */}
-            {/* </th> */}
-            <td align="right" style={{}}>
-              <table>
-                <tr>
-                  <td>© Prolaera {now.getFullYear()}</td>
-                </tr>
-              </table>
+
+            <td className="position" align="center">
+              © Prolaera {now.getFullYear()}
             </td>
           </tr>
         </table>

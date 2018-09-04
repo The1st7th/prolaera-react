@@ -153,7 +153,7 @@ class CourseInfo extends React.Component {
               </a>
             </div> */}
             <table cellSpacing="0" cellPadding="0">
-              <tr>
+              <tr className="center">
                 <td
                   align="center"
                   width="300"
