@@ -181,6 +181,7 @@ class CourseInfo extends React.Component {
           </Item> */}
           <Item width="100%" style={{ cellPadding: '5px', textAlign: 'center' }}>
             <table
+              align="center"
               style={{
                 textAlign: 'center',
                 margin: 'auto',
@@ -190,6 +191,7 @@ class CourseInfo extends React.Component {
               <tr className="center">
                 <td
                   className="customButton"
+                  align="center"
                   style={{
                     borderRadius: '2px',
                     margin: 'auto',
