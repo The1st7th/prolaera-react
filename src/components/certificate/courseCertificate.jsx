@@ -90,11 +90,10 @@ class CourseCertificate extends React.Component {
                 borderSpacing: '10px'
               }}
             >
-              <tr>
+              <tr className="center">
                 <td
                   className="customButton"
                   style={{
-                    margin: 'auto',
                     width: '50%'
                   }}
                 >
@@ -104,7 +103,7 @@ class CourseCertificate extends React.Component {
                   className="customButton"
                   style={{
                     borderRadius: '2px',
-                    margin: 'auto',
+
                     width: '50%'
                   }}
                 >

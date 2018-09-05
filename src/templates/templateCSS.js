@@ -124,7 +124,15 @@ only screen and (max-width: 768px)  {
 	}
 	
 	.customButton {
-		height:10%;
+		height:3%;
+	}
+	.center{
+		text-align:center;
+		margin-left:12%;
+	}
+	.position{
+		margin-right:0px;
+		padding:0px;
 	}
 	#div1{
 		text-align:center;

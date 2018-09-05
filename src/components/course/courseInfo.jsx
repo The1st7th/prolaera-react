@@ -126,8 +126,8 @@ class CourseInfo extends React.Component {
               />
             </div>
           </Item>
-          <Item align="center" style={{ width: '100%', paddingBottom: '20px' }}>
-            {/* <div
+          {/* <Item align="center" style={{ width: '100%', paddingBottom: '20px' }}>
+            <div
               className="customButton"
               style={{
                 display: 'inline-block',
@@ -151,9 +151,9 @@ class CourseInfo extends React.Component {
               >
                 {buttonText}
               </a>
-            </div> */}
+            </div>
             <table cellSpacing="0" cellPadding="0">
-              <tr>
+              <tr className="center">
                 <td
                   align="center"
                   width="300"
@@ -175,6 +175,29 @@ class CourseInfo extends React.Component {
                   >
                     <span style={{ color: '#FFFFFF' }}>{buttonText}</span>
                   </a>
+                </td>
+              </tr>
+            </table>
+          </Item> */}
+          <Item width="100%" style={{ cellPadding: '5px', textAlign: 'center' }}>
+            <table
+              style={{
+                textAlign: 'center',
+                margin: 'auto',
+                borderSpacing: '10px'
+              }}
+            >
+              <tr className="center">
+                <td
+                  className="customButton"
+                  style={{
+                    borderRadius: '2px',
+                    margin: 'auto',
+                    width: '100%',
+                    textAlign: 'center'
+                  }}
+                >
+                  <Button color={'#2F4050'} text={buttonText} link={newButtonLink} />
                 </td>
               </tr>
             </table>
