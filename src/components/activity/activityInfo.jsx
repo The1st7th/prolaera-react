@@ -54,7 +54,7 @@ class ActivityInfo extends React.Component {
                     textAlign: 'center'
                   }}
                 >
-                  <Button color={'#72C02C'} text={buttonText} link={button1Link} />
+                  <Button color={'#2F4050'} text={buttonText} link={button1Link} />
                 </td>
               </tr>
             </table>
