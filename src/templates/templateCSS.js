@@ -1,14 +1,12 @@
 const css = `
 
-@font-face {
-	font-family: source-sans-pro;
-	url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
-
-}
 html {
 	font-family: source-sans-pro, sans-serif;
+	margin: auto;
 }
-
+body {
+	margin: auto;
+}
 .textMuted {
 	color: #333333;
 }
@@ -30,6 +28,7 @@ html {
 only screen and (max-width: 768px)  {
 	html {
 		font-family: source-sans-pro, sans-serif;
+		margin: auto;
 	}
 	.green{
 		height: 100% ;
