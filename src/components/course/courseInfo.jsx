@@ -197,7 +197,7 @@ class CourseInfo extends React.Component {
                     textAlign: 'center'
                   }}
                 >
-                  <Button color={'#2F4050'} text={buttonText} link={newButtonLink} />
+                  <Button color={'#72C02C'} text={buttonText} link={newButtonLink} />
                 </td>
               </tr>
             </table>

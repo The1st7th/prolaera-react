@@ -37,24 +37,25 @@ class ActivityInfo extends React.Component {
               <p style={{ paddingTop: '15px', marginTop: '0px' }}>By: {author}</p>
             </div>
           </Item>
-          <Item width="100%" style={{ textAlign: 'center' }}>
+          <Item align="center" width="100%">
             <table
+              align="center"
               style={{
-                textAlign: 'center',
                 margin: 'auto',
                 borderSpacing: '10px'
               }}
             >
-              <tr style={{ textAlign: 'center' }}>
+              <tr width="100%">
                 <td
+                  align="center"
                   style={{
-                    borderRadius: '2px',
+                    borderRadius: '3px',
                     margin: 'auto',
                     width: '100%',
                     textAlign: 'center'
                   }}
                 >
-                  <Button color={'#2F4050'} text={buttonText} link={button1Link} />
+                  <Button color={'#72C02C'} text={buttonText} link={button1Link} />
                 </td>
               </tr>
             </table>

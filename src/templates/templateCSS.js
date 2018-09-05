@@ -2,10 +2,8 @@ const css = `
 
 html {
 	font-family: source-sans-pro, sans-serif;
-	margin: auto;
 }
 body {
-	margin: auto;
 }
 .textMuted {
 	color: #333333;
@@ -28,8 +26,7 @@ body {
 only screen and (max-width: 768px)  {
 	html {
 		font-family: source-sans-pro, sans-serif;
-		margin: auto;
-	}
+		}
 	.green{
 		height: 100% ;
 		padding: 14px 14px 14px 14px ;
