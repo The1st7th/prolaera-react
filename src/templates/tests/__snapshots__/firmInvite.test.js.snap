@@ -120,41 +120,65 @@ exports[`Firm Invite component creates and checks snapshot of FirmInvite compone
               <p>
                 You're ready to explore the new tools and resources you have access to.
               </p>
-              <div
-                align="center"
-                className="customButton"
-                style={
-                  Object {
-                    "height": "100%",
-                    "textAlign": "center",
-                    "width": "100%",
-                  }
-                }
+              <table
+                align="left"
+                border="0"
+                cellPadding={0}
+                cellSpacing={0}
+                valign="top"
               >
-                <a
-                  href="https://app.prolaera.com/#/users/test@email.com"
-                >
-                  <button
-                    className="buttonWidths"
-                    style={
-                      Object {
-                        "backgroundColor": "undefined",
-                        "borderColor": "undefined",
-                        "borderRadius": "3px",
-                        "borderStyle": "none",
-                        "color": "#FFFFFF",
-                        "fontSize": "10pt",
-                        "height": "100%",
-                        "padding": "14px 14px 14px 14px",
-                        "textDecoration": "none",
-                        "width": "100%",
-                      }
-                    }
-                  >
-                    Create Your Account
-                  </button>
-                </a>
-              </div>
+                <tbody>
+                  <tr>
+                    <td>
+                      <table
+                        cellPadding="0"
+                        cellSpacing="0"
+                      >
+                        <tr>
+                          <td
+                            align="center"
+                            bgcolor="#2F4050"
+                            height="40"
+                            style={
+                              Object {
+                                "borderRadius": "5px",
+                                "color": "#ffffff",
+                                "display": "block",
+                              }
+                            }
+                            width="300"
+                          >
+                            <a
+                              href="http://www.EXAMPLE.com/"
+                              style={
+                                Object {
+                                  "display": "inline-block",
+                                  "fontFamily": "sans-serif",
+                                  "fontSize": "16px",
+                                  "fontWeight": "bold",
+                                  "lineHeight": "40px",
+                                  "textDecoration": "none",
+                                  "width": "100%",
+                                }
+                              }
+                            >
+                              <span
+                                style={
+                                  Object {
+                                    "color": "#FFFFFF",
+                                  }
+                                }
+                              >
+                                Create Your Account
+                              </span>
+                            </a>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
           </div>
         </td>
