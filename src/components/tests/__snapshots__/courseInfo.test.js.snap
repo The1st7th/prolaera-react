@@ -353,58 +353,96 @@ exports[`CourseInfo component custom input tests creates and checks a snapshot o
       <tr>
         <td
           align="center"
-          style={
-            Object {
-              "paddingBottom": "20px",
-              "width": "100%",
-            }
-          }
         >
-          <div
+          <table
             style={
               Object {
-                "display": "inline-block",
+                "borderSpacing": "10px",
                 "margin": "auto",
-                "padding": "20px",
+                "textAlign": "center",
               }
             }
           >
-            <div
-              align="center"
-              className="customButton"
+            <tr
               style={
                 Object {
-                  "height": "100%",
                   "textAlign": "center",
-                  "width": "100%",
                 }
               }
             >
-              <a
-                href="https://app.prolaera.com/#/admin/testAdminProfileId/testButtonLink/review"
-              >
-                <button
-                  className="buttonWidths"
-                  style={
-                    Object {
-                      "backgroundColor": "#72C02C",
-                      "borderColor": "#72C02C",
-                      "borderRadius": "3px",
-                      "borderStyle": "none",
-                      "color": "#FFFFFF",
-                      "fontSize": "10pt",
-                      "height": "100%",
-                      "padding": "14px 14px 14px 14px",
-                      "textDecoration": "none",
-                      "width": "100%",
-                    }
+              <td
+                className="customButton"
+                style={
+                  Object {
+                    "borderRadius": "2px",
+                    "margin": "auto",
+                    "textAlign": "center",
+                    "width": "100%",
                   }
+                }
+              >
+                <table
+                  align="left"
+                  border="0"
+                  cellPadding={0}
+                  cellSpacing={0}
+                  valign="top"
                 >
-                  Test Button Text
-                </button>
-              </a>
-            </div>
-          </div>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <table
+                          cellPadding="0"
+                          cellSpacing="0"
+                        >
+                          <tr>
+                            <td
+                              align="center"
+                              bgcolor="#2F4050"
+                              height="40"
+                              style={
+                                Object {
+                                  "borderRadius": "5px",
+                                  "color": "#ffffff",
+                                  "display": "block",
+                                }
+                              }
+                              width="300"
+                            >
+                              <a
+                                href="http://www.EXAMPLE.com/"
+                                style={
+                                  Object {
+                                    "display": "inline-block",
+                                    "fontFamily": "sans-serif",
+                                    "fontSize": "16px",
+                                    "fontWeight": "bold",
+                                    "lineHeight": "40px",
+                                    "textDecoration": "none",
+                                    "width": "100%",
+                                  }
+                                }
+                              >
+                                <span
+                                  style={
+                                    Object {
+                                      "color": "#FFFFFF",
+                                    }
+                                  }
+                                >
+                                  Test Button Text
+                                </span>
+                              </a>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </td>
+            </tr>
+          </table>
         </td>
       </tr>
     </tbody>

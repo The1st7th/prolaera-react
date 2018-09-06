@@ -29,7 +29,14 @@ class Header extends React.Component {
           >
             <tr align="center">
               <td width="292px">
-                <Image className="headerLogo" alt="logo" src={url} width={resizedWidth} height={resizedHeight} />
+                <Image
+                  className="headerLogo"
+                  alt="Prolaera Logo"
+                  src={url}
+                  width={resizedWidth}
+                  height={resizedHeight}
+                  style={{ display: 'block' }}
+                />
               </td>
               {/* <td width="252px" style={{ textAlign: 'center' }}>
                 <div>

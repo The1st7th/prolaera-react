@@ -46,6 +46,7 @@ class CourseInfo extends React.Component {
         <Box align="center" width="100%">
           <Item align="center" width="100%">
             <div
+              align="center"
               style={{
                 width: '90%',
                 margin: 'auto'
