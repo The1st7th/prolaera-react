@@ -12,7 +12,7 @@ const firmInviteBuilder = async (completeUser, completeCompany, imageUrl) => {
     const headerText = '';
     const bodyText = (
       <div>
-        <p>Your account is waiting for you and there are only a couple quick steps to complete.</p>
+        <p align="center">Your account is waiting for you and there are only a couple quick steps to complete.</p>
         <ol>
           <li>Click the button below to register your account.</li>
           <li>On the registration page simply enter a password for your new account and click "Register".</li>
@@ -27,7 +27,7 @@ const firmInviteBuilder = async (completeUser, completeCompany, imageUrl) => {
             display: 'inline-block',
             backgroundColor: '#72C02C',
             borderRadius: '3px',
-            margin: 'auto'
+            margin: '0'
           }}
         >
           <Button

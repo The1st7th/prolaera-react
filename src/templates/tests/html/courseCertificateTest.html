@@ -1,125 +1,93 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html lang="en" xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><title>You have completed a course</title><style type="text/css">@font-face {
-	font-family: source-sans-pro;
-	url(&#x27;https://fonts.googleapis.com/css?family=Source+Sans+Pro&#x27;);
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html lang="en" xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><title>You have completed a course</title><style type="text/css">// body {
+// 	font-family: source-sans-pro, sans-serif;
+// }
+// .textMuted {
+// 	color: #333333;
+// }
 
-}
-html {
-	font-family: source-sans-pro, sans-serif;
-}
+// #subHeaderWrapper {
+// 	padding-top: 20px;
+// 	padding-bottom: 0px;
+// }
 
-.textMuted {
-	color: #333333;
-}
+// .innerHtmlStyles {
+// 	margin-top: 10px;
+// }
 
-#subHeaderWrapper {
-	padding-top: 20px;
-	padding-bottom: 0px;
-}
+// .innerHtmlStyles p, .innerHtmlStyles ol, .innerHtmlStyles ul  {
+// 	margin-top: 10px;
+// }
 
-.innerHtmlStyles {
-	margin-top: 10px;
-}
+// @media
+// only screen and (max-width: 768px)  {
+// 	html {
+// 		font-family: source-sans-pro, sans-serif;
+// 		}
+// 	.green{
+// 		height: 100% ;
+// 		padding: 14px 14px 14px 14px ;
+// 		color: #FFFFFF;
+// 		font-size: 10pt;
+// 		width: 100%;
+// 		text-decoration: none;
+// 		border-radius: 3px;
+// 		border-style: none;
+// 		background-color:#72C02C;
+// 		border-color:#72C02C;
+// 	}
 
-.innerHtmlStyles p, .innerHtmlStyles ol, .innerHtmlStyles ul  {
-	margin-top: 10px;
-}
-
-@media
-only screen and (max-width: 768px)  {
-	html {
-		font-family: source-sans-pro, sans-serif;
-	}
-	.green{
-		height: 100% ;
-		padding: 14px 14px 14px 14px ;
-		color: #FFFFFF;
-		font-size: 10pt;
-		width: 100%;
-		text-decoration: none;
-		border-radius: 3px;
-		border-style: none;
-		background-color:#72C02C;
-		border-color:#72C02C;
-	}
-
-	.notgreen{
-		height: 100% ;
-		padding: 14px 14px 14px 14px ;
-		color: #FFFFFF;
-		font-size: 10pt;
-		width: 100%;
-		text-decoration: none;
-		border-radius: 3px;
-		border-style: none;
-		background-color:#2F4050;
-		border-color:#2F4050;
-	}
-	body{
-		background-color: #F7F7F7;
-		margin-left: auto;
-		margin-right: auto;
-	}
+// 	.notgreen{
+// 		height: 100% ;
+// 		padding: 14px 14px 14px 14px ;
+// 		color: #FFFFFF;
+// 		font-size: 10pt;
+// 		width: 100%;
+// 		text-decoration: none;
+// 		border-radius: 3px;
+// 		border-style: none;
+// 		background-color:#2F4050;
+// 		border-color:#2F4050;
+// 	}
+// 	body{
+// 		background-color: #F7F7F7;
+// 		margin-left: auto;
+// 		margin-right: auto;
+// 	}
 
 	
 
-	/* Force table to not be like tables anymore */
-	table, thead, tbody, th, td, tr {
-		display: block;		
-	}
+// 	/* Force table to not be like tables anymore */
+// 	table, thead, tbody, th, td, tr {
+// 		display: block;		
+// 	}
 	
-	#courseCertificate {
-		max-width: 100%;
-	}
+// 	#courseCertificate {
+// 		max-width: 100%;
+// 	}
 
-	.courseCertificate {
-		width: 100%;
-		margin: auto;
-	}
-	
-	// .emailHeader td {
-	// 	width: 100%;
-	// }
+// 	.courseCertificate {
+// 		width: 100%;
+// 		margin: auto;
+// 	}
 
-	// .emailHeader td img {
-	// 	margin-left: auto;
-	// 	margin-right: auto;
-	// } 
+// 	.report td {
+// 		/* Behave  like a &quot;row&quot; */
+// 		border: none;
+// 		border-bottom: 1px solid #eee;
+//     	position: relative;
+//     	text-align: top;
+// 	}
 
-	// .emailFooter {
-	// 	width:500px
-	// 	color: #F7F7F7;
-	// 	margin-right: auto;
-	// 	margin-left: auto;
-	// 	font-size: 10pt;
-	// }
-
-	// .emailFooter td {
-	
-	// 	color: #F7F7F7;
-	// 	margin-right: auto;
-	// 	margin-left: auto;
-	// 	font-size: 10pt;
-		
-	// }
-
-	.report td {
-		/* Behave  like a &quot;row&quot; */
-		border: none;
-		border-bottom: 1px solid #eee;
-    	position: relative;
-    	text-align: top;
-	}
-
-	.report td:before {
-		/* Now like a table header */
-		position: absolute;
-		/* Top/left values mimic padding */
-		top: 6px;
-		left: 6px;
-		width: 45%;
-		padding-right: 10px;
-		white-space: nowrap;
-	}
+// 	.report td:before {
+// 		/* Now like a table header */
+// 		position: absolute;
+// 		/* Top/left values mimic padding */
+// 		top: 6px;
+// 		left: 6px;
+// 		width: 45%;
+// 		padding-right: 10px;
+// 		white-space: nowrap;
+// 	}
 	
 	.customButton {
 		height:3%;
@@ -137,136 +105,115 @@ only screen and (max-width: 768px)  {
 	}
 	#one{
 		
-		position:relative;
-		top:5px;
-		paddingTop: 5px;
-		height:23px;
-		width:100px
-	}
-	#div2{
-		text-align:center;
-		padding-top:7px;
-	}
-}
-	@media (min-width: 769px) {
+// 		position:relative;
+// 		top:5px;
+// 		padding-top: 5px;
+// 		height:23px;
+// 		width:100px
+// 	}
+// 	#div2{
+// 		text-align:center;
+// 		padding-top:7px;
+// 	}
+// }
+// 	@media (min-width: 769px) {
 
-		html{
+// 		html{
 			
-			font-family: source-sans-pro, sans-serif;
-		}
-		body{
-			background-color: #F7F7F7;
-			margin-left: auto;
-			margin-right: auto;
-			max-width:55%;
+// 			font-family: source-sans-pro, sans-serif;
+// 		}
+// 		body{
+// 			background-color: #F7F7F7;
+// 			margin-left: auto;
+// 			margin-right: auto;
+// 			max-width:55%;
 			
-		}
-		/* Force table to not be like tables anymore */
-		table, thead, tbody, th, td, tr {
-			// display: block;		
-		}
+// 		}
+// 		/* Force table to not be like tables anymore */
+// 		table, thead, tbody, th, td, tr {
+// 			// display: block;		
+// 		}
 
-		#courseCertificate {
-			max-width: 100%;
-		}
-		.courseCertificate {
-			width: 100%;
-			margin: auto;
-		}
+// 		#courseCertificate {
+// 			max-width: 100%;
+// 		}
+// 		.courseCertificate {
+// 			width: 100%;
+// 			margin: auto;
+// 		}
 	
-		// .emailHeader td img {
-		// 	margin-left: auto;
-		// 	margin-right: auto;
-		// } 
+// 		.report td {
+// 			/* Behave  like a &quot;row&quot; */
+// 			border: none;
+// 			border-bottom: 1px solid #eee;
+// 			position: relative;
+// 			text-align: top;
+// 		}
 	
-		// .emailFooter {
-		// 	padding-top:10px;
-		// 	padding-bottom:10px;
-		// 	max-height:100px;
-		// 	width:100%;
-		// 	color: #F7F7F7;
-		// 	margin-right: auto;
-		// 	margin-left: auto;
-		// 	font-size: 10pt;
-		// }
+// 		.report td:before {
+// 			/* Now like a table header */
+// 			position: absolute;
+// 			/* Top/left values mimic padding */
+// 			top: 6px;
+// 			left: 6px;
+// 			width: 45%;
+// 			padding-right: 10px;
+// 			white-space: nowrap;
+// 		}
+	
+// 		.green {
+// 			height: 100%;
+// 			padding: 14px 14px 14px 14px;
+// 			color: #FFFFFF;
+// 			font-size: 10pt;
+// 			width: 100%;
+// 			text-decoration: none;
+// 			border-radius: 3px;
+// 			border-style: none;
+// 			background-color:#72C02C;
+// 			border-color:#72C02C;
+// 	  	}
+// 		.notgreen {
+// 			height: 100%;
+// 			padding: 14px 14px 14px 14px;
+// 			color: #FFFFFF;
+// 			font-size: 10pt;
+// 			width: 100%;
+// 			text-decoration: none;
+// 			border-radius: 3px;
+// 			border-style: none;
+// 			background-color:#2F4050;
+// 			border-color:#2F4050;
+// 		}
+// 		#div1 {
+// 			float:left;
+// 			margin-left:5%;
+// 		}
+// 		#span1{
+// 			float:left;
+// 			padding:10px 5px 10px 10px;
+// 		}
+// 		#div2{
+// 			text-align:right;
+// 			padding:10px 10px 10px 10px;
+// 			margin-left:5%
+// 		}
+// 		#one{
+// 			paddingTop: 5px;
+// 			height:23px;
+// 			width:100px;
+// 			position:relative;
+// 			top:5px;
+// 		}
+// 		#footerId{
+// 			padding-top:20px;
+// 			padding-bottom:0px;
+// 		}
+	
+// /*End of media query*/
+// }
 
-		// .emailFooter td {
-		// 	width:100%;
-		// 	color: #F7F7F7;
-		// 	margin-right: auto;
-		// 	margin-left: auto;
-		// 	font-size: 10pt;
-			
-		// }
 
-	
-		.report td {
-			/* Behave  like a &quot;row&quot; */
-			border: none;
-			border-bottom: 1px solid #eee;
-			position: relative;
-			text-align: top;
-		}
-	
-		.report td:before {
-			/* Now like a table header */
-			position: absolute;
-			/* Top/left values mimic padding */
-			top: 6px;
-			left: 6px;
-			width: 45%;
-			padding-right: 10px;
-			white-space: nowrap;
-		}
-	
-		.green {
-			height: 100%;
-			padding: 14px 14px 14px 14px;
-			color: #FFFFFF;
-			font-size: 10pt;
-			width: 100%;
-			text-decoration: none;
-			border-radius: 3px;
-			border-style: none;
-			background-color:#72C02C;
-			border-color:#72C02C;
-	  	}
-		.notgreen {
-			height: 100%;
-			padding: 14px 14px 14px 14px;
-			color: #FFFFFF;
-			font-size: 10pt;
-			width: 100%;
-			text-decoration: none;
-			border-radius: 3px;
-			border-style: none;
-			background-color:#2F4050;
-			border-color:#2F4050;
-		}
-		#div1 {
-			float:left;
-			margin-left:5%;
-		}
-		#span1{
-			float:left;
-			padding:10px 5px 10px 10px;
-		}
-		#div2{
-			text-align:right;
-			padding:10px 10px 10px 10px;
-			margin-left:5%
-		}
-		#one{
-			paddingTop: 5px;
-			height:23px;
-			width:100px;
-			position:relative;
-			top:5px;
-		}
-		#footerId{
-			padding-top:20px;
-			padding-bottom:0px;
-		}
 	
 /*End of media query*/
 }</style></head><body style="width:100%;margin:0;padding:0;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%"><table width="100%" height="100%" cellPadding="0" cellSpacing="0" border="0" align="left" valign="top"><tbody><tr><td align="center" valign="top"><table width="600" align="center" cellPadding="0" cellSpacing="0" border="0" valign="top"><tbody><div><div style="display:none;white-space:nowrap;font:15px courier;color:#ffffff;line-height:0;width:600px !important;min-width:600px !important;max-width:600px !important">                                                           </div><table class="emailHeader" align="center" width="100%" style="background-color:#F7F7F7" cellPadding="0" cellSpacing="0" border="0" valign="top"><tbody><tr><td align="center"><table align="center" cellSpacing="0" style="padding:15px;max-width:584px;margin-top:25px;margin-bottom:20px"><tr align="center"><td width="292px"><img alt="logo" src="https://assets.prolaera.com/prolaeraLogo_fullText.png" width="199.15254237288136" height="47" style="display:block;outline:none;border:none;text-decoration:none"/></td></tr></table></td></tr></tbody></table></div><div id="courseCertificate" style="display:block;margin-left:auto;margin-right:auto;margin-top:auto;height:auto;margin-bottom:0px;text-align:center;background-color:#FFFFFF"><table class="courseCertificate" align="center" width="100%" cellPadding="0" cellSpacing="0" border="0" valign="top"><tbody><tr><td style="background-color:#FFFFFF;width:100%"><a href="https://app.prolaera.com/#/courses/6ef58c8e-6ab7-4798-bd21-1c8fa8bcb137" style="text-decoration:none;color:#333333"><div style="padding:25px 15px 15px;background-color:#FFFFFF;font-style:normal;font-weight:500"><p style="text-align:center;font-size:28px;letter-spacing:3px;margin-bottom:0px">ASC 606 (Self-Study)</p><p style="text-align:center;font-size:18px;letter-spacing:3px">September 6, 2018</p></div></a></td></tr><tr><td align="center"><table style="text-align:center;font-size:14pt;margin-left:auto;margin-right:auto"><tr><td><p></p><div style="box-sizing:border-box;padding:0px 50px"><p>Congratulations John! You&#x27;ve been issued a new certificate of completion. Please take a few moments to complete an evaluation to help us improve by clicking the Complete Evaluation button below.</p></div></td></tr></table></td></tr><tr><td><p></p></td></tr><tr><td align="center"><table style="text-align:center;margin:auto;border-spacing:10px"><tr class="center"><td class="customButton" style="width:50%"><table cellPadding="0" cellSpacing="0" border="0" align="left" valign="top"><tbody><tr><td><table cellSpacing="0" cellPadding="0"><tr><td align="center" width="300" height="40" bgcolor="#72C02C" style="border-radius:5px;color:#72C02C;display:block"><a href="http://www.EXAMPLE.com/" style="font-size:16px;font-weight:bold;font-family:sans-serif;text-decoration:none;line-height:40px;width:100%;display:inline-block"><span style="color:#FFFFFF">View Certificate</span></a></td></tr></table></td></tr></tbody></table></td><td class="customButton" style="border-radius:2px;width:50%"><table cellPadding="0" cellSpacing="0" border="0" align="left" valign="top"><tbody><tr><td><table cellSpacing="0" cellPadding="0"><tr><td align="center" width="300" height="40" bgcolor="#2F4050" style="border-radius:5px;color:#ffffff;display:block"><a href="http://www.EXAMPLE.com/" style="font-size:16px;font-weight:bold;font-family:sans-serif;text-decoration:none;line-height:40px;width:100%;display:inline-block"><span style="color:#FFFFFF">Complete Evaluation</span></a></td></tr></table></td></tr></tbody></table></td></tr></table></td></tr></tbody></table></div><div style="display:block;margin:auto;text-align:center;font-style:normal;font-weight:400;background-color:#FFFFFF"><table align="center" width="100%" cellPadding="0" cellSpacing="0" border="0" valign="top"><tbody><tr><td align="center"><div style="width:90%;margin:auto"><div><table class="courseReview" align="center" width="100%" cellPadding="0" cellSpacing="0" border="0" valign="top"><tbody><tr><td align="center" style="padding:20px"><div style="width:100%;height:20px;border-bottom:1px solid grey;text-align:center;box-sizing:border-box;position:relative;margin:auto;padding:10px"><span style="font-size:14pt;background-color:#FFFFFF;padding:0px 20px;box-sizing:border-box;margin:0">Course Information</span></div></td></tr></tbody></table></div></div><h4 align="center" style="padding-top:15px;margin-top:0px"><a href="https://app.prolaera.com/#/courses/6ef58c8e-6ab7-4798-bd21-1c8fa8bcb137" style="text-decoration:underline;color:#2F4050;height:100%"><em>ASC 606 (Self-Study)</em></a></h4></td></tr><tr><td align="left"><div style="padding-left:40px"><h4 style="margin-bottom:0px">By: <span class="innerHtmlStyles" style="font-weight:normal">Evan Hiner</span></h4><h4 style="margin-bottom:0px">Description: </h4><div class="innerHtmlStyles" style="font-weight:normal"><p>This is a course summary.</p></div><h4 style="margin-bottom:0px">Learning Objectives:</h4><div class="innerHtmlStyles" style="font-weight:normal"><ol><li>One</li><li>Two</li><li>Three</li></ol></div><h4 style="margin-bottom:0px">Delivery Method:</h4><div class="innerHtmlStyles" style="font-weight:normal">Self-Study</div><h4 style="margin-bottom:0px">Price: <span class="innerHtmlStyles" style="font-weight:normal">Free</span></h4><h4 style="margin-bottom:0px">Recommended CPE Credit(s):</h4><ul style="margin-top:10px"><li style="font-weight:normal">Accounting - 1 Hour(s)</li></ul><h4 style="margin-bottom:0px">Level: <span class="innerHtmlStyles" style="font-weight:normal">Basic</span></h4><h4 style="margin-bottom:0px">Target Audience: </h4><div class="innerHtmlStyles" style="font-weight:normal">Accountants and auditors who prepare financial statements</div><h4 style="margin-bottom:0px">Prerequisites: </h4><div class="innerHtmlStyles" style="font-weight:normal"><p>None</p></div><h4 style="margin-bottom:0px">Prep: </h4><div class="innerHtmlStyles" style="font-weight:normal"><p>None</p></div></div></td></tr><tr><td style="cell-padding:5px;text-align:center"><table class="center" align="center" style="text-align:center;margin:auto;border-spacing:10px"><tr class="center"><td class="customButton" align="center" style="border-radius:2px;margin:auto;width:100%;text-align:center"><table cellPadding="0" cellSpacing="0" border="0" align="left" valign="top"><tbody><tr><td><table cellSpacing="0" cellPadding="0"><tr><td align="center" width="300" height="40" bgcolor="#2F4050" style="border-radius:5px;color:#ffffff;display:block"><a href="http://www.EXAMPLE.com/" style="font-size:16px;font-weight:bold;font-family:sans-serif;text-decoration:none;line-height:40px;width:100%;display:inline-block"><span style="color:#FFFFFF">View Course</span></a></td></tr></table></td></tr></tbody></table></td></tr></table></td></tr></tbody></table></div><div><table class="emailFooter" align="center" cellSpacing="10" style="background-color:#333333;width:100%" cellPadding="0" border="0" valign="top"><tbody><tr><td align="center"><table style="color:#F7F7F7;font-size:10pt;font-weight:300;letter-spacing:1pt;width:100%"><tr><td class="position" align="center">Powered By <span>Prolaera</span></td><td class="position" align="center">© Prolaera 2018</td></tr></table></td></tr></tbody></table></div><div><table class="gmail-app-fix"><tr><td><table cellpadding="0" cellspacing="0" border="0" align="center" width="600"><tr><td cellpadding="0" cellspacing="0" border="0" height="1" style="line-height:1px;min-width:200px"><img src="transparent.gif" width="200" height="1" style="display:block;max-height:1px;min-height:1px;min-width:200px;width:200px"/></td><td cellpadding="0" cellspacing="0" border="0" height="1" style="line-height:1px;min-width:200px"><img src="transparent.gif" width="200" height="1" style="display:block;max-height:1px;min-height:1px;min-width:200px;width:200px"/></td><td cellpadding="0" cellspacing="0" border="0" height="1" style="line-height:1px;min-width:200px"><img src="transparent.gif" width="200" height="1" style="display:block;max-height:1px;min-height:1px;min-width:200px;width:200px"/></td></tr></table></td></tr></table></div></tbody></table></td></tr></tbody></table></table><table class="gmail-app-fix">

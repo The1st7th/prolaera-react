@@ -48,38 +48,39 @@ class TrackInfo extends React.Component {
               <p style={{ marginTop: '10px', fontWeight: 'normal' }}>{description}</p>
             </div>
           </Item>
-          <Item
-            align="center"
-            style={{
-              width: '100%',
-              paddingBottom: '10px'
-            }}
-          >
-            <p style={{ padding: '0px 40px' }}>
-              More information about this track can be found by navigating to the Prolaera website.
-            </p>
-            {profileId ? (
-              <div
-                style={{
-                  display: 'inline-block',
-                  margin: 'auto',
-                  padding: '20px',
-                  textAlign: 'center'
-                }}
-              >
-                {profileId ? (
-                  <Button
-                    color={'#72C02C'}
-                    text={buttonText}
-                    link={'https://app.prolaera.com/#/users/' + profileId + '/learning/track?track=' + trackId}
-                  />
-                ) : (
-                  <span className="buttonSpan" />
-                )}
-              </div>
-            ) : (
-              <span className="buttonSpan" />
-            )}
+          <Item align="center" width="100%">
+            <table align="center">
+              <tr>
+                <td align="center">
+                  <p style={{ padding: '0px 40px' }}>
+                    More information about this track can be found by navigating to the Prolaera website.
+                  </p>
+                  {profileId ? (
+                    <div
+                      align="center"
+                      style={{
+                        display: 'inline-block',
+                        margin: 'auto',
+                        padding: '20px',
+                        textAlign: 'center'
+                      }}
+                    >
+                      {profileId ? (
+                        <Button
+                          color={'#72C02C'}
+                          text={buttonText}
+                          link={'https://app.prolaera.com/#/users/' + profileId + '/learning/track?track=' + trackId}
+                        />
+                      ) : (
+                        <span className="buttonSpan" />
+                      )}
+                    </div>
+                  ) : (
+                    <span className="buttonSpan" />
+                  )}
+                </td>
+              </tr>
+            </table>
           </Item>
         </Box>
       </div>
