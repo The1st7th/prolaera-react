@@ -46,6 +46,7 @@ class CourseInfo extends React.Component {
         <Box align="center" width="100%">
           <Item align="center" width="100%">
             <div
+              align="center"
               style={{
                 width: '90%',
                 margin: 'auto'
@@ -182,19 +183,18 @@ class CourseInfo extends React.Component {
           <Item width="100%" align="center">
             <table
               style={{
-                textAlign: 'center',
                 margin: 'auto',
                 borderSpacing: '10px'
               }}
             >
-              <tr style={{ textAlign: 'center' }}>
+              <tr style={{}}>
                 <td
+                  align="center"
                   className="customButton"
                   style={{
                     borderRadius: '2px',
                     margin: 'auto',
-                    width: '100%',
-                    textAlign: 'center'
+                    width: '100%'
                   }}
                 >
                   <Button color={'#72C02C'} text={buttonText} link={newButtonLink} />

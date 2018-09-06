@@ -3,6 +3,7 @@ import writeFile from '../../helpers/writeFileHelper';
 import activityAssignedEmail from '../builders/activityAssignedBuilder';
 import activity from '../tests/json/completeActivity.json';
 import user from '../tests/json/completeUser.json';
+import inlineCss from 'inline-css';
 
 describe('Activity Assigned email', () => {
   const logoUrl = 'https://assets.prolaera.com/prolaeraLogo_fullText.png';
@@ -16,7 +17,8 @@ describe('Activity Assigned email', () => {
 
   it('writes an html file', async () => {
     const email = await activityAssignedEmail(activity, user, logoUrl);
-    const saved = await writeFile(email, 'activityTest.html');
+    const newEmail = await inlineCss(email, { url: ' ' });
+    const saved = await writeFile(newEmail, 'activityTest.html');
     expect(saved).toEqual(true);
   });
 });

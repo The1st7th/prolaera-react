@@ -18,7 +18,7 @@ class SubHeader extends React.Component {
 
     return (
       <div
-        id="subHeaderWrapper"
+        id="backgroundTable"
         style={{
           backgroundColor: '#FFFFFF',
           marginLeft: 'auto',
@@ -30,7 +30,7 @@ class SubHeader extends React.Component {
           letterSpacing: '1pt'
         }}
       >
-        <Box className="subHeader" align="center" width="100%">
+        <Box className="container" className="subHeader" textAlign="center" align="center" width="100%">
           <Item style={{ textAlign: 'center' }}>
             <table id="subHeaderTable" style={{ textAlign: 'center', marginLeft: 'auto', marginRight: 'auto' }}>
               <tr>

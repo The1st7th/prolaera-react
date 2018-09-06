@@ -16,6 +16,7 @@ class ActivityInfo extends React.Component {
 
     return (
       <div
+        id="backgroundTable"
         style={{
           display: 'block',
           margin: 'auto',
@@ -25,11 +26,11 @@ class ActivityInfo extends React.Component {
           backgroundColor: '#FFFFFF'
         }}
       >
-        <Box align="center" width="100%">
-          <Item align="center" width="100%">
+        <Box className="container" align="center" width="100%">
+          <Item className="row" align="center" textAlign="center" width="100%">
             <div
               style={{
-                width: '90%',
+                width: '100%',
                 margin: 'auto'
               }}
             >
@@ -48,6 +49,7 @@ class ActivityInfo extends React.Component {
               <tr width="100%">
                 <td
                   align="center"
+                  textAlign="center"
                   style={{
                     borderRadius: '3px',
                     margin: 'auto',
