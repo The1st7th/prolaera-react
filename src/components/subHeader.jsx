@@ -17,42 +17,64 @@ class SubHeader extends React.Component {
     var now = new Date();
 
     return (
-      <div
-        id="backgroundTable"
-        style={{
-          backgroundColor: '#FFFFFF',
-          marginLeft: 'auto',
-          marginRight: 'auto',
-          fontStyle: 'normal',
-          color: 'black',
-          fontWeight: '500',
-          display: 'block',
-          letterSpacing: '1pt'
-        }}
-      >
-        <Box className="container" className="subHeader" textAlign="center" align="center" width="100%">
-          <Item style={{ textAlign: 'center' }}>
-            <table id="subHeaderTable" style={{ textAlign: 'center', marginLeft: 'auto', marginRight: 'auto' }}>
-              <tr>
-                <td>
-                  <p style={{ fontSize: '18pt', marginBottom: '5px' }}>{subText}</p>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <p style={{ fontSize: '28px', marginTop: '0px', marginBottom: '0px' }}>{header}</p>
-                </td>
-              </tr>
-              <tr style={{ margin: 'auto', padding: '0px 10px 10px 10px' }}>
-                <td style={{ width: '100%' }} align="center">
-                  <div style={{ maxWidth: '85%', letterSpacing: '1pt', padding: '20px 20px 0px 20px' }}>{message}</div>
-                  <div style={{ maxWidth: '85%' }}>{profile_uid ? <p>{certMessage}</p> : <div />}</div>
-                </td>
-              </tr>
-            </table>
-          </Item>
-        </Box>
-      </div>
+      <Box align="center" className="container">
+        <Item>
+          <Box align="center" className="row">
+            <tr>
+              <th className="small-12 large-12 columns first last">
+                <table align="center">
+                  <tobdy>
+                    <tr>
+                      <th>
+                        <h6 className="text-center">{subText}</h6>
+                      </th>
+                    </tr>
+                  </tobdy>
+                </table>
+              </th>
+            </tr>
+            <tr>
+              <th className="small-12 large-12 columns first last">
+                <table align="center">
+                  <tbody>
+                    <tr>
+                      <th>
+                        <h3 className="text-center">{header}</h3>
+                      </th>
+                    </tr>
+                  </tbody>
+                </table>
+              </th>
+            </tr>
+            <tr>
+              <th className="small-12 large-12 columns first last">
+                <table align="center">
+                  <tbody>
+                    <tr>
+                      <th>
+                        <h5 className="text-center">{message}</h5>
+                      </th>
+                    </tr>
+                  </tbody>
+                </table>
+              </th>
+            </tr>
+            <tr>
+              <th className="small-12 large-12 columns first last">
+                <table alignm="center">
+                  <tbody>
+                    <tr>
+                      <th>
+                        <p className="text-center">{profile_uid ? <p>{certMessage}</p> : <div />}</p>
+                      </th>
+                    </tr>
+                  </tbody>
+                </table>
+              </th>
+            </tr>
+          </Box>
+        </Item>
+      </Box>
     );
   }
 }
