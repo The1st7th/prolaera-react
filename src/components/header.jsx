@@ -20,48 +20,19 @@ class Header extends React.Component {
     const resizedHeight = 47;
 
     return (
-      <Box className="emailHeader" align="center" width="100%" style={{ backgroundColor: '#F7F7F7' }}>
-        <Item align="center">
-          <table
-            align="center"
-            cellSpacing={0}
-            style={{ padding: '15px', maxWidth: '584px', marginTop: '25px', marginBottom: '20px' }}
-          >
-            <tr align="center">
-              <td width="292px">
-                <Image className="headerLogo" alt="logo" src={url} width={resizedWidth} height={resizedHeight} />
-              </td>
-              {/* <td width="252px" style={{ textAlign: 'center' }}>
-                <div>
-                  {event_id && course_id ? (
-                    <a
-                      href={'https://app.prolaera.com/#/events/' + `${event_id}`}
-                      style={{ textDecoration: 'none', color: '#2F4050', float: 'right', paddingRight: '5px' }}
-                    >
-                      View Event
-                    </a>
-                  ) : (
-                    <div />
-                  )}{' '}
-                </div>
-                <div>
-                  {!event_id && course_id ? (
-                    <a
-                      href={'https://app.prolaera.com/#/courses/' + `${course_id}`}
-                      style={{ textDecoration: 'none', color: '#2F4050', float: 'right', paddingRight: '5px' }}
-                    >
-                      View Course
-                    </a>
-                  ) : (
-                    <div />
-                  )}{' '}
-                </div>
-                <div>{!event_id && !course_id ? <a href={link}>{text}</a> : <div />} </div>
-              </td> */}
-            </tr>
-          </table>
-        </Item>
-      </Box>
+      <div>
+        <Box align="center" class="container">
+          <Item>
+            <table class="row">
+              <tr>
+                <center class="small-12 large-12 first last float-center ">
+                  <Image className="headerLogo" alt="logo" src={url} width={resizedWidth} height={resizedHeight} />
+                </center>
+              </tr>
+            </table>
+          </Item>
+        </Box>
+      </div>
     );
   }
 }

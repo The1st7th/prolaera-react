@@ -181,6 +181,7 @@ class CourseInfo extends React.Component {
           </Item> */}
           <Item width="100%" style={{ cellPadding: '5px', textAlign: 'center' }}>
             <table
+              className="center"
               align="center"
               style={{
                 textAlign: 'center',
