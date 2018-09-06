@@ -11,8 +11,129 @@ const css = `
 	background-color: #2F4050;
 }
 
-.72C02C {
-	backgrounbd-color: #72C02C;
+@media
+only screen and (max-width: 768px)  {
+	html {
+		font-family: source-sans-pro, sans-serif;
+	}
+	.green{
+		height: 100% ;
+		padding: 14px 14px 14px 14px ;
+		color: #FFFFFF;
+		font-size: 10pt;
+		width: 100%;
+		text-decoration: none;
+		border-radius: 3px;
+		border-style: none;
+		background-color:#72C02C;
+		border-color:#72C02C;
+	}
+
+	.notgreen{
+		height: 100% ;
+		padding: 14px 14px 14px 14px ;
+		color: #FFFFFF;
+		font-size: 10pt;
+		width: 100%;
+		text-decoration: none;
+		border-radius: 3px;
+		border-style: none;
+		background-color:#2F4050;
+		border-color:#2F4050;
+	}
+	body{
+		background-color: #F7F7F7;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	
+
+	/* Force table to not be like tables anymore */
+	table, thead, tbody, th, td, tr {
+		display: block;		
+	}
+	
+	#courseCertificate {
+		max-width: 100%;
+	}
+
+	.courseCertificate {
+		width: 100%;
+		margin: auto;
+	}
+	
+	// .emailHeader td {
+	// 	width: 100%;
+	// }
+
+	// .emailHeader td img {
+	// 	margin-left: auto;
+	// 	margin-right: auto;
+	// } 
+
+	// .emailFooter {
+	// 	width:500px
+	// 	color: #F7F7F7;
+	// 	margin-right: auto;
+	// 	margin-left: auto;
+	// 	font-size: 10pt;
+	// }
+
+	// .emailFooter td {
+	
+	// 	color: #F7F7F7;
+	// 	margin-right: auto;
+	// 	margin-left: auto;
+	// 	font-size: 10pt;
+		
+	// }
+
+	.report td {
+		/* Behave  like a "row" */
+		border: none;
+		border-bottom: 1px solid #eee;
+    	position: relative;
+    	text-align: top;
+	}
+
+	.report td:before {
+		/* Now like a table header */
+		position: absolute;
+		/* Top/left values mimic padding */
+		top: 6px;
+		left: 6px;
+		width: 45%;
+		padding-right: 10px;
+		white-space: nowrap;
+	}
+	
+	.customButton {
+		height:3%;
+	}
+	.center{
+		text-align:center;
+		margin-left:12%;
+	}
+	.position{
+		margin-right:0px;
+		padding:0px;
+	}
+	#div1{
+		text-align:center;
+	}
+	#one{
+		
+		position:relative;
+		top:5px;
+		paddingTop: 5px;
+		height:23px;
+		width:100px
+	}
+	#div2{
+		text-align:center;
+		padding-top:7px;
+	}
 }
 
 .wrapper {

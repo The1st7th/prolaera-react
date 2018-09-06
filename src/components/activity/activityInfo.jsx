@@ -38,7 +38,7 @@ class ActivityInfo extends React.Component {
               <p style={{ paddingTop: '15px', marginTop: '0px' }}>By: {author}</p>
             </div>
           </Item>
-          <Item align="center" width="100%">
+          <Item width="100%" style={{ cellpadding: '5px', textAlign: 'center' }}>
             <table
               align="center"
               style={{
@@ -46,7 +46,7 @@ class ActivityInfo extends React.Component {
                 borderSpacing: '10px'
               }}
             >
-              <tr width="100%">
+              <tr className="center">
                 <td
                   align="center"
                   textAlign="center"
