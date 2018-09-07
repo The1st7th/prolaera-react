@@ -19,7 +19,7 @@ class Button extends React.Component {
                   style={{ borderRadius: '5px', color: '#72C02C', display: 'block' }}
                 >
                   <a
-                    href="http://www.EXAMPLE.com/"
+                    href="#"
                     style={{
                       fontSize: '16px',
                       fontWeight: 'bold',
@@ -46,7 +46,7 @@ class Button extends React.Component {
                   style={{ borderRadius: '5px', color: '#ffffff', display: 'block' }}
                 >
                   <a
-                    href="http://www.EXAMPLE.com/"
+                    href="#"
                     style={{
                       fontSize: '16px',
                       fontWeight: 'bold',

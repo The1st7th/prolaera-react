@@ -1,6 +1,6 @@
 import React from 'react';
 import { Box, Item } from 'react-html-email';
-import Button from '../button';
+// import Button from '../button';
 import InfoHeader from '../infoHeader';
 
 class ActivityInfo extends React.Component {
@@ -15,55 +15,72 @@ class ActivityInfo extends React.Component {
     } = this.props;
 
     return (
-      <div
-        id="backgroundTable"
-        style={{
-          display: 'block',
-          margin: 'auto',
-          textAlign: 'center',
-          fontStyle: 'normal',
-          fontWeight: '400',
-          backgroundColor: '#FFFFFF'
-        }}
-      >
-        <Box className="container" align="center" width="100%">
-          <Item className="row" align="center" textAlign="center" width="100%">
-            <div
-              style={{
-                width: '100%',
-                margin: 'auto'
-              }}
-            >
-              <InfoHeader info={name} />
-              <p style={{ paddingTop: '15px', marginTop: '0px' }}>By: {author}</p>
-            </div>
-          </Item>
-          <Item width="100%" style={{ cellpadding: '5px', textAlign: 'center' }}>
-            <table
-              align="center"
-              style={{
-                margin: 'auto',
-                borderSpacing: '10px'
-              }}
-            >
-              <tr className="center">
-                <td
-                  align="center"
-                  textAlign="center"
-                  style={{
-                    borderRadius: '3px',
-                    margin: 'auto',
-                    width: '100%',
-                    textAlign: 'center'
-                  }}
-                >
-                  <Button color={'#72C02C'} text={buttonText} link={button1Link} />
-                </td>
-              </tr>
-            </table>
-          </Item>
-        </Box>
-      </div>
+      <Box align="center" className="container">
+        <Item>
+          <Box className="row">
+            <tr>
+              <th className="small-12 large-12 columns first last">
+                <table align="center">
+                  <tbody>
+                    <tr>
+                      <th>
+                        <InfoHeader info={name} />
+                        <p className="text-center small-text-center">By: {author}</p>
+                      </th>
+                    </tr>
+                  </tbody>
+                </table>
+              </th>
+            </tr>
+          </Box>
+        </Item>
+        <Item>
+          <Box className="row">
+            <tr>
+              <th className="small-12 large-12 columns first last">
+                <table align="center">
+                  <tbody>
+                    <tr>
+                      <th>
+                        <center data-parsed="">
+                          <table align="center" className="button">
+                            <tr>
+                              <td>
+                                <table>
+                                  <tr>
+                                    <td
+                                      align="center"
+                                      style={{
+                                        backgroundColor: '#72C02C',
+                                        border: '0px solid #72C02C',
+                                        borderRadius: '3px'
+                                      }}
+                                      className="text-center small-text-center"
+                                    >
+                                      <a
+                                        align="center"
+                                        style={{ color: '#FFFFFF', textDecoration: 'none' }}
+                                        href={button1Link}
+                                      >
+                                        {buttonText}
+                                      </a>
+                                      {/* <Button text={buttonText} link={button1Link} /> */}
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                          </table>
+                        </center>
+                      </th>
+                    </tr>
+                  </tbody>
+                </table>
+              </th>
+            </tr>
+          </Box>
+        </Item>
+      </Box>
     );
   }
 }
