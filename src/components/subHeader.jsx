@@ -19,53 +19,26 @@ class SubHeader extends React.Component {
     return (
       <Box align="center" className="container">
         <Item>
-          <Box align="center" className="row">
-            <tr>
-              <th className="small-12 large-12 columns first last">
-                <table align="center">
-                  <tobdy>
-                    <tr>
-                      <th>
-                        <h6 className="text-center">{subText}</h6>
-                      </th>
-                    </tr>
-                  </tobdy>
-                </table>
-              </th>
-            </tr>
+          <Box className="row">
             <tr>
               <th className="small-12 large-12 columns first last">
                 <table align="center">
                   <tbody>
                     <tr>
                       <th>
-                        <h3 className="text-center">{header}</h3>
-                      </th>
-                    </tr>
-                  </tbody>
-                </table>
-              </th>
-            </tr>
-            <tr>
-              <th className="small-12 large-12 columns first last">
-                <table align="center">
-                  <tbody>
-                    <tr>
-                      <th>
-                        <h5 className="text-center">{message}</h5>
-                      </th>
-                    </tr>
-                  </tbody>
-                </table>
-              </th>
-            </tr>
-            <tr>
-              <th className="small-12 large-12 columns first last">
-                <table alignm="center">
-                  <tbody>
-                    <tr>
-                      <th>
-                        <p className="text-center">{profile_uid ? <p>{certMessage}</p> : <div />}</p>
+                        <p
+                          style={{ marginBottom: '0', marginTop: '20px', fontSize: '14pt' }}
+                          className="text-center subheader"
+                        >
+                          {subText}
+                        </p>
+                        <h2 style={{ marginBottom: '5px' }} className="text-center small-text-center">
+                          {header}
+                        </h2>
+                        <h4 style={{ marginBottom: '0' }} className="text-center small-text-center">
+                          {message}
+                        </h4>
+                        <p className="text-center small-text-center">{profile_uid ? <p>{certMessage}</p> : <div />}</p>
                       </th>
                     </tr>
                   </tbody>
