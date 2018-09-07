@@ -43,7 +43,7 @@ class ActivityInfo extends React.Component {
                     <tr>
                       <th>
                         <center data-parsed="">
-                          <table align="center" className="button">
+                          <table align="center" className="" style={{}}>
                             <tr>
                               <td>
                                 <table>
@@ -51,8 +51,10 @@ class ActivityInfo extends React.Component {
                                     <td
                                       align="center"
                                       style={{
+                                        padding: '18px',
+                                        fontSize: '14pt',
                                         backgroundColor: '#72C02C',
-                                        border: '0px solid #72C02C',
+                                        border: '1px solid #72C02C',
                                         borderRadius: '3px'
                                       }}
                                       className="text-center small-text-center"
