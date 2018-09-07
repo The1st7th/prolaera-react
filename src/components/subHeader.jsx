@@ -27,15 +27,18 @@ class SubHeader extends React.Component {
                     <tr>
                       <th>
                         <p
-                          style={{ marginBottom: '0', marginTop: '20px', fontSize: '14pt' }}
-                          className="text-center subheader"
+                          style={{ marginBottom: '0px', marginTop: '20px', fontSize: '14pt' }}
+                          className="text-center small-text-center subheader"
                         >
                           {subText}
                         </p>
-                        <h2 style={{ marginBottom: '5px' }} className="text-center small-text-center">
+                        <h2 style={{ marginBottom: '5px', marginTop: '0px' }} className="text-center small-text-center">
                           {header}
                         </h2>
-                        <h4 style={{ marginBottom: '0' }} className="text-center small-text-center">
+                        <h4
+                          style={{ marginBottom: '0px', marginTop: '0px', fontSize: '18pt' }}
+                          className="text-center small-text-center"
+                        >
                           {message}
                         </h4>
                         <p className="text-center small-text-center">{profile_uid ? <p>{certMessage}</p> : <div />}</p>
