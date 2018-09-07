@@ -41,7 +41,7 @@ describe('Activity Assigned email', () => {
     expect(activityJson).toMatchSnapshot();
   });
 
-  it('writes an html files', async () => {
+  it('writes an html file', async () => {
     const email = await activityAssignedEmail(activity, user, logoUrl);
 
     const newEmail = await inlineCss(email, {
