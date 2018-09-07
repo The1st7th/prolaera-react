@@ -180,24 +180,28 @@ class CourseInfo extends React.Component {
               </tr>
             </table>
           </Item> */}
-          <Item width="100%" align="center">
+          <Item width="100%" style={{ cellPadding: '5px', textAlign: 'center' }}>
             <table
+              className="center"
+              align="center"
               style={{
+                textAlign: 'center',
                 margin: 'auto',
                 borderSpacing: '10px'
               }}
             >
-              <tr style={{}}>
+              <tr className="center">
                 <td
-                  align="center"
                   className="customButton"
+                  align="center"
                   style={{
                     borderRadius: '2px',
                     margin: 'auto',
-                    width: '100%'
+                    width: '100%',
+                    textAlign: 'center'
                   }}
                 >
-                  <Button color={'#72C02C'} text={buttonText} link={newButtonLink} />
+                  <Button color={'#2F4050'} text={buttonText} link={newButtonLink} />
                 </td>
               </tr>
             </table>

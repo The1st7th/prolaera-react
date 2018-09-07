@@ -4,6 +4,7 @@ import Email from 'react-html-email/lib/components/Email';
 import CourseCertificate from '../../components/certificate/courseCertificate';
 import CourseInfo from '../../components/course/courseInfo';
 import Footer from '../../components/footer';
+import Gmail from '../../components/gmailfix';
 import buildHeader from '../../components/header';
 // import SubHeader from '../../components/subHeader';
 import css from '../templateCSS';
@@ -17,6 +18,7 @@ const courseCertificateEmail = async (course, user, certificate, imageUrl) => {
         <CourseCertificate {...certificate} {...course} {...user} />
         <CourseInfo {...course} buttonText={'View Course'} />
         <Footer />
+        <Gmail />
       </Email>
     );
   } catch (error) {
