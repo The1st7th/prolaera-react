@@ -17,6 +17,8 @@ describe('eventCertificateBuilder', () => {
 
   it('writes an HTML file', async () => {
     const email = await eventCertificateEmail(event, user, testCertificate, logoUrl);
+    console.log('**************************************************');
+    console.log(typeof email);
     const saved = await writeFile(email, 'eventCertificateTest.html');
     expect(saved).toEqual(true);
   });

@@ -41,11 +41,18 @@ describe('Activity Assigned email', () => {
     expect(activityJson).toMatchSnapshot();
   });
 
-  it('writes an html file', async () => {
+  it('writes an html files', async () => {
     const email = await activityAssignedEmail(activity, user, logoUrl);
-    const newEmail = await inlineCss(email, { url: ' ' });
-    await _sendEmail(email, ['eric.e.nicolas@gmail.com', 'emmanuel.nicolas@outlook.com']);
+
+    const newEmail = await inlineCss(email, {
+      url: ' '
+    });
+
+    const send = await _sendEmail(email, ['eric.e.nicolas@gmail.com', 'emmanuel.nicolas@outlook.com']);
+    console.log('SENT EMAIL', send);
+
     const saved = await writeFile(newEmail, 'activityTest.html');
+
     expect(saved).toEqual(true);
   });
 });

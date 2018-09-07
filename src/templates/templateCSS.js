@@ -1,4 +1,8 @@
 const css = `
+<<<<<<< HEAD
+=======
+
+>>>>>>> master
 .wrapper {
   width: 100%; }
 
