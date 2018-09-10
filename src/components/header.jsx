@@ -2,7 +2,7 @@ import url from 'url';
 import https from 'https';
 import sizeOf from 'image-size';
 import React from 'react';
-import { Box, Image, Item } from 'react-html-email';
+import { Image } from 'react-html-email';
 
 class Header extends React.Component {
   render() {
@@ -20,28 +20,54 @@ class Header extends React.Component {
     const resizedHeight = 47;
 
     return (
-      <div>
-        <Box align="center" class="container">
-          <table class="spacer">
-            <tbody>
-              <tr>
-                <td height="10px" style={{ fontSize: '10px', lineHeight: '10x' }}>
-                  &#xA0;
-                </td>
-              </tr>
-            </tbody>
-          </table>
-          <Item>
-            <table class="row">
-              <tr>
-                <center class="small-12 large-12 first last float-center ">
-                  <Image className="headerLogo" alt="logo" src={url} width={resizedWidth} height={resizedHeight} />
-                </center>
-              </tr>
-            </table>
-          </Item>
-        </Box>
-      </div>
+      <table align="center" className="container">
+        <tbody>
+          <tr>
+            <td>
+              <table align="center" className="row spacer">
+                <tbody>
+                  <tr>
+                    <th height="10px" style={{ fontSize: '10px', lineHeight: '10x' }}>
+                      <table>
+                        <tbody>
+                          <tr>
+                            <th>&#xA0;</th>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </th>
+                  </tr>
+                </tbody>
+              </table>
+              <table className="row">
+                <tbody>
+                  <tr>
+                    <th>
+                      <center>
+                        <table className="small-12 large-12 columns first last float-center">
+                          <tbody>
+                            <tr>
+                              <th>
+                                <Image
+                                  className="headerLogo"
+                                  alt="logo"
+                                  src={url}
+                                  width={resizedWidth}
+                                  height={resizedHeight}
+                                />
+                              </th>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </center>
+                    </th>
+                  </tr>
+                </tbody>
+              </table>
+            </td>
+          </tr>
+        </tbody>
+      </table>
     );
   }
 }
