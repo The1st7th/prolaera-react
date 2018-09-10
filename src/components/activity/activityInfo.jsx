@@ -1,5 +1,5 @@
 import React from 'react';
-// import Button from '../button';
+import Button from '../button';
 import InfoHeader from '../infoHeader';
 
 class ActivityInfo extends React.Component {
@@ -21,7 +21,7 @@ class ActivityInfo extends React.Component {
               <table align="center" className="row">
                 <tbody>
                   <tr>
-                    <th className="large-12 small-12 columns first last">
+                    <th align="center" className="large-12 small-12 columns first last">
                       <table>
                         <tbody>
                           <tr>
@@ -39,39 +39,27 @@ class ActivityInfo extends React.Component {
               <table align="center" className="row">
                 <tbody>
                   <tr>
-                    <th className="large-12 small-12 columns first last">
+                    <th align="center" className="large-12 small-12 columns first last">
                       <table>
                         <tbody>
                           <tr>
                             <th>
-                              <center data-parsed="">
-                                <table align="center" className="" style={{}}>
+                              <center>
+                                <table className="button float-center" style={{ borderCollapse: 'none' }}>
                                   <tr>
-                                    <td>
-                                      <table>
-                                        <tr>
-                                          <td
-                                            align="center"
-                                            style={{
-                                              padding: '18px',
-                                              fontSize: '14pt',
-                                              backgroundColor: '#72C02C',
-                                              border: '1px solid #72C02C',
-                                              borderRadius: '3px'
-                                            }}
-                                            className="text-center small-text-center"
-                                          >
-                                            <a
-                                              align="center"
-                                              style={{ color: '#FFFFFF', textDecoration: 'none' }}
-                                              href={button1Link}
-                                            >
-                                              {buttonText}
-                                            </a>
-                                            {/* <Button text={buttonText} link={button1Link} /> */}
-                                          </td>
-                                        </tr>
-                                      </table>
+                                    <td
+                                      className="text-center small-text-center"
+                                      style={{
+                                        padding: '14px',
+                                        fontSize: '14pt',
+                                        backgroundColor: '#72C02C',
+                                        border: '1px solid #72C02C',
+                                        borderRadius: '2px'
+                                      }}
+                                    >
+                                      <a style={{ color: '#FFFFFF', textDecoration: 'none' }} href={button1Link}>
+                                        {buttonText}
+                                      </a>
                                     </td>
                                   </tr>
                                 </table>
