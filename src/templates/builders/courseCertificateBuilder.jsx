@@ -1,6 +1,6 @@
 import React from 'react';
 import { renderEmail } from 'react-html-email';
-import Email from 'react-html-email/lib/components/Email';
+import Email from '../../components/newemail';
 import CourseCertificate from '../../components/certificate/courseCertificate';
 import CourseInfo from '../../components/course/courseInfo';
 import Footer from '../../components/footer';
