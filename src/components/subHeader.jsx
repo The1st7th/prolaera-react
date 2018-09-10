@@ -1,5 +1,4 @@
 import React from 'react';
-import { Box, Item } from 'react-html-email';
 
 class SubHeader extends React.Component {
   render() {
@@ -17,43 +16,51 @@ class SubHeader extends React.Component {
     var now = new Date();
 
     return (
-      <Box align="center" className="container">
-        <Item>
-          <Box className="row">
-            <tr>
-              <th className="small-12 large-12 columns first last">
-                <table align="center">
-                  <tbody>
-                    <tr>
-                      <th>
-                        <p
-                          style={{ marginBottom: '0px', marginTop: '20px', fontSize: '14pt' }}
-                          className="text-center small-text-center subheader"
-                        >
-                          {subText}
-                        </p>
-                        <p
-                          style={{ marginBottom: '0px', marginTop: '0px', fontSize: '26pt' }}
-                          className="text-center small-text-center"
-                        >
-                          {header}
-                        </p>
-                        <p
-                          style={{ marginBottom: '0px', marginTop: '0px', fontSize: '18pt' }}
-                          className="text-center small-text-center"
-                        >
-                          {message}
-                        </p>
-                        <p className="text-center small-text-center">{profile_uid ? <p>{certMessage}</p> : <div />}</p>
-                      </th>
-                    </tr>
-                  </tbody>
-                </table>
-              </th>
-            </tr>
-          </Box>
-        </Item>
-      </Box>
+      <table align="center" className="container">
+        <tbody>
+          <tr>
+            <td>
+              <table align="center" className="row">
+                <tbody>
+                  <tr>
+                    <th align="center" className="small-12 large-12 columns first last">
+                      <table>
+                        <tbody>
+                          <tr>
+                            <th>
+                              <p
+                                style={{ marginBottom: '0px', marginTop: '20px', fontSize: '14pt' }}
+                                className="text-center small-text-center subheader"
+                              >
+                                {subText}
+                              </p>
+                              <p
+                                style={{ marginBottom: '0px', marginTop: '0px', fontSize: '26pt' }}
+                                className="text-center small-text-center"
+                              >
+                                {header}
+                              </p>
+                              <p
+                                style={{ marginBottom: '0px', marginTop: '0px', fontSize: '18pt' }}
+                                className="text-center small-text-center"
+                              >
+                                {message}
+                              </p>
+                              <p className="text-center small-text-center">
+                                {profile_uid ? <p>{certMessage}</p> : <div />}
+                              </p>
+                            </th>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </th>
+                  </tr>
+                </tbody>
+              </table>
+            </td>
+          </tr>
+        </tbody>
+      </table>
     );
   }
 }
