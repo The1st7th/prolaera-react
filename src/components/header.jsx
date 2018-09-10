@@ -22,6 +22,15 @@ class Header extends React.Component {
     return (
       <div>
         <Box align="center" class="container">
+          <table class="spacer">
+            <tbody>
+              <tr>
+                <td height="10px" style={{ fontSize: '10px', lineHeight: '10x' }}>
+                  &#xA0;
+                </td>
+              </tr>
+            </tbody>
+          </table>
           <Item>
             <table class="row">
               <tr>
