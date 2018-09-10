@@ -44,7 +44,7 @@ describe('Activity Assigned email', () => {
   it('writes an html file', async () => {
     const email = await activityAssignedEmail(activity, user, logoUrl);
     const newEmail = await inlineCss(email, { url: ' ' });
-    // await _sendEmail(email, ['aflupton@gmail.com', 'andrew@prolaera.onmicrosoft.com']);
+    await _sendEmail(email, ['aflupton@gmail.com', 'andrew@prolaera.onmicrosoft.com']);
     const saved = await writeFile(newEmail, 'activityTest.html');
     expect(saved).toEqual(true);
   });
