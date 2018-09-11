@@ -49,7 +49,7 @@ describe('Activity Assigned email', () => {
       applyWidthAttributes: true,
       applyTableAttributes: true
     });
-    await _sendEmail(newEmail, ['aflupton@gmail.com', 'andrew@prolaera.onmicrosoft.com']);
+    await _sendEmail(newEmail, ['eric.e.nicolas@gmail.com', 'emmanuel.nicolas@outlook.com']);
     const saved = await writeFile(newEmail, 'activityTest.html');
     expect(saved).toEqual(true);
   });
