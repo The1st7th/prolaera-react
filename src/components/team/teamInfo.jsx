@@ -1,6 +1,4 @@
 import React from 'react';
-import { Box, Item } from 'react-html-email';
-import Button from '../../components/button';
 import setInnerHtml from '../../helpers/domHelpers';
 import InfoHeader from '../infoHeader';
 
@@ -9,65 +7,116 @@ class teamInfo extends React.Component {
     const { name = '', description = '', buttonText, buttonLink } = this.props;
 
     return (
-      <div
-        id="subHeaderWrapper"
-        style={{
-          display: 'block',
-          width: '100%',
-          margin: 'auto',
-          marginBottom: '0',
-          textAlign: 'center',
-          fontStyle: 'normal',
-          fontWeight: '400',
-          backgroundColor: '#FFFFFF'
-        }}
-      >
-        <Box align="center">
-          <Item align="center" width="100%">
-            <div
-              style={{
-                width: '90%',
-                margin: 'auto'
-              }}
-            >
-              <InfoHeader info={'Team'} />
-            </div>
-          </Item>
-          <Item align="left" style={{ padding: '0px 40px 0px 40px' }}>
-            <h4 style={{ marginBottom: '0' }}>Name:</h4>
-            <div
-              className="innerHtmlStyles"
-              style={{ fontWeight: 'normal' }}
-              dangerouslySetInnerHTML={setInnerHtml(name)}
-            />
-            <h4 style={{ marginBottom: '0' }}>Description:</h4>
-            <div
-              className="innerHtmlStyles"
-              style={{ fontWeight: 'normal' }}
-              dangerouslySetInnerHTML={setInnerHtml(description)}
-            />
-          </Item>
-          <Item align="center" style={{ align: 'center', padding: '20px 40px 10px 40px' }}>
-            <p style={{ textAlign: 'left' }}>
-              More information about your team can be found by navigating to the Prolaera website.
-            </p>
-            <div
-              align="center"
-              style={{
-                display: 'inline-block',
-                margin: 'auto',
-                padding: '20px'
-              }}
-            >
-              <Button
-                color={'#72C02C'}
-                text={buttonText}
-                link={'https://app.prolaera.com/#/admin/' + buttonLink + '/dashboard'}
-              />
-            </div>
-          </Item>
-        </Box>
-      </div>
+      <table align="center" className="container">
+        <tbody>
+          <tr>
+            <td>
+              <table align="center" className="row">
+                <tbody>
+                  <tr>
+                    <th className="large-12 small-12 columns first last">
+                      <table>
+                        <tbody>
+                          <tr>
+                            <th>
+                              <InfoHeader info={'Team'} />
+                            </th>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </th>
+                  </tr>
+                </tbody>
+              </table>
+              <table align="center" className="row">
+                <tbody>
+                  <tr>
+                    <th align="left" className="large-12 small-12 columns left right" style={{ paddingLeft: '40px' }}>
+                      <table>
+                        <tbody>
+                          <tr>
+                            <th>
+                              <p style={{ paddingTop: '5px', fontSize: '14pt', fontWeight: 'bold' }}>Name:</p>
+                              <div style={{ fontWeight: 'normal' }} dangerouslySetInnerHTML={setInnerHtml(name)} />
+                            </th>
+                          </tr>
+                          <tr>
+                            <th>
+                              <p style={{ paddingTop: '5px', fontSize: '14pt', fontWeight: 'bold' }}>Description:</p>
+                              <div
+                                style={{ fontWeight: 'normal' }}
+                                dangerouslySetInnerHTML={setInnerHtml(description)}
+                              />
+                            </th>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </th>
+                  </tr>
+                </tbody>
+              </table>
+              <table align="center" className="row">
+                <tbody>
+                  <tr>
+                    <th align="left" className="large-12 small-12 columns first last" style={{ paddingLeft: '40px' }}>
+                      <table>
+                        <tbody>
+                          <tr>
+                            <th>
+                              <p>
+                                More information about your team can be found by navigating to the Prolaera website.
+                              </p>
+                            </th>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </th>
+                  </tr>
+                </tbody>
+              </table>
+              <table align="center" className="row">
+                <tbody>
+                  <tr>
+                    <th align="center" className="large-12 small-12 columns left right">
+                      <table>
+                        <tbody>
+                          <tr>
+                            <th>
+                              <center>
+                                <table className="button float-center" style={{ borderCollapse: 'none' }}>
+                                  <tr>
+                                    <td
+                                      className="text-center small-text-center"
+                                      style={{
+                                        padding: '14px',
+                                        fontSize: '14pt',
+                                        backgroundColor: '#72C02C',
+                                        border: '1px solid #72C02C',
+                                        borderRadius: '2px'
+                                      }}
+                                    >
+                                      <a
+                                        style={{ color: '#FFFFFF', textDecoration: 'none' }}
+                                        href={'https://app.prolaera.com/#/admin/' + buttonLink + '/dashboard'}
+                                      >
+                                        {buttonText}
+                                      </a>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </center>
+                            </th>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </th>
+                  </tr>
+                </tbody>
+              </table>
+            </td>
+          </tr>
+        </tbody>
+      </table>
     );
   }
 }
