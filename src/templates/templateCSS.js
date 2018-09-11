@@ -1,9 +1,4 @@
 const css = `
-.innerHtmlStyles {
-  // margin: auto;
-  // padding-top,
-  // padding-bottom: 5px;
-}
 
 .333333 {
   background-color: #333333;

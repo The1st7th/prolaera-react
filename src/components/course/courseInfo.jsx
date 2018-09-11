@@ -71,19 +71,16 @@ class CourseInfo extends React.Component {
                     <th align="left" className="large-12 small-12 columns first last" style={{ paddingLeft: '40px' }}>
                       <table>
                         <tbody>
-                          <tr className="row">
+                          <tr>
                             <th>
-                              <p style={{ paddingTop: '5px', fontSize: '14pt' }}>
-                                By:{' '}
-                                <span className="innerHtmlStyles" style={{ fontWeight: 'normal', fontSize: '12pt' }}>
-                                  {by}
-                                </span>
+                              <p style={{ paddingTop: '5px', fontSize: '14pt', fontWeight: 'bold' }}>
+                                By: <span style={{ fontWeight: 'lighter', fontSize: '12pt' }}>{by}</span>
                               </p>
                             </th>
                           </tr>
-                          <tr className="row">
+                          <tr>
                             <th>
-                              <p style={{ paddingTop: '5px', fontSize: '14pt' }}>Description: </p>
+                              <p style={{ paddingTop: '5px', fontSize: '14pt', fontWeight: 'bold' }}>Description: </p>
                               <div
                                 className="innerHtmlStyles"
                                 style={{ fontWeight: 'normal' }}
@@ -91,9 +88,11 @@ class CourseInfo extends React.Component {
                               />
                             </th>
                           </tr>
-                          <tr className="row">
+                          <tr>
                             <th>
-                              <p style={{ paddingTop: '5px', fontSize: '14pt' }}>Learning Objectives:</p>
+                              <p style={{ paddingTop: '5px', fontSize: '14pt', fontWeight: 'bold' }}>
+                                Learning Objectives:
+                              </p>
                               <div
                                 className="innerHtmlStyles"
                                 style={{ fontWeight: 'normal' }}
@@ -101,9 +100,11 @@ class CourseInfo extends React.Component {
                               />
                             </th>
                           </tr>
-                          <tr className="row">
+                          <tr>
                             <th>
-                              <p style={{ paddingTop: '5px', fontSize: '14pt' }}>Delivery Method:</p>
+                              <p style={{ paddingTop: '5px', fontSize: '14pt', fontWeight: 'bold' }}>
+                                Delivery Method:
+                              </p>
                               <div
                                 className="innerHtmlStyles"
                                 style={{ fontWeight: 'normal' }}
@@ -111,39 +112,40 @@ class CourseInfo extends React.Component {
                               />
                             </th>
                           </tr>
-                          <tr className="row">
+                          <tr>
                             <th>
-                              <p style={{ paddingTop: '5px', fontSize: '14pt' }}>
+                              <p style={{ marginTop: '5px', paddingTop: '5px', fontSize: '14pt', fontWeight: 'bold' }}>
                                 Price:{' '}
-                                <span className="innerHtmlStyles" style={{ fontWeight: 'normal', fontSize: '12pt' }}>
+                                <span style={{ fontWeight: 'lighter', fontSize: '12pt' }}>
                                   {{ price } > 0 ? { price } : 'Free'}
                                 </span>
                               </p>
                             </th>
                           </tr>
-                          <tr className="row">
+                          <tr>
                             <th>
-                              <p style={{ paddingTop: '5px', fontSize: '14pt' }}>Recommended CPE Credit(s):</p>
-                              <ul style={{ paddingTop: '10px' }}>
+                              <p style={{ paddingTop: '5px', fontSize: '14pt', fontWeight: 'bold' }}>
+                                Recommended CPE Credit(s):
+                              </p>
+                              <ul style={{ paddingTop: '5px' }}>
                                 <li style={{ fontWeight: 'normal' }}>
                                   {hours[0].subject_area} - {hours[0].credits} Hour(s)
                                 </li>
                               </ul>
                             </th>
                           </tr>
-                          <tr className="row">
+                          <tr>
                             <th>
-                              <p style={{ paddingTop: '5px', fontSize: '14pt' }}>
-                                Level:{' '}
-                                <span className="innerHtmlStyles" style={{ fontWeight: 'normal' }}>
-                                  {level}
-                                </span>
+                              <p style={{ paddingTop: '5px', fontSize: '14pt', fontWeight: 'bold' }}>
+                                Level: <span style={{ fontWeight: 'lighter', fontSize: '12pt' }}>{level}</span>
                               </p>
                             </th>
                           </tr>
-                          <tr className="row">
+                          <tr>
                             <th>
-                              <p style={{ paddingTop: '5px', fontSize: '14pt' }}>Target Audience: </p>
+                              <p style={{ paddingTop: '5px', fontSize: '14pt', fontWeight: 'bold' }}>
+                                Target Audience:{' '}
+                              </p>
                               <div
                                 className="innerHtmlStyles"
                                 style={{ fontWeight: 'normal' }}
@@ -151,9 +153,11 @@ class CourseInfo extends React.Component {
                               />
                             </th>
                           </tr>
-                          <tr className="row">
+                          <tr>
                             <th>
-                              <p style={{ paddingTop: '5px', fontSize: '14pt' }}>Prerequisites: </p>
+                              <p style={{ marginTop: '5px', paddingTop: '5px', fontSize: '14pt', fontWeight: 'bold' }}>
+                                Prerequisites:{' '}
+                              </p>
                               <div
                                 className="innerHtmlStyles"
                                 style={{ fontWeight: 'normal' }}
@@ -161,9 +165,9 @@ class CourseInfo extends React.Component {
                               />
                             </th>
                           </tr>
-                          <tr className="row">
+                          <tr>
                             <th>
-                              <p style={{ paddingTop: '5px', fontSize: '14pt' }}>Prep: </p>
+                              <p style={{ paddingTop: '5px', fontSize: '14pt', fontWeight: 'bold' }}>Prep: </p>
                               <div
                                 className="innerHtmlStyles"
                                 style={{ fontWeight: 'normal' }}
@@ -177,7 +181,7 @@ class CourseInfo extends React.Component {
                   </tr>
                 </tbody>
               </table>
-              <table align="center" className="row">
+              <table align="center" className="row" style={{ marginTop: '10px' }}>
                 <tbody>
                   <tr>
                     <th align="center" className="large-12 small-12 columns first last">

@@ -18,7 +18,7 @@ const eventCertificateEmail = async (event, user, certificate, imageUrl) => {
         <Header text="Complete Evaluation" {...event} {...certificate} />
         <SubHeader {...user} subText="You have received an" header="Event Certificate" />
         <EventCertificate {...event} {...user} {...certificate} />
-        <EventInfo {...event} />
+        <EventInfo {...event} buttonText="Event Details" />
         <Footer />
       </Email>
     );
