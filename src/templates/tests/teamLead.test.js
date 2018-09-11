@@ -55,8 +55,7 @@ describe('teamLead Email', () => {
       applyWidthAttributes: true,
       applyTableAttributes: true
     });
-    const send = await _sendEmail(newEmail, ['eric.e.nicolas@gmail.com', 'emmanuel.nicolas@outlook.com']);
-    console.log('SENT EMAIL', send);
+    await _sendEmail(newEmail, ['aflupton@gmail.com', 'andrew@prolaera.onmicrosoft.com']);
     const saved = await writeFile(newEmail, 'teamLeadTest.html');
     expect(saved).toEqual(true);
   });

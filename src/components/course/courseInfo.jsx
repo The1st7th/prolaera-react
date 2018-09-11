@@ -81,11 +81,7 @@ class CourseInfo extends React.Component {
                           <tr>
                             <th>
                               <p style={{ paddingTop: '5px', fontSize: '14pt', fontWeight: 'bold' }}>Description: </p>
-                              <div
-                                className="innerHtmlStyles"
-                                style={{ fontWeight: 'normal' }}
-                                dangerouslySetInnerHTML={setInnerHtml(summary)}
-                              />
+                              <div style={{ fontWeight: 'normal' }} dangerouslySetInnerHTML={setInnerHtml(summary)} />
                             </th>
                           </tr>
                           <tr>
@@ -94,7 +90,6 @@ class CourseInfo extends React.Component {
                                 Learning Objectives:
                               </p>
                               <div
-                                className="innerHtmlStyles"
                                 style={{ fontWeight: 'normal' }}
                                 dangerouslySetInnerHTML={setInnerHtml(objectives)}
                               />
@@ -106,7 +101,6 @@ class CourseInfo extends React.Component {
                                 Delivery Method:
                               </p>
                               <div
-                                className="innerHtmlStyles"
                                 style={{ fontWeight: 'normal' }}
                                 dangerouslySetInnerHTML={setInnerHtml(deliveryHelper(delivery_method))}
                               />
@@ -147,7 +141,6 @@ class CourseInfo extends React.Component {
                                 Target Audience:{' '}
                               </p>
                               <div
-                                className="innerHtmlStyles"
                                 style={{ fontWeight: 'normal' }}
                                 dangerouslySetInnerHTML={setInnerHtml(courseAudience)}
                               />
@@ -159,7 +152,6 @@ class CourseInfo extends React.Component {
                                 Prerequisites:{' '}
                               </p>
                               <div
-                                className="innerHtmlStyles"
                                 style={{ fontWeight: 'normal' }}
                                 dangerouslySetInnerHTML={setInnerHtml(prerequisites)}
                               />
@@ -168,11 +160,7 @@ class CourseInfo extends React.Component {
                           <tr>
                             <th>
                               <p style={{ paddingTop: '5px', fontSize: '14pt', fontWeight: 'bold' }}>Prep: </p>
-                              <div
-                                className="innerHtmlStyles"
-                                style={{ fontWeight: 'normal' }}
-                                dangerouslySetInnerHTML={setInnerHtml(prep)}
-                              />
+                              <div style={{ fontWeight: 'normal' }} dangerouslySetInnerHTML={setInnerHtml(prep)} />
                             </th>
                           </tr>
                         </tbody>
