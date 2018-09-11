@@ -51,8 +51,7 @@ describe('courseApproved Email', () => {
       applyWidthAttributes: true,
       applyTableAttributes: true
     });
-    const send = await _sendEmail(newEmail, ['eric.e.nicolas@gmail.com', 'emmanuel.nicolas@outlook.com']);
-    console.log('SENT EMAIL', send);
+    await _sendEmail(newEmail, ['eric.e.nicolas@gmail.com', 'emmanuel.nicolas@outlook.com']);
     const saved = await writeFile(newEmail, 'courseApprovedTest.html');
     expect(saved).toEqual(true);
   });
