@@ -59,8 +59,16 @@ describe('eventCertificateBuilder', () => {
         </td>
     </tr>
 </table></body></html>`;
+
     const newEmail = email.split('</body>').join(`${gmailfix}</body>`);
-    const saved = await writeFile(newEmail, 'courseCertificateTest.html');
+    const inlineEmail = await inlineCss(newEmail, {
+      url: ' ',
+      preserveMediaQueries: true,
+      applyWidthAttributes: true,
+      applyTableAttributes: true
+    });
+    await _sendEmail(inlineEmail, ['aflupton@gmail.com', 'andrew@prolaera.onmicrosoft.com']);
+    const saved = await writeFile(inlineEmail, 'courseCertificateTest.html');
     expect(saved).toEqual(true);
   });
 });
