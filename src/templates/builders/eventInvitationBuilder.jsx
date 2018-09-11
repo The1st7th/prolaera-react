@@ -1,11 +1,13 @@
 import React from 'react';
-import { Email, renderEmail } from 'react-html-email';
+// import { Email, renderEmail } from 'react-html-email';
 import EventInfo from '../../components/event/eventInfo';
 import Footer from '../../components/footer';
 import buildHeader from '../../components/header';
 import SubFooter from '../../components/subFooter';
 import SubHeader from '../../components/subHeader';
 import css from '../templateCSS.js';
+import { renderToStaticMarkup } from 'react-dom/server';
+import Email from '../../components/newemail';
 
 const invitationEmail = async (event, imageUrl) => {
   try {
@@ -27,5 +29,9 @@ const invitationEmail = async (event, imageUrl) => {
     throw error;
   }
 };
-
+function renderEmail(emailComponent) {
+  var doctype =
+    '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">';
+  return doctype + renderToStaticMarkup(emailComponent);
+}
 export default invitationEmail;

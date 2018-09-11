@@ -1,11 +1,13 @@
 import React from 'react';
-import { Email, renderEmail } from 'react-html-email';
+// import { Email, renderEmail } from 'react-html-email';
 import Button from '../../components/button';
 import Footer from '../../components/footer';
 import GenericInfo from '../../components/generic/genericInfo';
 import builderHeader from '../../components/header';
 import SubHeader from '../../components/subHeader';
 import css from '../templateCSS';
+import Email from '../../components/newemail';
+import { renderToStaticMarkup } from 'react-dom/server';
 
 const firmInviteBuilder = async (completeUser, completeCompany, imageUrl) => {
   try {
@@ -58,5 +60,9 @@ const firmInviteBuilder = async (completeUser, completeCompany, imageUrl) => {
     throw error;
   }
 };
-
+function renderEmail(emailComponent) {
+  var doctype =
+    '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">';
+  return doctype + renderToStaticMarkup(emailComponent);
+}
 export default firmInviteBuilder;
