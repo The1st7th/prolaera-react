@@ -42,16 +42,13 @@ describe('eventCertificateBuilder', () => {
 
   it('writes an HTML file', async () => {
     const email = await eventCertificateEmail(event, user, testCertificate, logoUrl);
-    console.log('**************************************************');
-    console.log(typeof email);
     const newEmail = await inlineCss(email, {
       url: ' ',
       preserveMediaQueries: true,
       applyWidthAttributes: true,
       applyTableAttributes: true
     });
-    const send = await _sendEmail(newEmail, ['eric.e.nicolas@gmail.com', 'emmanuel.nicolas@outlook.com']);
-    console.log('SENT EMAIL', send);
+    await _sendEmail(newEmail, ['andrew@prolaera.onmicrosoft.com', 'aflupton@gmail.com']);
     const saved = await writeFile(newEmail, 'eventCertificateTest.html');
     expect(saved).toEqual(true);
   });

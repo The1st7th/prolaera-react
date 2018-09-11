@@ -181,7 +181,7 @@ class CourseInfo extends React.Component {
                   </tr>
                 </tbody>
               </table>
-              <table align="center" className="row">
+              <table align="center" className="row" style={{ marginTop: '10px' }}>
                 <tbody>
                   <tr>
                     <th align="center" className="large-12 small-12 columns first last">

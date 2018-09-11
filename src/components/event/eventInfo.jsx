@@ -1,9 +1,7 @@
 import React from 'react';
-import { Box, Item } from 'react-html-email';
 import { PrettyDate } from '../../helpers/dateHelpers';
 import deliveryHelper from '../../helpers/deliveryHelper';
 import setInnerHtml from '../../helpers/domHelpers';
-import Button from '../button';
 import InfoHeader from '../infoHeader';
 
 class EventInfo extends React.Component {
@@ -30,140 +28,217 @@ class EventInfo extends React.Component {
     let newPrerequisites = prerequisites.trim();
 
     return (
-      <div
-        id="subHeaderWrapper"
-        style={{
-          display: 'block',
-          margin: 'auto',
-          textAlign: 'center',
-          fontStyle: 'normal',
-          fontWeight: '400',
-          backgroundColor: '#FFFFFF'
-        }}
-      >
-        <Box align="center" width="100%">
-          <Item align="center" width="100%">
-            <div
-              style={{
-                width: '90%',
-                margin: 'auto'
-              }}
-            >
-              <InfoHeader info={'Event'} />
-            </div>
-            <h4 align="center">
-              <a
-                href={'https://app.prolaera.com/#/events/' + `${event_id}`}
-                style={{ textDecoration: 'underline', color: '#2F4050', height: '100%' }}
-              >
-                <em>
-                  {course_name} ({deliveryHelper(delivery_method)})
-                </em>
-              </a>
-            </h4>
-          </Item>
-          <Item align="left">
-            <div style={{ paddingLeft: '40px' }}>
-              <h4>Start Time:</h4>
-              <div
-                className="innerHtmlStyles"
-                style={{ fontWeight: 'normal' }}
-                dangerouslySetInnerHTML={setInnerHtml(PrettyDate(delivery_date))}
-              />
-              <h4>End Time:</h4>
-              <div
-                className="innerHtmlStyles"
-                style={{ fontWeight: 'normal' }}
-                dangerouslySetInnerHTML={setInnerHtml(PrettyDate(delivery_end_date))}
-              />
-              <h4 style={{ marginBottom: '0px' }}>Recommended CPE Credit(s):</h4>
-              <ul style={{ marginTop: '10px' }}>
-                {hours.map((hour, index) => (
-                  <li key={index} style={{ padding: '5px' }}>
-                    {hour.subject_area} - {hour.credits} Hour(s)
-                  </li>
-                ))}
-              </ul>
-              <h4>Location:</h4>
-              <div className="innerHtmlStyles" style={{ fontWeight: 'normal' }}>
-                <a
-                  style={{ textDecoration: 'underline', color: 'inherit' }}
-                  href={'https://www.google.com/maps/place/' + `${delivery_location}`}
-                >
-                  <span style={{ fontWeight: 'normal' }}>{delivery_location}</span>
-                </a>
-              </div>
-              <h4>Delivery Method:</h4>
-              <div
-                className="innerHtmlStyles"
-                style={{ fontWeight: 'normal' }}
-                dangerouslySetInnerHTML={setInnerHtml(deliveryHelper(delivery_method))}
-              />
-              <h4>Price: </h4>
-              <div
-                className="innerHtmlStyles"
-                style={{ fontWeight: 'normal' }}
-                dangerouslySetInnerHTML={setInnerHtml('$' + price + '.00')}
-              />
-              <h4>Target Audience:</h4>
-              <div
-                className="innerHtmlStyles"
-                style={{ fontWeight: 'normal' }}
-                dangerouslySetInnerHTML={setInnerHtml(courseAudience)}
-              />
-              <h4 style={{ marginBottom: '0px' }}>Prep:</h4>
-              <div
-                className="innerHtmlStyles"
-                style={{ fontWeight: 'normal' }}
-                dangerouslySetInnerHTML={setInnerHtml(prep)}
-              />
-              <h4 style={{ marginBottom: '0px' }}>Prerequisites:</h4>
-              <div
-                className="innerHtmlStyles"
-                style={{ fontWeight: 'normal' }}
-                dangerouslySetInnerHTML={setInnerHtml(newPrerequisites)}
-              />
-              <h4>Level:</h4>
-              <div
-                className="innerHtmlStyles"
-                style={{ fontWeight: 'normal' }}
-                dangerouslySetInnerHTML={setInnerHtml(level)}
-              />
-              <h4 style={{ marginBottom: '0px' }}>Learning Objectives:</h4>
-              <div
-                className="innerHtmlStyles"
-                style={{ fontWeight: 'norma;' }}
-                dangerouslySetInnerHTML={setInnerHtml(objectives)}
-              />
-              <h4 style={{ marginBottom: '0px' }}>Summary:</h4>
-              <div
-                className="innerHtmlStyles"
-                style={{ fontWeight: 'normal' }}
-                dangerouslySetInnerHTML={setInnerHtml(summary)}
-              />
-            </div>
-          </Item>
-          <Item align="center" style={{ width: '100%', paddingBottom: '20px' }}>
-            {buttonText ? (
-              <div
-                style={{
-                  display: 'inline-block',
-                  margin: 'auto',
-                  padding: '20px'
-                }}
-              >
-                {buttonText ? (
-                  <Button color={'#72C02C'} text={buttonText} link={buttonLink} />
-                ) : (
-                  <span className="buttonSpan" />
-                )}
-              </div>
-            ) : (
-              <span className="buttonSpan" />
-            )}
-          </Item>
-        </Box>
-      </div>
+      <table align="center" className="container">
+        <tbody>
+          <tr>
+            <td>
+              <table align="center" className="row">
+                <tbody>
+                  <tr>
+                    <th className="large-12 small-12 columns first last">
+                      <table>
+                        <tbody>
+                          <tr>
+                            <th className="text-center small-text-center">
+                              <InfoHeader info={'Event'} />
+                              <h4
+                                align="center"
+                                className="text-center small-text-center"
+                                style={{ paddingTop: '15px', marginTop: '0px' }}
+                              >
+                                <a
+                                  href={'https://app.prolaera.com/#/events/' + `${event_id}`}
+                                  style={{ textDecoration: 'underline', color: '#2F4050', height: '100%' }}
+                                >
+                                  <em>
+                                    {course_name} ({deliveryHelper(delivery_method)})
+                                  </em>
+                                </a>
+                              </h4>
+                            </th>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </th>
+                  </tr>
+                </tbody>
+              </table>
+              <table align="center" className="row">
+                <tbody>
+                  <tr>
+                    <th align="left" className="large-12 small-12 columns first last" style={{ paddingLeft: '40px' }}>
+                      <table>
+                        <tbody>
+                          <tr>
+                            <th>
+                              <p style={{ paddingTop: '5px', fontSize: '14pt', fontWeight: 'bold' }}>Start Time:</p>
+                              <div
+                                style={{ fontWeight: 'normal' }}
+                                dangerouslySetInnerHTML={setInnerHtml(PrettyDate(delivery_date))}
+                              />
+                            </th>
+                          </tr>
+                          <tr>
+                            <th>
+                              <p style={{ paddingTop: '5px', marginTop: '5px', fontSize: '14pt', fontWeight: 'bold' }}>
+                                End Time:
+                              </p>
+                              <div
+                                style={{ fontWeight: 'normal' }}
+                                dangerouslySetInnerHTML={setInnerHtml(PrettyDate(delivery_end_date))}
+                              />
+                            </th>
+                          </tr>
+                          <tr>
+                            <th>
+                              <p style={{ paddingTop: '5px', marginTop: '5px', fontSize: '14pt', fontWeight: 'bold' }}>
+                                Recommended CPE Credit(s):
+                              </p>
+                              <ul style={{ marginTop: '5px', marginBottom: '0px' }}>
+                                {hours.map((hour, index) => (
+                                  <li key={index} style={{}}>
+                                    {hour.subject_area} - {hour.credits} Hour(s)
+                                  </li>
+                                ))}
+                              </ul>
+                            </th>
+                          </tr>
+                          <tr>
+                            <th>
+                              <p style={{ paddingTop: '5px', marginTop: '5px', fontSize: '14pt', fontWeight: 'bold' }}>
+                                Location:
+                              </p>
+                              <a
+                                style={{ textDecoration: 'underline', color: 'inherit' }}
+                                href={'https://www.google.com/maps/place/' + `${delivery_location}`}
+                              >
+                                <span style={{ fontWeight: 'normal' }}>{delivery_location}</span>
+                              </a>
+                            </th>
+                          </tr>
+                          <tr>
+                            <th>
+                              <p style={{ paddingTop: '5px', marginTop: '5px', fontSize: '14pt', fontWeight: 'bold' }}>
+                                Delivery Method:
+                              </p>
+                              <div
+                                style={{ fontWeight: 'normal' }}
+                                dangerouslySetInnerHTML={setInnerHtml(deliveryHelper(delivery_method))}
+                              />
+                            </th>
+                          </tr>
+                          <tr>
+                            <th>
+                              <p style={{ paddingTop: '5px', marginTop: '5px', fontSize: '14pt', fontWeight: 'bold' }}>
+                                Price:{' '}
+                                <span style={{ fontWeight: 'lighter', fontSize: '12pt' }}>
+                                  {{ price } > 0 ? { price } : 'Free'}
+                                </span>
+                              </p>
+                            </th>
+                          </tr>
+                          <tr>
+                            <th>
+                              <p style={{ paddingTop: '5px', fontSize: '14pt', fontWeight: 'bold' }}>
+                                Target Audience:
+                              </p>
+                              <div
+                                style={{ fontWeight: 'normal' }}
+                                dangerouslySetInnerHTML={setInnerHtml(courseAudience)}
+                              />
+                            </th>
+                          </tr>
+                          <tr>
+                            <th>
+                              <p style={{ paddingTop: '5px', marginTop: '5px', fontSize: '14pt', fontWeight: 'bold' }}>
+                                Prep:
+                              </p>
+                              <div style={{ fontWeight: 'normal' }} dangerouslySetInnerHTML={setInnerHtml(prep)} />
+                            </th>
+                          </tr>
+                          <tr>
+                            <th>
+                              <p style={{ paddingTop: '5px', fontSize: '14pt', fontWeight: 'bold' }}>Prerequisites: </p>
+                              <div
+                                style={{ fontWeight: 'normal' }}
+                                dangerouslySetInnerHTML={setInnerHtml(newPrerequisites)}
+                              />
+                            </th>
+                          </tr>
+                          <tr>
+                            <th>
+                              <p style={{ paddingTop: '5px', fontSize: '14pt', fontWeight: 'bold' }}>
+                                Level: <span style={{ fontWeight: 'lighter', fontSize: '12pt' }}>{level}</span>
+                              </p>
+                            </th>
+                          </tr>
+                          <tr>
+                            <th>
+                              <p style={{ paddingTop: '5px', marginTop: '5px', fontSize: '14pt', fontWeight: 'bold' }}>
+                                Learning Objectives:
+                              </p>
+                              <div
+                                style={{ fontWeight: 'normal' }}
+                                dangerouslySetInnerHTML={setInnerHtml(objectives)}
+                              />
+                            </th>
+                          </tr>
+                          <tr>
+                            <th>
+                              <p style={{ paddingTop: '5px', fontSize: '14pt', fontWeight: 'bold' }}>Summary:</p>
+                              <div style={{ fontWeight: 'normal' }} dangerouslySetInnerHTML={setInnerHtml(summary)} />
+                            </th>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </th>
+                  </tr>
+                </tbody>
+              </table>
+              <table align="center" className="row" style={{ marginTop: '10px' }}>
+                <tbody>
+                  <tr>
+                    <th align="center" className="large-12 small-12 columns first last">
+                      <table>
+                        <tbody>
+                          <tr>
+                            <th>
+                              <center>
+                                <table className="button float-center" style={{ borderCollapse: 'none' }}>
+                                  <tr>
+                                    <td
+                                      className="text-center small-text-center"
+                                      style={{
+                                        padding: '14px',
+                                        fontSize: '14pt',
+                                        backgroundColor: '#72C02C',
+                                        border: '1px solid #72C02C',
+                                        borderRadius: '2px'
+                                      }}
+                                    >
+                                      {buttonText ? (
+                                        <a style={{ color: '#FFFFFF', textDecoration: 'none' }} href={buttonLink}>
+                                          {buttonText}
+                                        </a>
+                                      ) : (
+                                        <span />
+                                      )}
+                                    </td>
+                                  </tr>
+                                </table>
+                              </center>
+                            </th>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </th>
+                  </tr>
+                </tbody>
+              </table>
+            </td>
+          </tr>
+        </tbody>
+      </table>
     );
   }
 }
