@@ -2,7 +2,7 @@ import React from 'react';
 
 var now = new Date();
 export default () => (
-  <table align="center" className="container 333333" valign="middle">
+  <table align="center" className="container" valign="middle">
     <tbody>
       <tr>
         <td>
