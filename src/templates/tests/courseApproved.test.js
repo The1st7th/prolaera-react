@@ -2,6 +2,8 @@ import renderer from 'react-test-renderer';
 import writeFile from '../../helpers/writeFileHelper';
 import courseApprovedBuilder from '../builders/courseApprovedBuilder';
 import course from './json/completeCourse.json';
+import inlineCss from 'inline-css';
+var request = require('request');
 
 const _sendEmail = (template, emails) => {
   return new Promise((resolve, reject) => {
@@ -49,8 +51,7 @@ describe('courseApproved Email', () => {
       applyWidthAttributes: true,
       applyTableAttributes: true
     });
-    const send = await _sendEmail(newEmail, ['aflupton@gmail.com', 'andrew@prolaera.onmicrosoft.com']);
-    console.log('SENT EMAIL', send);
+    await _sendEmail(newEmail, ['aflupton@gmail.com', 'andrew@prolaera.onmicrosoft.com']);
     const saved = await writeFile(newEmail, 'courseApprovedTest.html');
     expect(saved).toEqual(true);
   });
