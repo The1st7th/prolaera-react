@@ -1,6 +1,8 @@
 import renderer from 'react-test-renderer';
 import writeFile from '../../helpers/writeFileHelper';
 import trackAssignedBuilder from '../builders/trackAssignedBuilder';
+import inlineCss from 'inline-css';
+var request = require('request');
 const _sendEmail = (template, emails) => {
   return new Promise((resolve, reject) => {
     request(

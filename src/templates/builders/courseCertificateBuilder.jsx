@@ -1,5 +1,5 @@
 import React from 'react';
-import { renderEmail } from 'react-html-email';
+// import { renderEmail } from 'react-html-email';
 import Email from '../../components/newemail';
 import CourseCertificate from '../../components/certificate/courseCertificate';
 import CourseInfo from '../../components/course/courseInfo';
@@ -8,6 +8,7 @@ import Gmail from '../../components/gmailfix';
 import buildHeader from '../../components/header';
 // import SubHeader from '../../components/subHeader';
 import css from '../templateCSS';
+import { renderToStaticMarkup } from 'react-dom/server';
 
 const courseCertificateEmail = async (course, user, certificate, imageUrl) => {
   try {

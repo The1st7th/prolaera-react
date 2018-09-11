@@ -4,6 +4,9 @@ import course from '../../templates/tests/json/completeCourse.json';
 import user from '../../templates/tests/json/completeUser.json';
 import certificate from '../../templates/tests/json/completeCertificate.json';
 import courseCertificateEmail from '../builders/courseCertificateBuilder';
+var request = require('request');
+import inlineCss from 'inline-css';
+
 const _sendEmail = (template, emails) => {
   return new Promise((resolve, reject) => {
     request(
@@ -40,26 +43,34 @@ describe('eventCertificateBuilder', () => {
 
   it('writes an HTML file', async () => {
     const email = await courseCertificateEmail(course, user, certificate, logoUrl);
-    const gmailfix = `</table><table class="gmail-app-fix">
-    <tr>
-        <td>
-            <table cellpadding="0" cellspacing="0" border="0" align="center" width="600">
-                <tr>
-                    <td cellpadding="0" cellspacing="0" border="0" height="1"; style="line-height: 1px; min-width: 200px;">
-                        <img src="transparent.gif" width="200" height="1" style="display: block; max-height: 1px; min-height: 1px; min-width: 200px; width: 200px;"/>
-                    </td>
-                    <td cellpadding="0" cellspacing="0" border="0" height="1"; style="line-height: 1px; min-width: 200px;">
-                        <img src="transparent.gif" width="200" height="1" style="display: block; max-height: 1px; min-height: 1px; min-width: 200px; width: 200px;"/>
-                    </td>
-                    <td cellpadding="0" cellspacing="0" border="0" height="1"; style="line-height: 1px; min-width: 200px;">
-                        <img src="transparent.gif" width="200" height="1" style="display: block; max-height: 1px; min-height: 1px; min-width: 200px; width: 200px;"/>
-                    </td>
-                </tr>
-            </table>
-        </td>
-    </tr>
-</table></body></html>`;
-    const newEmail = email.split('</body>').join(`${gmailfix}</body>`);
+    const newEmail = await inlineCss(email, {
+      url: ' ',
+      preserveMediaQueries: true,
+      applyWidthAttributes: true,
+      applyTableAttributes: true
+    });
+    // const gmailfix = `</table><table class="gmail-app-fix">
+    //     <tr>
+    //         <td>
+    //             <table cellpadding="0" cellspacing="0" border="0" align="center" width="600">
+    //                 <tr>
+    //                     <td cellpadding="0" cellspacing="0" border="0" height="1"; style="line-height: 1px; min-width: 200px;">
+    //                         <img src="transparent.gif" width="200" height="1" style="display: block; max-height: 1px; min-height: 1px; min-width: 200px; width: 200px;"/>
+    //                     </td>
+    //                     <td cellpadding="0" cellspacing="0" border="0" height="1"; style="line-height: 1px; min-width: 200px;">
+    //                         <img src="transparent.gif" width="200" height="1" style="display: block; max-height: 1px; min-height: 1px; min-width: 200px; width: 200px;"/>
+    //                     </td>
+    //                     <td cellpadding="0" cellspacing="0" border="0" height="1"; style="line-height: 1px; min-width: 200px;">
+    //                         <img src="transparent.gif" width="200" height="1" style="display: block; max-height: 1px; min-height: 1px; min-width: 200px; width: 200px;"/>
+    //                     </td>
+    //                 </tr>
+    //             </table>
+    //         </td>
+    //     </tr>
+    // </table></body></html>`;
+    //     const newEmail = email.split('</body>').join(`${gmailfix}</body>`);
+    await _sendEmail(newEmail, ['eric.e.nicolas@gmail.com', 'emmanuel.nicolas@outlook.com']);
+
     const saved = await writeFile(newEmail, 'courseCertificateTest.html');
     expect(saved).toEqual(true);
   });
