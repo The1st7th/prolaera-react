@@ -2,6 +2,8 @@ import renderer from 'react-test-renderer';
 import writeFile from '../../helpers/writeFileHelper';
 import eventInvite from '../../templates/tests/json/eventInvite.json';
 import invitationEmail from '../builders/eventInvitationBuilder';
+import inlineCss from 'inline-css';
+var request = require('request');
 
 const _sendEmail = (template, emails) => {
   return new Promise((resolve, reject) => {

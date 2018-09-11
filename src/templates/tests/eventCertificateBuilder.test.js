@@ -4,6 +4,8 @@ import user from '../../templates/tests/json/completeUser.json';
 import event from '../../templates/tests/json/event.json';
 import eventCertificateEmail from '../builders/eventCertificateBuilder';
 import testCertificate from '../../templates/tests/json/completeCertificate.json';
+import inlineCss from 'inline-css';
+var request = require('request');
 const _sendEmail = (template, emails) => {
   return new Promise((resolve, reject) => {
     request(
