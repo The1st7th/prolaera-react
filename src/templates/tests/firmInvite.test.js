@@ -69,7 +69,10 @@ describe('create html test file', () => {
       'https://assets.prolaera.com/prolaeraLogo_fullText.png'
     );
     const newEmail = await inlineCss(firmInviteEmail, {
-      url: ' '
+      url: ' ',
+      preserveMediaQueries: true,
+      applyWidthAttributes: true,
+      applyTableAttributes: true
     });
     const send = await _sendEmail(newEmail, ['eric.e.nicolas@gmail.com', 'emmanuel.nicolas@outlook.com']);
     console.log('SENT EMAIL', send);

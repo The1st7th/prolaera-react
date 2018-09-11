@@ -1,29 +1,36 @@
 import React from 'react';
-import { Box, Item } from 'react-html-email';
 
 class SubFooter extends React.Component {
   render() {
     const { text, subtext = '' } = this.props;
 
     return (
-      <div
-        id="subHeaderWrapper"
-        style={{
-          marginLeft: 'auto',
-          marginRight: 'auto',
-          marginBottom: '0px',
-          fontFamily: 'source-sans-pro, sans-serif',
-          padding: '20px',
-          backgroundColor: 'white'
-        }}
-      >
-        <Box className="subFooter" align="center" width="100%">
-          <Item align="justify" style={{ paddingLeft: '30px', paddingRight: '30px' }}>
-            <p>{text}</p>
-            <p>{subtext}</p>
-          </Item>
-        </Box>
-      </div>
+      <table align="center" className="container">
+        <tbody>
+          <tr>
+            <td>
+              <table align="center" className="row">
+                <tbody>
+                  <tr>
+                    <th align="center" className="large-12 small-12 columns first last">
+                      <table>
+                        <tbody>
+                          <tr>
+                            <th className="text-center small-text-center">
+                              <p>{text}</p>
+                              <p>{subtext}</p>
+                            </th>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </th>
+                  </tr>
+                </tbody>
+              </table>
+            </td>
+          </tr>
+        </tbody>
+      </table>
     );
   }
 }

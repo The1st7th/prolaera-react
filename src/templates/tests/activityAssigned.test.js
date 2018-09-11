@@ -44,10 +44,12 @@ describe('Activity Assigned email', () => {
   it('writes an html file', async () => {
     const email = await activityAssignedEmail(activity, user, logoUrl);
     const newEmail = await inlineCss(email, {
-      url: ' '
+      url: ' ',
+      preserveMediaQueries: true,
+      applyWidthAttributes: true,
+      applyTableAttributes: true
     });
-    const send = await _sendEmail(newEmail, ['eric.e.nicolas@gmail.com', 'emmanuel.nicolas@outlook.com']);
-    console.log('SENT EMAIL', send);
+    await _sendEmail(newEmail, ['eric.e.nicolas@gmail.com', 'emmanuel.nicolas@outlook.com']);
     const saved = await writeFile(newEmail, 'activityTest.html');
     expect(saved).toEqual(true);
   });

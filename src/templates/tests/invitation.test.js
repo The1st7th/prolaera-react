@@ -40,9 +40,11 @@ describe('invitation Email', () => {
   it('writes an html file', async () => {
     const email = await invitationEmail(eventInvite, logoUrl);
     const newEmail = await inlineCss(email, {
-      url: ' '
+      url: ' ',
+      preserveMediaQueries: true,
+      applyWidthAttributes: true,
+      applyTableAttributes: true
     });
-
     const send = await _sendEmail(newEmail, ['eric.e.nicolas@gmail.com', 'emmanuel.nicolas@outlook.com']);
     console.log('SENT EMAIL', send);
     const saved = await writeFile(newEmail, 'inviteTest.html');

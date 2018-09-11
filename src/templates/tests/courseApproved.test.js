@@ -44,7 +44,10 @@ describe('courseApproved Email', () => {
   it('writes an html file', async () => {
     const email = await courseApprovedBuilder(course, logoUrl);
     const newEmail = await inlineCss(email, {
-      url: ' '
+      url: ' ',
+      preserveMediaQueries: true,
+      applyWidthAttributes: true,
+      applyTableAttributes: true
     });
     const send = await _sendEmail(newEmail, ['eric.e.nicolas@gmail.com', 'emmanuel.nicolas@outlook.com']);
     console.log('SENT EMAIL', send);
