@@ -8,32 +8,34 @@ export default () => (
         <td>
           <table className="row text-white" color="#FFFFFF">
             <tr>
-              <th align="center" className="small-12 large-4 columns first" style={{ verticalAlign: 'middle' }}>
+              <th align="center" className="small-12 large-4 columns first last" style={{ verticalAlign: 'middle' }}>
                 <table>
                   <tbody>
                     <tr>
                       <th>
-                        <p className="text-left small-text-left">Powered By Prolaera</p>
+                        <p className="text-left small-text-center">Powered By Prolaera</p>
                       </th>
                     </tr>
                   </tbody>
                 </table>
               </th>
-              <th align="center" className="small-12 large-4 columns">
-                <table>
-                  <tbody>
-                    <tr>
-                      <th>&#xA0;</th>
-                    </tr>
-                  </tbody>
-                </table>
-              </th>
-              <th align="center" className="small-12 large-4 columns last" style={{ verticalAlign: 'middle' }}>
+              {/* <th align="center" className="small-12 large-4 columns first last">
                 <table>
                   <tbody>
                     <tr>
                       <th>
-                        <p className="text-right small-text-right">© Prolaera {now.getFullYear()}</p>
+                        <p className='text-center small-text-center'>&#xA0;</p>
+                      </th>
+                    </tr>
+                  </tbody>
+                </table>
+              </th> */}
+              <th align="center" className="small-12 large-4 columns first last" style={{ verticalAlign: 'middle' }}>
+                <table>
+                  <tbody>
+                    <tr>
+                      <th>
+                        <p className="text-right small-text-center">© Prolaera {now.getFullYear()}</p>
                       </th>
                     </tr>
                   </tbody>

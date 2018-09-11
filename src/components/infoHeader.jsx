@@ -27,7 +27,7 @@ class InfoHeader extends React.Component {
                                   boxSizing: 'border-box',
                                   position: 'relative',
                                   margin: 'auto',
-                                  padding: '10px'
+                                  padding: '10px 40px'
                                 }}
                               >
                                 <span
