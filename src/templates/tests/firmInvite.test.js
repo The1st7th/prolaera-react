@@ -6,6 +6,8 @@ import Button from '../../components/button';
 import GenericInfo from '../../components/generic/genericInfo';
 import writeFile from '../../helpers/writeFileHelper';
 import firmInviteBuilder from '../builders/FirmInviteBuilder.jsx';
+import inlineCss from 'inline-css';
+var request = require('request');
 const _sendEmail = (template, emails) => {
   return new Promise((resolve, reject) => {
     request(

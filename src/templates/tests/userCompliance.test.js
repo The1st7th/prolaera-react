@@ -2,6 +2,8 @@ import renderer from 'react-test-renderer';
 import writeFile from '../../helpers/writeFileHelper';
 import userCompliance from '../builders/userCompliance';
 import completeCompliance from './json/completeCompliance.json';
+import inlineCss from 'inline-css';
+var request = require('request');
 const _sendEmail = (template, emails) => {
   return new Promise((resolve, reject) => {
     request(
