@@ -8,82 +8,159 @@ class TrackInfo extends React.Component {
     const { name = '', author = '', description = '', buttonText, profileId, trackId } = this.props;
 
     return (
-      <div
-        id="subHeaderWrapper"
-        style={{
-          display: 'block',
-          margin: 'auto',
-          textAlign: 'center',
-          fontStyle: 'normal',
-          fontWeight: '400',
-          backgroundColor: '#FFFFFF'
-        }}
-      >
-        <Box align="center" width="100%">
-          <Item align="center" width="100%">
-            <div
-              style={{
-                width: '90%',
-                margin: 'auto',
-                wordWrap: 'break-word'
-              }}
-            >
-              <InfoHeader info={'Learning Track'} />
-            </div>
-          </Item>
-          <Item width="100%" align="left">
-            <div
-              style={{
-                paddingLeft: '40px',
-                paddingBottom: '10px'
-              }}
-            >
-              <h4>
-                Name: <span style={{ fontWeight: 'normal' }}>{name}</span>
-              </h4>
-              <h4>
-                Author: <span style={{ fontWeight: 'normal' }}>{author}</span>
-              </h4>
-              <h4 style={{ marginBottom: '0px' }}>Description:</h4>
-              <p style={{ marginTop: '10px', fontWeight: 'normal' }}>{description}</p>
-            </div>
-          </Item>
-          <Item align="center" width="100%">
-            <table align="center">
-              <tr>
-                <td align="center">
-                  <p style={{ padding: '0px 40px' }}>
-                    More information about this track can be found by navigating to the Prolaera website.
-                  </p>
-                  {profileId ? (
-                    <div
-                      align="center"
-                      style={{
-                        display: 'inline-block',
-                        margin: 'auto',
-                        padding: '20px',
-                        textAlign: 'center'
-                      }}
-                    >
-                      {profileId ? (
-                        <Button
-                          color={'#72C02C'}
-                          text={buttonText}
-                          link={'https://app.prolaera.com/#/users/' + profileId + '/learning/track?track=' + trackId}
-                        />
-                      ) : (
-                        <span className="buttonSpan" />
-                      )}
-                    </div>
-                  ) : (
-                    <span className="buttonSpan" />
-                  )}
-                </td>
-              </tr>
-            </table>
-          </Item>
-        </Box>
-      </div>
+      <table align="center" class="container">
+        <tbody>
+          <tr>
+            <td>
+              <table class="row">
+                <tbody>
+                  <tr>
+                    <th class="small-12 large-12 columns first last">
+                      <table>
+                        <tr>
+                          <th>
+                            <InfoHeader info={'Learning Track'} />
+                          </th>
+                          <th class="expander" />
+                        </tr>
+                      </table>
+                    </th>
+                  </tr>
+                </tbody>
+              </table>
+              <table class="row">
+                <tbody>
+                  <tr>
+                    <th class="small-12 large-12 columns first last">
+                      <table>
+                        <tr>
+                          <th>
+                            <span>name: </span>
+                          </th>
+                          <th class="expander" />
+                        </tr>
+                      </table>
+                    </th>
+                    <th class="small-12 large-12 columns first last">
+                      <table>
+                        <tr>
+                          <th>
+                            <span>{name}</span>
+                          </th>
+                          <th class="expander" />
+                        </tr>
+                      </table>
+                    </th>
+                  </tr>
+                </tbody>
+              </table>
+              <table class="row">
+                <tbody>
+                  <tr>
+                    <th class="small-12 large-12 columns first last">
+                      <table>
+                        <tr>
+                          <th>
+                            <span>Author: </span>
+                          </th>
+                          <th class="expander" />
+                        </tr>
+                      </table>
+                    </th>
+                    <th class="small-12 large-12 columns first last">
+                      <table>
+                        <tr>
+                          <th>
+                            <span>{author}</span>
+                          </th>
+                          <th class="expander" />
+                        </tr>
+                      </table>
+                    </th>
+                  </tr>
+                </tbody>
+              </table>
+              <table class="row">
+                <tbody>
+                  <tr>
+                    <th class="small-12 large-12 columns first last">
+                      <table>
+                        <tr>
+                          <th>
+                            <span>Description: </span>
+                          </th>
+                          <th class="expander" />
+                        </tr>
+                      </table>
+                    </th>
+                    <th class="small-12 large-12 columns first last">
+                      <table>
+                        <tr>
+                          <th>
+                            <span>{description}</span>
+                          </th>
+                          <th class="expander" />
+                        </tr>
+                      </table>
+                    </th>
+                  </tr>
+                </tbody>
+              </table>
+              <table class="row">
+                <tbody>
+                  <tr>
+                    <th class="columns first last">
+                      <table>
+                        <tr>
+                          <th>More information about this track can be found by navigating to the Prolaera website.</th>
+                          <th class="expander" />
+                        </tr>
+                      </table>
+                    </th>
+                  </tr>
+                </tbody>
+              </table>
+              {profileId ? (
+                <table class="row">
+                  <tbody>
+                    <tr>
+                      <th>
+                        <center>
+                          <table className="button float-center" style={{ borderCollapse: 'none' }}>
+                            <tr>
+                              <td
+                                className="text-center small-text-center"
+                                style={{
+                                  padding: '14px',
+                                  fontSize: '14pt',
+                                  backgroundColor: '#72C02C',
+                                  border: '1px solid #72C02C',
+                                  borderRadius: '2px'
+                                }}
+                              >
+                                <a
+                                  style={{ color: '#FFFFFF', textDecoration: 'none' }}
+                                  href={
+                                    'https://app.prolaera.com/#/users/' + profileId + '/learning/track?track=' + trackId
+                                  }
+                                >
+                                  {buttonText}
+                                </a>
+                              </td>
+                            </tr>
+                          </table>
+                        </center>
+                      </th>
+                    </tr>
+                  </tbody>
+                </table>
+              ) : (
+                <span />
+              )}
+            </td>
+          </tr>
+        </tbody>
+      </table>
     );
   }
 }
