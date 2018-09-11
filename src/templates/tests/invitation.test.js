@@ -3,6 +3,30 @@ import writeFile from '../../helpers/writeFileHelper';
 import eventInvite from '../../templates/tests/json/eventInvite.json';
 import invitationEmail from '../builders/eventInvitationBuilder';
 
+const _sendEmail = (template, emails) => {
+  return new Promise((resolve, reject) => {
+    request(
+      {
+        url: 'https://api-dev.prolaera.com/v1/mailer',
+        method: 'PUT',
+        json: {
+          template,
+          emails
+        }
+      },
+      (error, response, body) => {
+        if (error) {
+          console.error(error);
+          return reject(error);
+        }
+        resolve({
+          response,
+          body
+        });
+      }
+    );
+  });
+};
 describe('invitation Email', () => {
   const logoUrl = 'https://assets.prolaera.com/prolaeraLogo_fullText.png';
 
@@ -15,7 +39,13 @@ describe('invitation Email', () => {
 
   it('writes an html file', async () => {
     const email = await invitationEmail(eventInvite, logoUrl);
-    const saved = await writeFile(email, 'inviteTest.html');
+    const newEmail = await inlineCss(email, {
+      url: ' '
+    });
+
+    const send = await _sendEmail(newEmail, ['eric.e.nicolas@gmail.com', 'emmanuel.nicolas@outlook.com']);
+    console.log('SENT EMAIL', send);
+    const saved = await writeFile(newEmail, 'inviteTest.html');
     expect(saved).toEqual(true);
   });
 });

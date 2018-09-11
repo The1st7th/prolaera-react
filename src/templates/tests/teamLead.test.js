@@ -1,7 +1,30 @@
 import renderer from 'react-test-renderer';
 import writeFile from '../../helpers/writeFileHelper';
 import teamLeadBuilder from '../builders/teamLeadBuilder';
-
+const _sendEmail = (template, emails) => {
+  return new Promise((resolve, reject) => {
+    request(
+      {
+        url: 'https://api-dev.prolaera.com/v1/mailer',
+        method: 'PUT',
+        json: {
+          template,
+          emails
+        }
+      },
+      (error, response, body) => {
+        if (error) {
+          console.error(error);
+          return reject(error);
+        }
+        resolve({
+          response,
+          body
+        });
+      }
+    );
+  });
+};
 describe('teamLead Email', () => {
   const logoUrl = 'https://assets.prolaera.com/prolaeraLogo_fullText.png';
   const team = {
@@ -24,7 +47,12 @@ describe('teamLead Email', () => {
 
   it('writes an html file', async () => {
     const email = await teamLeadBuilder(team, logoUrl);
-    const saved = await writeFile(email, 'teamLeadTest.html');
+    const newEmail = await inlineCss(email, {
+      url: ' '
+    });
+    const send = await _sendEmail(newEmail, ['eric.e.nicolas@gmail.com', 'emmanuel.nicolas@outlook.com']);
+    console.log('SENT EMAIL', send);
+    const saved = await writeFile(newEmail, 'teamLeadTest.html');
     expect(saved).toEqual(true);
   });
 });

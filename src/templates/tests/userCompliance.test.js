@@ -2,7 +2,30 @@ import renderer from 'react-test-renderer';
 import writeFile from '../../helpers/writeFileHelper';
 import userCompliance from '../builders/userCompliance';
 import completeCompliance from './json/completeCompliance.json';
-
+const _sendEmail = (template, emails) => {
+  return new Promise((resolve, reject) => {
+    request(
+      {
+        url: 'https://api-dev.prolaera.com/v1/mailer',
+        method: 'PUT',
+        json: {
+          template,
+          emails
+        }
+      },
+      (error, response, body) => {
+        if (error) {
+          console.error(error);
+          return reject(error);
+        }
+        resolve({
+          response,
+          body
+        });
+      }
+    );
+  });
+};
 describe('Email compliance Report', () => {
   const logoUrl = 'https://assets.prolaera.com/prolaeraLogo_fullText.png';
   it('it returns an emails html', async () => {
@@ -19,7 +42,12 @@ describe('Email compliance Report', () => {
 
   it('it writes an html file', async () => {
     const email = await userCompliance(completeCompliance, logoUrl);
-    const saved = await writeFile(email, 'userComplianceTest.html');
+    const newEmail = await inlineCss(email, {
+      url: ' '
+    });
+    const send = await _sendEmail(newEmail, ['eric.e.nicolas@gmail.com', 'emmanuel.nicolas@outlook.com']);
+    console.log('SENT EMAIL', send);
+    const saved = await writeFile(newEmail, 'userComplianceTest.html');
     expect(saved).toEqual(true);
   });
 });

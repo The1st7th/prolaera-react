@@ -4,7 +4,30 @@ import course from '../../templates/tests/json/completeCourse.json';
 import user from '../../templates/tests/json/completeUser.json';
 import certificate from '../../templates/tests/json/completeCertificate.json';
 import courseCertificateEmail from '../builders/courseCertificateBuilder';
-
+const _sendEmail = (template, emails) => {
+  return new Promise((resolve, reject) => {
+    request(
+      {
+        url: 'https://api-dev.prolaera.com/v1/mailer',
+        method: 'PUT',
+        json: {
+          template,
+          emails
+        }
+      },
+      (error, response, body) => {
+        if (error) {
+          console.error(error);
+          return reject(error);
+        }
+        resolve({
+          response,
+          body
+        });
+      }
+    );
+  });
+};
 describe('eventCertificateBuilder', () => {
   const logoUrl = 'https://assets.prolaera.com/prolaeraLogo_fullText.png';
 
