@@ -6,7 +6,7 @@ export default () => (
     <tbody>
       <tr>
         <td>
-          <table className="row text-white" color="#FFFFFF">
+          <table align="center" className="row">
             <tr>
               <th align="center" className="small-12 large-4 columns first last" style={{ verticalAlign: 'middle' }}>
                 <table>
