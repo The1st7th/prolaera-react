@@ -1,451 +1,663 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`CourseInfo component custom input tests creates and checks a snapshot of CourseInfo html 1`] = `
-<div
-  style={
-    Object {
-      "backgroundColor": "#FFFFFF",
-      "display": "block",
-      "fontStyle": "normal",
-      "fontWeight": "400",
-      "margin": "auto",
-      "textAlign": "center",
-    }
-  }
+<table
+  align="center"
+  className="container"
 >
-  <table
-    align="center"
-    border="0"
-    cellPadding={0}
-    cellSpacing={0}
-    valign="top"
-    width="100%"
-  >
-    <tbody>
-      <tr>
-        <td
+  <tbody>
+    <tr>
+      <td>
+        <table
           align="center"
+          className="row"
         >
-          <div
-            style={
-              Object {
-                "margin": "auto",
-                "width": "90%",
-              }
-            }
-          >
-            <div>
-              <table
+          <tbody>
+            <tr>
+              <th
                 align="center"
-                border="0"
-                cellPadding={0}
-                cellSpacing={0}
-                className="courseReview"
-                valign="top"
-                width="100%"
+                className="large-12 small-12 columns first last"
               >
-                <tbody>
-                  <tr>
-                    <td
-                      align="center"
-                      style={
-                        Object {
-                          "padding": "20px",
-                        }
-                      }
-                    >
-                      <div
-                        style={
-                          Object {
-                            "borderBottom": "1px solid grey",
-                            "boxSizing": "border-box",
-                            "height": "20px",
-                            "margin": "auto",
-                            "padding": "10px",
-                            "position": "relative",
-                            "textAlign": "center",
-                            "width": "100%",
-                          }
-                        }
-                      >
-                        <span
+                <table>
+                  <tbody>
+                    <tr>
+                      <th>
+                        <table
+                          align="center"
+                          className="container"
+                        >
+                          <tbody
+                            align="center"
+                          >
+                            <tr>
+                              <td>
+                                <table
+                                  align="center"
+                                  className="row"
+                                >
+                                  <tbody>
+                                    <tr>
+                                      <th
+                                        align="center"
+                                        className="large-12 small-12 columns first last"
+                                      >
+                                        <table>
+                                          <tbody>
+                                            <tr>
+                                              <th>
+                                                <div
+                                                  style={
+                                                    Object {
+                                                      "borderBottom": "1px solid grey",
+                                                      "boxSizing": "border-box",
+                                                      "height": "20px",
+                                                      "margin": "auto",
+                                                      "padding": "10px 40px",
+                                                      "position": "relative",
+                                                      "textAlign": "center",
+                                                      "width": "100%",
+                                                    }
+                                                  }
+                                                >
+                                                  <span
+                                                    style={
+                                                      Object {
+                                                        "backgroundColor": "#FFFFFF",
+                                                        "boxSizing": "border-box",
+                                                        "fontSize": "14pt",
+                                                        "margin": "0",
+                                                        "padding": "0px 20px",
+                                                      }
+                                                    }
+                                                  >
+                                                    Course
+                                                     Information
+                                                  </span>
+                                                </div>
+                                              </th>
+                                            </tr>
+                                          </tbody>
+                                        </table>
+                                      </th>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                        <h4
+                          align="center"
+                          className="text-center small-text-center"
                           style={
                             Object {
-                              "backgroundColor": "#FFFFFF",
-                              "boxSizing": "border-box",
-                              "fontSize": "14pt",
-                              "margin": "0",
-                              "padding": "0px 20px",
+                              "marginTop": "0px",
+                              "paddingTop": "15px",
                             }
                           }
                         >
-                          Course
-                           Information
-                        </span>
-                      </div>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-          <h4
-            align="center"
-            style={
-              Object {
-                "marginTop": "0px",
-                "paddingTop": "15px",
-              }
-            }
-          >
-            <a
-              href="https://app.prolaera.com/#/courses/1234-1234-1234-1234"
-              style={
-                Object {
-                  "color": "#2F4050",
-                  "height": "100%",
-                  "textDecoration": "underline",
-                }
-              }
-            >
-              <em>
-                Tax Preparation 102
-              </em>
-            </a>
-          </h4>
-        </td>
-      </tr>
-      <tr>
-        <td
-          align="left"
-        >
-          <div
-            style={
-              Object {
-                "paddingLeft": "40px",
-              }
-            }
-          >
-            <h4
-              style={
-                Object {
-                  "marginBottom": "0px",
-                }
-              }
-            >
-              By:
-               
-              <span
-                className="innerHtmlStyles"
-                style={
-                  Object {
-                    "fontWeight": "normal",
-                  }
-                }
-              >
-                John Doe
-              </span>
-            </h4>
-            <h4
-              style={
-                Object {
-                  "marginBottom": "0px",
-                }
-              }
-            >
-              Description: 
-            </h4>
-            <div
-              className="innerHtmlStyles"
-              dangerouslySetInnerHTML={
-                Object {
-                  "__html": "<p>This course is the second installation of Tax Prep focused on general tax planning.</p>",
-                }
-              }
-              style={
-                Object {
-                  "fontWeight": "normal",
-                }
-              }
-            />
-            <h4
-              style={
-                Object {
-                  "marginBottom": "0px",
-                }
-              }
-            >
-              Learning Objectives:
-            </h4>
-            <div
-              className="innerHtmlStyles"
-              dangerouslySetInnerHTML={
-                Object {
-                  "__html": "<ol><li>Learn about tax planning</li><li>Apply skills</li><li>Review tax planning</li></ol>",
-                }
-              }
-              style={
-                Object {
-                  "fontWeight": "normal",
-                }
-              }
-            />
-            <h4
-              style={
-                Object {
-                  "marginBottom": "0px",
-                }
-              }
-            >
-              Delivery Method:
-            </h4>
-            <div
-              className="innerHtmlStyles"
-              dangerouslySetInnerHTML={
-                Object {
-                  "__html": "Group-Live",
-                }
-              }
-              style={
-                Object {
-                  "fontWeight": "normal",
-                }
-              }
-            />
-            <h4
-              style={
-                Object {
-                  "marginBottom": "0px",
-                }
-              }
-            >
-              Price:
-               
-              <span
-                className="innerHtmlStyles"
-                style={
-                  Object {
-                    "fontWeight": "normal",
-                  }
-                }
-              >
-                Free
-              </span>
-            </h4>
-            <h4
-              style={
-                Object {
-                  "marginBottom": "0px",
-                }
-              }
-            >
-              Recommended CPE Credit(s):
-            </h4>
-            <ul
-              style={
-                Object {
-                  "marginTop": "10px",
-                }
-              }
-            >
-              <li
-                style={
-                  Object {
-                    "fontWeight": "normal",
-                  }
-                }
-              >
-                Tax Preparation
-                 - 
-                1
-                 Hour(s)
-              </li>
-            </ul>
-            <h4
-              style={
-                Object {
-                  "marginBottom": "0px",
-                }
-              }
-            >
-              Level:
-               
-              <span
-                className="innerHtmlStyles"
-                style={
-                  Object {
-                    "fontWeight": "normal",
-                  }
-                }
-              >
-                Basic
-              </span>
-            </h4>
-            <h4
-              style={
-                Object {
-                  "marginBottom": "0px",
-                }
-              }
-            >
-              Target Audience: 
-            </h4>
-            <div
-              className="innerHtmlStyles"
-              dangerouslySetInnerHTML={
-                Object {
-                  "__html": "Accountants",
-                }
-              }
-              style={
-                Object {
-                  "fontWeight": "normal",
-                }
-              }
-            />
-            <h4
-              style={
-                Object {
-                  "marginBottom": "0px",
-                }
-              }
-            >
-              Prerequisites: 
-            </h4>
-            <div
-              className="innerHtmlStyles"
-              dangerouslySetInnerHTML={
-                Object {
-                  "__html": "<p>Tax Prep 101</p>",
-                }
-              }
-              style={
-                Object {
-                  "fontWeight": "normal",
-                }
-              }
-            />
-            <h4
-              style={
-                Object {
-                  "marginBottom": "0px",
-                }
-              }
-            >
-              Prep: 
-            </h4>
-            <div
-              className="innerHtmlStyles"
-              dangerouslySetInnerHTML={
-                Object {
-                  "__html": "<p>Read course introduction</p>",
-                }
-              }
-              style={
-                Object {
-                  "fontWeight": "normal",
-                }
-              }
-            />
-          </div>
-        </td>
-      </tr>
-      <tr>
-        <td
+                          <a
+                            href="https://app.prolaera.com/#/courses/1234-1234-1234-1234"
+                            style={
+                              Object {
+                                "color": "#2F4050",
+                                "height": "100%",
+                                "textDecoration": "underline",
+                              }
+                            }
+                          >
+                            <em>
+                              Tax Preparation 102
+                            </em>
+                          </a>
+                        </h4>
+                      </th>
+                    </tr>
+                  </tbody>
+                </table>
+              </th>
+            </tr>
+          </tbody>
+        </table>
+        <table
           align="center"
+          className="row"
         >
-          <table
-            style={
-              Object {
-                "borderSpacing": "10px",
-                "margin": "auto",
-                "textAlign": "center",
-              }
-            }
-          >
-            <tr
-              style={
-                Object {
-                  "textAlign": "center",
-                }
-              }
-            >
-              <td
-                className="customButton"
+          <tbody>
+            <tr>
+              <th
+                align="left"
+                className="large-12 small-12 columns first last"
                 style={
                   Object {
-                    "borderRadius": "2px",
-                    "margin": "auto",
-                    "textAlign": "center",
-                    "width": "100%",
+                    "paddingLeft": "40px",
                   }
                 }
               >
-                <table
-                  align="left"
-                  border="0"
-                  cellPadding={0}
-                  cellSpacing={0}
-                  valign="top"
-                >
+                <table>
                   <tbody>
                     <tr>
-                      <td>
-                        <table
-                          cellPadding="0"
-                          cellSpacing="0"
+                      <th>
+                        <p
+                          style={
+                            Object {
+                              "fontSize": "14pt",
+                              "fontWeight": "bold",
+                              "paddingTop": "5px",
+                            }
+                          }
                         >
-                          <tr>
-                            <td
-                              align="center"
-                              bgcolor="#2F4050"
-                              height="40"
-                              style={
-                                Object {
-                                  "borderRadius": "5px",
-                                  "color": "#ffffff",
-                                  "display": "block",
-                                }
+                          By: 
+                          <span
+                            style={
+                              Object {
+                                "fontSize": "12pt",
+                                "fontWeight": "lighter",
                               }
-                              width="300"
-                            >
-                              <a
-                                href="http://www.EXAMPLE.com/"
+                            }
+                          >
+                            John Doe
+                          </span>
+                        </p>
+                        <table
+                          className="spacer"
+                        >
+                          <tbody>
+                            <tr>
+                              <td
+                                height="16px"
                                 style={
                                   Object {
-                                    "display": "inline-block",
-                                    "fontFamily": "sans-serif",
                                     "fontSize": "16px",
-                                    "fontWeight": "bold",
-                                    "lineHeight": "40px",
-                                    "textDecoration": "none",
-                                    "width": "100%",
+                                    "lineHeight": "16px",
                                   }
                                 }
                               >
-                                <span
+                                 
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                        <p
+                          style={
+                            Object {
+                              "fontSize": "14pt",
+                              "fontWeight": "bold",
+                              "paddingTop": "5px",
+                            }
+                          }
+                        >
+                          Description: 
+                        </p>
+                        <div
+                          dangerouslySetInnerHTML={
+                            Object {
+                              "__html": "<p>This course is the second installation of Tax Prep focused on general tax planning.</p>",
+                            }
+                          }
+                          style={
+                            Object {
+                              "fontWeight": "normal",
+                            }
+                          }
+                        />
+                        <table
+                          className="spacer"
+                        >
+                          <tbody>
+                            <tr>
+                              <td
+                                height="16px"
+                                style={
+                                  Object {
+                                    "fontSize": "16px",
+                                    "lineHeight": "16px",
+                                  }
+                                }
+                              >
+                                 
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                        <p
+                          style={
+                            Object {
+                              "fontSize": "14pt",
+                              "fontWeight": "bold",
+                              "paddingTop": "5px",
+                            }
+                          }
+                        >
+                          Learning Objectives:
+                        </p>
+                        <div
+                          dangerouslySetInnerHTML={
+                            Object {
+                              "__html": "<ol><li>Learn about tax planning</li><li>Apply skills</li><li>Review tax planning</li></ol>",
+                            }
+                          }
+                          style={
+                            Object {
+                              "fontWeight": "normal",
+                            }
+                          }
+                        />
+                        <table
+                          className="spacer"
+                        >
+                          <tbody>
+                            <tr>
+                              <td
+                                height="16px"
+                                style={
+                                  Object {
+                                    "fontSize": "16px",
+                                    "lineHeight": "16px",
+                                  }
+                                }
+                              >
+                                 
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                        <p
+                          style={
+                            Object {
+                              "fontSize": "14pt",
+                              "fontWeight": "bold",
+                              "paddingTop": "5px",
+                            }
+                          }
+                        >
+                          Delivery Method:
+                        </p>
+                        <div
+                          dangerouslySetInnerHTML={
+                            Object {
+                              "__html": "Group-Live",
+                            }
+                          }
+                          style={
+                            Object {
+                              "fontWeight": "normal",
+                            }
+                          }
+                        />
+                        <table
+                          className="spacer"
+                        >
+                          <tbody>
+                            <tr>
+                              <td
+                                height="16px"
+                                style={
+                                  Object {
+                                    "fontSize": "16px",
+                                    "lineHeight": "16px",
+                                  }
+                                }
+                              >
+                                 
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                        <p
+                          style={
+                            Object {
+                              "fontSize": "14pt",
+                              "fontWeight": "bold",
+                              "marginTop": "5px",
+                              "paddingTop": "5px",
+                            }
+                          }
+                        >
+                          Price:
+                           
+                          <span
+                            style={
+                              Object {
+                                "fontSize": "12pt",
+                                "fontWeight": "lighter",
+                              }
+                            }
+                          >
+                            Free
+                          </span>
+                        </p>
+                        <table
+                          className="spacer"
+                        >
+                          <tbody>
+                            <tr>
+                              <td
+                                height="16px"
+                                style={
+                                  Object {
+                                    "fontSize": "16px",
+                                    "lineHeight": "16px",
+                                  }
+                                }
+                              >
+                                 
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                        <p
+                          style={
+                            Object {
+                              "fontSize": "14pt",
+                              "fontWeight": "bold",
+                              "paddingTop": "5px",
+                            }
+                          }
+                        >
+                          Recommended CPE Credit(s):
+                        </p>
+                        <ul
+                          style={
+                            Object {
+                              "paddingTop": "5px",
+                            }
+                          }
+                        >
+                          <li
+                            style={
+                              Object {
+                                "fontWeight": "normal",
+                              }
+                            }
+                          >
+                            Tax Preparation
+                             - 
+                            1
+                             Hour(s)
+                          </li>
+                        </ul>
+                        <table
+                          className="spacer"
+                        >
+                          <tbody>
+                            <tr>
+                              <td
+                                height="16px"
+                                style={
+                                  Object {
+                                    "fontSize": "16px",
+                                    "lineHeight": "16px",
+                                  }
+                                }
+                              >
+                                 
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                        <p
+                          style={
+                            Object {
+                              "fontSize": "14pt",
+                              "fontWeight": "bold",
+                              "paddingTop": "5px",
+                            }
+                          }
+                        >
+                          Level: 
+                          <span
+                            style={
+                              Object {
+                                "fontSize": "12pt",
+                                "fontWeight": "lighter",
+                              }
+                            }
+                          >
+                            Basic
+                          </span>
+                        </p>
+                        <table
+                          className="spacer"
+                        >
+                          <tbody>
+                            <tr>
+                              <td
+                                height="16px"
+                                style={
+                                  Object {
+                                    "fontSize": "16px",
+                                    "lineHeight": "16px",
+                                  }
+                                }
+                              >
+                                 
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                        <p
+                          style={
+                            Object {
+                              "fontSize": "14pt",
+                              "fontWeight": "bold",
+                              "paddingTop": "5px",
+                            }
+                          }
+                        >
+                          Target Audience:
+                           
+                        </p>
+                        <div
+                          dangerouslySetInnerHTML={
+                            Object {
+                              "__html": "Accountants",
+                            }
+                          }
+                          style={
+                            Object {
+                              "fontWeight": "normal",
+                            }
+                          }
+                        />
+                        <table
+                          className="spacer"
+                        >
+                          <tbody>
+                            <tr>
+                              <td
+                                height="16px"
+                                style={
+                                  Object {
+                                    "fontSize": "16px",
+                                    "lineHeight": "16px",
+                                  }
+                                }
+                              >
+                                 
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                        <p
+                          style={
+                            Object {
+                              "fontSize": "14pt",
+                              "fontWeight": "bold",
+                              "marginTop": "5px",
+                              "paddingTop": "5px",
+                            }
+                          }
+                        >
+                          Prerequisites:
+                           
+                        </p>
+                        <div
+                          dangerouslySetInnerHTML={
+                            Object {
+                              "__html": "<p>Tax Prep 101</p>",
+                            }
+                          }
+                          style={
+                            Object {
+                              "fontWeight": "normal",
+                            }
+                          }
+                        />
+                        <table
+                          className="spacer"
+                        >
+                          <tbody>
+                            <tr>
+                              <td
+                                height="16px"
+                                style={
+                                  Object {
+                                    "fontSize": "16px",
+                                    "lineHeight": "16px",
+                                  }
+                                }
+                              >
+                                 
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                        <p
+                          style={
+                            Object {
+                              "fontSize": "14pt",
+                              "fontWeight": "bold",
+                              "paddingTop": "5px",
+                            }
+                          }
+                        >
+                          Prep: 
+                        </p>
+                        <div
+                          dangerouslySetInnerHTML={
+                            Object {
+                              "__html": "<p>Read course introduction</p>",
+                            }
+                          }
+                          style={
+                            Object {
+                              "fontWeight": "normal",
+                            }
+                          }
+                        />
+                      </th>
+                    </tr>
+                  </tbody>
+                </table>
+              </th>
+            </tr>
+          </tbody>
+        </table>
+        <table
+          align="center"
+          className="row"
+          style={
+            Object {
+              "marginTop": "10px",
+            }
+          }
+        >
+          <tbody>
+            <tr>
+              <th
+                align="center"
+                className="large-12 small-12 columns first last"
+              >
+                <table>
+                  <tbody>
+                    <tr>
+                      <th>
+                        <table
+                          className="spacer"
+                        >
+                          <tbody>
+                            <tr>
+                              <td
+                                height="16px"
+                                style={
+                                  Object {
+                                    "fontSize": "16px",
+                                    "lineHeight": "16px",
+                                  }
+                                }
+                              >
+                                 
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                        <center>
+                          <table
+                            className="button float-center"
+                            style={
+                              Object {
+                                "borderCollapse": "none",
+                              }
+                            }
+                          >
+                            <tr>
+                              <td
+                                className="text-center small-text-center"
+                                style={
+                                  Object {
+                                    "backgroundColor": "#72C02C",
+                                    "border": "2px solid #72C02C",
+                                    "borderRadius": "2px",
+                                    "fontSize": "14pt",
+                                    "padding": "14px",
+                                  }
+                                }
+                              >
+                                <a
+                                  href="admin/testAdminProfileId/testButtonLink/review"
                                   style={
                                     Object {
                                       "color": "#FFFFFF",
+                                      "textDecoration": "none",
                                     }
                                   }
                                 >
                                   Test Button Text
-                                </span>
-                              </a>
-                            </td>
-                          </tr>
+                                </a>
+                              </td>
+                            </tr>
+                          </table>
+                        </center>
+                        <table
+                          className="spacer"
+                        >
+                          <tbody>
+                            <tr>
+                              <td
+                                height="16px"
+                                style={
+                                  Object {
+                                    "fontSize": "16px",
+                                    "lineHeight": "16px",
+                                  }
+                                }
+                              >
+                                 
+                              </td>
+                            </tr>
+                          </tbody>
                         </table>
-                      </td>
+                      </th>
                     </tr>
                   </tbody>
                 </table>
-              </td>
+              </th>
             </tr>
-          </table>
-        </td>
-      </tr>
-    </tbody>
-  </table>
-</div>
+          </tbody>
+        </table>
+      </td>
+    </tr>
+  </tbody>
+</table>
 `;

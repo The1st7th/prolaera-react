@@ -41,7 +41,7 @@
   "objectives": "<ol><li>One</li><li>Two</li><li>Three</li></ol>",
   "payee": "222222",
   "prep": "<p>None</p>",
-  "prerequisites": "<p>&nbsp;None&nbsp;<br></p>",
+  "prerequisites": "<p>None</p>",
   "sponsor": "{\"company_id\":222222,\"addressOne\":\"444 Castro St\",\"zip\":\"94041\",\"logoUrl\":\"https://prolaera.s3-us-west-2.amazonaws.com/sponsors/def4c2bf-0485-4eda-9b2b-0e4055ef0dbe.logo.png\",\"sponsors\":{\"name\":\"BowmanKnopp\",\"qas\":\"123456\",\"texas\":\"123456\",\"nationalRegistry\":\"123456\"},\"addressTwo\":\"Suite 1200\",\"sponsorStatement\":\"In accordance with the standards of the National Registry of CPE Sponsors and as set forth in Circular 230 Section 10.6, credits have been granted based on a 50-minute hour. State boards of accountancy, state bars, and other state regulatory bodies have final authority on the acceptance of courses for continuing education credit. Please check with your state board regarding applicability of this course towards your continuing education requirement.\",\"name\":\"BowmanKnopp\",\"style\":\"portrait\",\"state\":\"California\",\"sponsor_id\":\"def4c2bf-0485-4eda-9b2b-0e4055ef0dbe\",\"city\":\"Mountain View\",\"signature\":{\"name\":\"Jane Doe\",\"title\":\"Director, Learning & Development\",\"imageUrl\":\"https://prolaera.s3-us-west-2.amazonaws.com/sponsors/def4c2bf-0485-4eda-9b2b-0e4055ef0dbe.signature.jpg\"},\"active\":true,\"archived\":false}",
   "summary": "This is a course summary.",
   "updates": [

@@ -25,8 +25,6 @@ class EventInfo extends React.Component {
       summary = ''
     } = this.props;
 
-    let newPrerequisites = prerequisites.trim();
-
     return (
       <table align="center" className="container">
         <tbody>
@@ -41,11 +39,16 @@ class EventInfo extends React.Component {
                           <tr>
                             <th className="text-center small-text-center">
                               <InfoHeader info={'Event'} />
-                              <h4
-                                align="center"
-                                className="text-center small-text-center"
-                                style={{ paddingTop: '15px', marginTop: '0px' }}
-                              >
+                              <table className="spacer">
+                                <tbody>
+                                  <tr>
+                                    <td height="16px" style={{ fontSize: '16px', lineHeight: '16px' }}>
+                                      &#xA0;
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                              <h4 align="center" className="text-center small-text-center">
                                 <a
                                   href={'https://app.prolaera.com/#/events/' + `${event_id}`}
                                   style={{ textDecoration: 'underline', color: '#2F4050', height: '100%' }}
@@ -56,6 +59,7 @@ class EventInfo extends React.Component {
                                 </a>
                               </h4>
                             </th>
+                            <th className="expander" />
                           </tr>
                         </tbody>
                       </table>
@@ -76,22 +80,30 @@ class EventInfo extends React.Component {
                                 style={{ fontWeight: 'normal' }}
                                 dangerouslySetInnerHTML={setInnerHtml(PrettyDate(delivery_date))}
                               />
-                            </th>
-                          </tr>
-                          <tr>
-                            <th>
-                              <p style={{ paddingTop: '5px', marginTop: '5px', fontSize: '14pt', fontWeight: 'bold' }}>
-                                End Time:
-                              </p>
+                              <table className="spacer">
+                                <tbody>
+                                  <tr>
+                                    <td height="16px" style={{ fontSize: '16px', lineHeight: '16px' }}>
+                                      &#xA0;
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                              <p style={{ paddingTop: '5px', fontSize: '14pt', fontWeight: 'bold' }}>End Time:</p>
                               <div
                                 style={{ fontWeight: 'normal' }}
                                 dangerouslySetInnerHTML={setInnerHtml(PrettyDate(delivery_end_date))}
                               />
-                            </th>
-                          </tr>
-                          <tr>
-                            <th>
-                              <p style={{ paddingTop: '5px', marginTop: '5px', fontSize: '14pt', fontWeight: 'bold' }}>
+                              <table className="spacer">
+                                <tbody>
+                                  <tr>
+                                    <td height="16px" style={{ fontSize: '16px', lineHeight: '16px' }}>
+                                      &#xA0;
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                              <p style={{ paddingTop: '5px', fontSize: '14pt', fontWeight: 'bold' }}>
                                 Recommended CPE Credit(s):
                               </p>
                               <ul style={{ marginTop: '5px', marginBottom: '0px' }}>
@@ -101,44 +113,62 @@ class EventInfo extends React.Component {
                                   </li>
                                 ))}
                               </ul>
-                            </th>
-                          </tr>
-                          <tr>
-                            <th>
-                              <p style={{ paddingTop: '5px', marginTop: '5px', fontSize: '14pt', fontWeight: 'bold' }}>
-                                Location:
-                              </p>
+                              <table className="spacer">
+                                <tbody>
+                                  <tr>
+                                    <td height="16px" style={{ fontSize: '16px', lineHeight: '16px' }}>
+                                      &#xA0;
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                              <p style={{ paddingTop: '5px', fontSize: '14pt', fontWeight: 'bold' }}>Location:</p>
                               <a
                                 style={{ textDecoration: 'underline', color: 'inherit' }}
                                 href={'https://www.google.com/maps/place/' + `${delivery_location}`}
                               >
                                 <span style={{ fontWeight: 'normal' }}>{delivery_location}</span>
                               </a>
-                            </th>
-                          </tr>
-                          <tr>
-                            <th>
-                              <p style={{ paddingTop: '5px', marginTop: '5px', fontSize: '14pt', fontWeight: 'bold' }}>
+                              <table className="spacer">
+                                <tbody>
+                                  <tr>
+                                    <td height="16px" style={{ fontSize: '16px', lineHeight: '16px' }}>
+                                      &#xA0;
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                              <p style={{ paddingTop: '5px', fontSize: '14pt', fontWeight: 'bold' }}>
                                 Delivery Method:
                               </p>
                               <div
                                 style={{ fontWeight: 'normal' }}
                                 dangerouslySetInnerHTML={setInnerHtml(deliveryHelper(delivery_method))}
                               />
-                            </th>
-                          </tr>
-                          <tr>
-                            <th>
-                              <p style={{ paddingTop: '5px', marginTop: '5px', fontSize: '14pt', fontWeight: 'bold' }}>
+                              <table className="spacer">
+                                <tbody>
+                                  <tr>
+                                    <td height="16px" style={{ fontSize: '16px', lineHeight: '16px' }}>
+                                      &#xA0;
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                              <p style={{ paddingTop: '5px', fontSize: '14pt', fontWeight: 'bold' }}>
                                 Price:{' '}
                                 <span style={{ fontWeight: 'lighter', fontSize: '12pt' }}>
                                   {{ price } > 0 ? { price } : 'Free'}
                                 </span>
                               </p>
-                            </th>
-                          </tr>
-                          <tr>
-                            <th>
+                              <table className="spacer">
+                                <tbody>
+                                  <tr>
+                                    <td height="16px" style={{ fontSize: '16px', lineHeight: '16px' }}>
+                                      &#xA0;
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
                               <p style={{ paddingTop: '5px', fontSize: '14pt', fontWeight: 'bold' }}>
                                 Target Audience:
                               </p>
@@ -146,45 +176,68 @@ class EventInfo extends React.Component {
                                 style={{ fontWeight: 'normal' }}
                                 dangerouslySetInnerHTML={setInnerHtml(courseAudience)}
                               />
-                            </th>
-                          </tr>
-                          <tr>
-                            <th>
-                              <p style={{ paddingTop: '5px', marginTop: '5px', fontSize: '14pt', fontWeight: 'bold' }}>
-                                Prep:
-                              </p>
+                              <table className="spacer">
+                                <tbody>
+                                  <tr>
+                                    <td height="16px" style={{ fontSize: '16px', lineHeight: '16px' }}>
+                                      &#xA0;
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                              <p style={{ paddingTop: '5px', fontSize: '14pt', fontWeight: 'bold' }}>Prep:</p>
                               <div style={{ fontWeight: 'normal' }} dangerouslySetInnerHTML={setInnerHtml(prep)} />
-                            </th>
-                          </tr>
-                          <tr>
-                            <th>
-                              <p style={{ paddingTop: '5px', fontSize: '14pt', fontWeight: 'bold' }}>Prerequisites: </p>
+                              <table className="spacer">
+                                <tbody>
+                                  <tr>
+                                    <td height="16px" style={{ fontSize: '16px', lineHeight: '16px' }}>
+                                      &#xA0;
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                              <p style={{ paddingTop: '5px', fontSize: '14pt', fontWeight: 'bold' }}>Prerequisites:</p>
                               <div
                                 style={{ fontWeight: 'normal' }}
-                                dangerouslySetInnerHTML={setInnerHtml(newPrerequisites)}
+                                dangerouslySetInnerHTML={setInnerHtml(prerequisites)}
                               />
-                            </th>
-                          </tr>
-                          <tr>
-                            <th>
+                              <table className="spacer">
+                                <tbody>
+                                  <tr>
+                                    <td height="16px" style={{ fontSize: '16px', lineHeight: '16px' }}>
+                                      &#xA0;
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
                               <p style={{ paddingTop: '5px', fontSize: '14pt', fontWeight: 'bold' }}>
                                 Level: <span style={{ fontWeight: 'lighter', fontSize: '12pt' }}>{level}</span>
                               </p>
-                            </th>
-                          </tr>
-                          <tr>
-                            <th>
-                              <p style={{ paddingTop: '5px', marginTop: '5px', fontSize: '14pt', fontWeight: 'bold' }}>
+                              <table className="spacer">
+                                <tbody>
+                                  <tr>
+                                    <td height="16px" style={{ fontSize: '16px', lineHeight: '16px' }}>
+                                      &#xA0;
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                              <p style={{ paddingTop: '5px', fontSize: '14pt', fontWeight: 'bold' }}>
                                 Learning Objectives:
                               </p>
                               <div
                                 style={{ fontWeight: 'normal' }}
                                 dangerouslySetInnerHTML={setInnerHtml(objectives)}
                               />
-                            </th>
-                          </tr>
-                          <tr>
-                            <th>
+                              <table className="spacer">
+                                <tbody>
+                                  <tr>
+                                    <td height="16px" style={{ fontSize: '16px', lineHeight: '16px' }}>
+                                      &#xA0;
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
                               <p style={{ paddingTop: '5px', fontSize: '14pt', fontWeight: 'bold' }}>Summary:</p>
                               <div style={{ fontWeight: 'normal' }} dangerouslySetInnerHTML={setInnerHtml(summary)} />
                             </th>
@@ -203,6 +256,15 @@ class EventInfo extends React.Component {
                         <tbody>
                           <tr>
                             <th>
+                              <table className="spacer">
+                                <tbody>
+                                  <tr>
+                                    <td height="16px" style={{ fontSize: '16px', lineHeight: '16px' }}>
+                                      &#xA0;
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
                               <center>
                                 <table className="button float-center" style={{ borderCollapse: 'none' }}>
                                   <tr>
@@ -212,7 +274,7 @@ class EventInfo extends React.Component {
                                         padding: '14px',
                                         fontSize: '14pt',
                                         backgroundColor: '#72C02C',
-                                        border: '1px solid #72C02C',
+                                        border: '2px solid #72C02C',
                                         borderRadius: '2px'
                                       }}
                                     >
@@ -227,6 +289,15 @@ class EventInfo extends React.Component {
                                   </tr>
                                 </table>
                               </center>
+                              <table className="spacer">
+                                <tbody>
+                                  <tr>
+                                    <td height="16px" style={{ fontSize: '16px', lineHeight: '16px' }}>
+                                      &#xA0;
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
                             </th>
                           </tr>
                         </tbody>

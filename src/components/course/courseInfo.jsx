@@ -1,7 +1,6 @@
 import React from 'react';
 import deliveryHelper from '../../helpers/deliveryHelper';
 import setInnerHtml from '../../helpers/domHelpers';
-import Button from '../button';
 import InfoHeader from '../infoHeader';
 
 class CourseInfo extends React.Component {
@@ -57,7 +56,17 @@ class CourseInfo extends React.Component {
                                   <em>{name}</em>
                                 </a>
                               </h4>
+                              <table className="spacer">
+                                <tbody>
+                                  <tr>
+                                    <td height="16px" style={{ fontSize: '16px', lineHeight: '16px' }}>
+                                      &#xA0;
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
                             </th>
+                            <th className="expander" />
                           </tr>
                         </tbody>
                       </table>
@@ -76,16 +85,26 @@ class CourseInfo extends React.Component {
                               <p style={{ paddingTop: '5px', fontSize: '14pt', fontWeight: 'bold' }}>
                                 By: <span style={{ fontWeight: 'lighter', fontSize: '12pt' }}>{by}</span>
                               </p>
-                            </th>
-                          </tr>
-                          <tr>
-                            <th>
+                              <table className="spacer">
+                                <tbody>
+                                  <tr>
+                                    <td height="16px" style={{ fontSize: '16px', lineHeight: '16px' }}>
+                                      &#xA0;
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
                               <p style={{ paddingTop: '5px', fontSize: '14pt', fontWeight: 'bold' }}>Description: </p>
                               <div style={{ fontWeight: 'normal' }} dangerouslySetInnerHTML={setInnerHtml(summary)} />
-                            </th>
-                          </tr>
-                          <tr>
-                            <th>
+                              <table className="spacer">
+                                <tbody>
+                                  <tr>
+                                    <td height="16px" style={{ fontSize: '16px', lineHeight: '16px' }}>
+                                      &#xA0;
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
                               <p style={{ paddingTop: '5px', fontSize: '14pt', fontWeight: 'bold' }}>
                                 Learning Objectives:
                               </p>
@@ -93,10 +112,15 @@ class CourseInfo extends React.Component {
                                 style={{ fontWeight: 'normal' }}
                                 dangerouslySetInnerHTML={setInnerHtml(objectives)}
                               />
-                            </th>
-                          </tr>
-                          <tr>
-                            <th>
+                              <table className="spacer">
+                                <tbody>
+                                  <tr>
+                                    <td height="16px" style={{ fontSize: '16px', lineHeight: '16px' }}>
+                                      &#xA0;
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
                               <p style={{ paddingTop: '5px', fontSize: '14pt', fontWeight: 'bold' }}>
                                 Delivery Method:
                               </p>
@@ -104,20 +128,30 @@ class CourseInfo extends React.Component {
                                 style={{ fontWeight: 'normal' }}
                                 dangerouslySetInnerHTML={setInnerHtml(deliveryHelper(delivery_method))}
                               />
-                            </th>
-                          </tr>
-                          <tr>
-                            <th>
+                              <table className="spacer">
+                                <tbody>
+                                  <tr>
+                                    <td height="16px" style={{ fontSize: '16px', lineHeight: '16px' }}>
+                                      &#xA0;
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
                               <p style={{ marginTop: '5px', paddingTop: '5px', fontSize: '14pt', fontWeight: 'bold' }}>
                                 Price:{' '}
                                 <span style={{ fontWeight: 'lighter', fontSize: '12pt' }}>
                                   {{ price } > 0 ? { price } : 'Free'}
                                 </span>
                               </p>
-                            </th>
-                          </tr>
-                          <tr>
-                            <th>
+                              <table className="spacer">
+                                <tbody>
+                                  <tr>
+                                    <td height="16px" style={{ fontSize: '16px', lineHeight: '16px' }}>
+                                      &#xA0;
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
                               <p style={{ paddingTop: '5px', fontSize: '14pt', fontWeight: 'bold' }}>
                                 Recommended CPE Credit(s):
                               </p>
@@ -126,17 +160,27 @@ class CourseInfo extends React.Component {
                                   {hours[0].subject_area} - {hours[0].credits} Hour(s)
                                 </li>
                               </ul>
-                            </th>
-                          </tr>
-                          <tr>
-                            <th>
+                              <table className="spacer">
+                                <tbody>
+                                  <tr>
+                                    <td height="16px" style={{ fontSize: '16px', lineHeight: '16px' }}>
+                                      &#xA0;
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
                               <p style={{ paddingTop: '5px', fontSize: '14pt', fontWeight: 'bold' }}>
                                 Level: <span style={{ fontWeight: 'lighter', fontSize: '12pt' }}>{level}</span>
                               </p>
-                            </th>
-                          </tr>
-                          <tr>
-                            <th>
+                              <table className="spacer">
+                                <tbody>
+                                  <tr>
+                                    <td height="16px" style={{ fontSize: '16px', lineHeight: '16px' }}>
+                                      &#xA0;
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
                               <p style={{ paddingTop: '5px', fontSize: '14pt', fontWeight: 'bold' }}>
                                 Target Audience:{' '}
                               </p>
@@ -144,10 +188,15 @@ class CourseInfo extends React.Component {
                                 style={{ fontWeight: 'normal' }}
                                 dangerouslySetInnerHTML={setInnerHtml(courseAudience)}
                               />
-                            </th>
-                          </tr>
-                          <tr>
-                            <th>
+                              <table className="spacer">
+                                <tbody>
+                                  <tr>
+                                    <td height="16px" style={{ fontSize: '16px', lineHeight: '16px' }}>
+                                      &#xA0;
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
                               <p style={{ marginTop: '5px', paddingTop: '5px', fontSize: '14pt', fontWeight: 'bold' }}>
                                 Prerequisites:{' '}
                               </p>
@@ -155,10 +204,15 @@ class CourseInfo extends React.Component {
                                 style={{ fontWeight: 'normal' }}
                                 dangerouslySetInnerHTML={setInnerHtml(prerequisites)}
                               />
-                            </th>
-                          </tr>
-                          <tr>
-                            <th>
+                              <table className="spacer">
+                                <tbody>
+                                  <tr>
+                                    <td height="16px" style={{ fontSize: '16px', lineHeight: '16px' }}>
+                                      &#xA0;
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
                               <p style={{ paddingTop: '5px', fontSize: '14pt', fontWeight: 'bold' }}>Prep: </p>
                               <div style={{ fontWeight: 'normal' }} dangerouslySetInnerHTML={setInnerHtml(prep)} />
                             </th>
@@ -177,6 +231,15 @@ class CourseInfo extends React.Component {
                         <tbody>
                           <tr>
                             <th>
+                              <table className="spacer">
+                                <tbody>
+                                  <tr>
+                                    <td height="16px" style={{ fontSize: '16px', lineHeight: '16px' }}>
+                                      &#xA0;
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
                               <center>
                                 <table className="button float-center" style={{ borderCollapse: 'none' }}>
                                   <tr>
@@ -186,7 +249,7 @@ class CourseInfo extends React.Component {
                                         padding: '14px',
                                         fontSize: '14pt',
                                         backgroundColor: '#72C02C',
-                                        border: '1px solid #72C02C',
+                                        border: '2px solid #72C02C',
                                         borderRadius: '2px'
                                       }}
                                     >
@@ -197,6 +260,15 @@ class CourseInfo extends React.Component {
                                   </tr>
                                 </table>
                               </center>
+                              <table className="spacer">
+                                <tbody>
+                                  <tr>
+                                    <td height="16px" style={{ fontSize: '16px', lineHeight: '16px' }}>
+                                      &#xA0;
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
                             </th>
                           </tr>
                         </tbody>
