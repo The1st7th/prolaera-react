@@ -54,7 +54,7 @@ describe('trackAssigned Email', () => {
       applyWidthAttributes: true,
       applyTableAttributes: true
     });
-    await _sendEmail(newEmail, ['aflupton@gmail.com']);
+    await _sendEmail(newEmail, ['aflupton@gmail.com', 'andrew@prolaera.onmicrosoft.com']);
     const saved = await writeFile(newEmail, 'trackAssignedTest.html');
     expect(saved).toEqual(true);
   });
