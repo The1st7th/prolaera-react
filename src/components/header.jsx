@@ -27,11 +27,21 @@ class Header extends React.Component {
               <table align="center" className="row spacer">
                 <tbody>
                   <tr>
-                    <th height="10px" style={{ fontSize: '10px', lineHeight: '10x' }}>
+                    <th className="large-12 small-12 columns first last">
                       <table>
                         <tbody>
                           <tr>
-                            <th>&#xA0;</th>
+                            <th>
+                              <table className="spacer">
+                                <tbody>
+                                  <tr>
+                                    <td height="16px" style={{ fontSize: '16px', lineHeight: '16px' }}>
+                                      &#xA0;
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </th>
                           </tr>
                         </tbody>
                       </table>
@@ -39,15 +49,24 @@ class Header extends React.Component {
                   </tr>
                 </tbody>
               </table>
-              <table className="row">
+              <table align="center" className="row">
                 <tbody>
                   <tr>
-                    <th>
-                      <center>
-                        <table className="small-12 large-12 columns first last float-center">
-                          <tbody>
-                            <tr>
-                              <th>
+                    <th align="center" className="small-12 large-12 columns first last float-center">
+                      <table>
+                        <tbody>
+                          <tr>
+                            <th>
+                              <table className="spacer">
+                                <tbody>
+                                  <tr>
+                                    <td height="16px" style={{ fontSize: '16px', lineHeight: '16px' }}>
+                                      &#xA0;
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                              <center>
                                 <Image
                                   className="headerLogo"
                                   alt="logo"
@@ -55,11 +74,11 @@ class Header extends React.Component {
                                   width={resizedWidth}
                                   height={resizedHeight}
                                 />
-                              </th>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </center>
+                              </center>
+                            </th>
+                          </tr>
+                        </tbody>
+                      </table>
                     </th>
                   </tr>
                 </tbody>

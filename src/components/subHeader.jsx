@@ -28,6 +28,15 @@ class SubHeader extends React.Component {
                         <tbody>
                           <tr>
                             <th>
+                              <table className="spacer">
+                                <tbody>
+                                  <tr>
+                                    <td height="16px" style={{ fontSize: '16px', lineHeight: '16px' }}>
+                                      &#xA0;
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
                               <p
                                 style={{ marginBottom: '0px', marginTop: '20px', fontSize: '14pt' }}
                                 className="text-center small-text-center subheader"

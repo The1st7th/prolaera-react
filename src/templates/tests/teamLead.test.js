@@ -3,6 +3,7 @@ import writeFile from '../../helpers/writeFileHelper';
 import teamLeadBuilder from '../builders/teamLeadBuilder';
 import inlineCss from 'inline-css';
 var request = require('request');
+
 const _sendEmail = (template, emails) => {
   return new Promise((resolve, reject) => {
     request(

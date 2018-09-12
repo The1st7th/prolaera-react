@@ -31,17 +31,22 @@ class teamInfo extends React.Component {
               <table align="center" className="row">
                 <tbody>
                   <tr>
-                    <th align="left" className="large-12 small-12 columns left right" style={{ paddingLeft: '40px' }}>
+                    <th align="left" className="large-12 small-12 columns first last" style={{ paddingLeft: '40px' }}>
                       <table>
                         <tbody>
                           <tr>
                             <th>
                               <p style={{ paddingTop: '5px', fontSize: '14pt', fontWeight: 'bold' }}>Name:</p>
                               <div style={{ fontWeight: 'normal' }} dangerouslySetInnerHTML={setInnerHtml(name)} />
-                            </th>
-                          </tr>
-                          <tr>
-                            <th>
+                              <table className="spacer">
+                                <tbody>
+                                  <tr>
+                                    <td height="16px" style={{ fontSize: '16px', lineHeight: '16px' }}>
+                                      &#xA0;
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
                               <p style={{ paddingTop: '5px', fontSize: '14pt', fontWeight: 'bold' }}>Description:</p>
                               <div
                                 style={{ fontWeight: 'normal' }}
@@ -58,11 +63,24 @@ class teamInfo extends React.Component {
               <table align="center" className="row">
                 <tbody>
                   <tr>
-                    <th align="left" className="large-12 small-12 columns first last" style={{ paddingLeft: '40px' }}>
+                    <th
+                      align="left"
+                      className="large-12 small-12 columns first last"
+                      style={{ paddingLeft: '40px', paddingRight: '40px' }}
+                    >
                       <table>
                         <tbody>
                           <tr>
                             <th>
+                              <table className="spacer">
+                                <tbody>
+                                  <tr>
+                                    <td height="16px" style={{ fontSize: '16px', lineHeight: '16px' }}>
+                                      &#xA0;
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
                               <p>
                                 More information about your team can be found by navigating to the Prolaera website.
                               </p>
@@ -82,6 +100,15 @@ class teamInfo extends React.Component {
                         <tbody>
                           <tr>
                             <th>
+                              <table className="spacer">
+                                <tbody>
+                                  <tr>
+                                    <td height="16px" style={{ fontSize: '16px', lineHeight: '16px' }}>
+                                      &#xA0;
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
                               <center>
                                 <table className="button float-center" style={{ borderCollapse: 'none' }}>
                                   <tr>
@@ -105,6 +132,15 @@ class teamInfo extends React.Component {
                                   </tr>
                                 </table>
                               </center>
+                              <table className="spacer">
+                                <tbody>
+                                  <tr>
+                                    <td height="16px" style={{ fontSize: '16px', lineHeight: '16px' }}>
+                                      &#xA0;
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
                             </th>
                           </tr>
                         </tbody>
