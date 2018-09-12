@@ -6,6 +6,7 @@ import eventCertificateEmail from '../builders/eventCertificateBuilder';
 import testCertificate from '../../templates/tests/json/completeCertificate.json';
 import inlineCss from 'inline-css';
 var request = require('request');
+
 const _sendEmail = (template, emails) => {
   return new Promise((resolve, reject) => {
     request(
@@ -48,7 +49,7 @@ describe('eventCertificateBuilder', () => {
       applyWidthAttributes: true,
       applyTableAttributes: true
     });
-    await _sendEmail(newEmail, ['andrew@prolaera.onmicrosoft.com', 'aflupton@gmail.com']);
+    // await _sendEmail(newEmail, ['andrew@prolaera.onmicrosoft.com', 'aflupton@gmail.com']);
     const saved = await writeFile(newEmail, 'eventCertificateTest.html');
     expect(saved).toEqual(true);
   });

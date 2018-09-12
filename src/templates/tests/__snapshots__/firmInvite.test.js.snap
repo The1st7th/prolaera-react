@@ -1,189 +1,220 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Firm Invite component creates and checks snapshot of FirmInvite component html 1`] = `
-<div
-  id="subHeaderWrapper"
-  style={
-    Object {
-      "backgroundColor": "white",
-      "display": "block",
-      "fontFamily": "source-sans-pro, sans-serif",
-      "marginBottom": "0px",
-      "marginLeft": "auto",
-      "marginRight": "auto",
-      "padding": "20px",
-      "textAlign": "left",
-    }
-  }
+<table
+  align="center"
+  className="container"
 >
-  <table
-    align="center"
-    border="0"
-    cellPadding={0}
-    cellSpacing={0}
-    valign="top"
-    width="100%"
-  >
-    <tbody>
-      <tr>
-        <td
+  <tbody>
+    <tr>
+      <td>
+        <table
           align="center"
+          className="row"
         >
-          <div
-            style={
-              Object {
-                "margin": "auto",
-                "width": "90%",
-              }
-            }
-          >
-            <div>
-              <table
+          <tbody>
+            <tr>
+              <th
                 align="center"
-                border="0"
-                cellPadding={0}
-                cellSpacing={0}
-                className="courseReview"
-                valign="top"
-                width="100%"
+                className="large-12 small-12 columns first last"
               >
-                <tbody>
-                  <tr>
-                    <td
-                      align="center"
-                      style={
-                        Object {
-                          "padding": "20px",
-                        }
-                      }
-                    >
-                      <div
-                        style={
-                          Object {
-                            "borderBottom": "1px solid grey",
-                            "boxSizing": "border-box",
-                            "height": "20px",
-                            "margin": "auto",
-                            "padding": "10px",
-                            "position": "relative",
-                            "textAlign": "center",
-                            "width": "100%",
-                          }
-                        }
-                      >
-                        <span
-                          style={
-                            Object {
-                              "backgroundColor": "#FFFFFF",
-                              "boxSizing": "border-box",
-                              "fontSize": "14pt",
-                              "margin": "0",
-                              "padding": "0px 20px",
-                            }
-                          }
+                <table>
+                  <tbody>
+                    <tr>
+                      <th>
+                        <table
+                          align="center"
+                          className="container"
                         >
-                          header
-                           Information
-                        </span>
-                      </div>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <div>
-            <div>
-              <p>
-                Your account is waiting for you and there are only a couple quick steps to complete.
-              </p>
-              <ol>
-                <li>
-                  Click the button below to register your account.
-                </li>
-                <li>
-                  On the registration page simply enter a password for your new account and click "Register".
-                </li>
-              </ol>
-            </div>
-          </div>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <div>
-            <div>
-              <p>
-                You're ready to explore the new tools and resources you have access to.
-              </p>
-              <table
-                align="left"
-                border="0"
-                cellPadding={0}
-                cellSpacing={0}
-                valign="top"
-              >
-                <tbody>
-                  <tr>
-                    <td>
-                      <table
-                        cellPadding="0"
-                        cellSpacing="0"
-                      >
-                        <tr>
-                          <td
+                          <tbody
                             align="center"
-                            bgcolor="#2F4050"
-                            height="40"
-                            style={
-                              Object {
-                                "borderRadius": "5px",
-                                "color": "#ffffff",
-                                "display": "block",
-                              }
-                            }
-                            width="300"
                           >
-                            <a
-                              href="http://www.EXAMPLE.com/"
-                              style={
-                                Object {
-                                  "display": "inline-block",
-                                  "fontFamily": "sans-serif",
-                                  "fontSize": "16px",
-                                  "fontWeight": "bold",
-                                  "lineHeight": "40px",
-                                  "textDecoration": "none",
-                                  "width": "100%",
-                                }
-                              }
-                            >
-                              <span
-                                style={
-                                  Object {
-                                    "color": "#FFFFFF",
-                                  }
-                                }
-                              >
-                                Create Your Account
-                              </span>
-                            </a>
-                          </td>
-                        </tr>
-                      </table>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-        </td>
-      </tr>
-    </tbody>
-  </table>
-</div>
+                            <tr>
+                              <td>
+                                <table
+                                  align="center"
+                                  className="row"
+                                >
+                                  <tbody>
+                                    <tr>
+                                      <th
+                                        align="center"
+                                        className="large-12 small-12 columns first last"
+                                      >
+                                        <table>
+                                          <tbody>
+                                            <tr>
+                                              <th>
+                                                <div
+                                                  style={
+                                                    Object {
+                                                      "borderBottom": "1px solid grey",
+                                                      "boxSizing": "border-box",
+                                                      "height": "20px",
+                                                      "margin": "auto",
+                                                      "padding": "10px 40px",
+                                                      "position": "relative",
+                                                      "textAlign": "center",
+                                                      "width": "100%",
+                                                    }
+                                                  }
+                                                >
+                                                  <span
+                                                    style={
+                                                      Object {
+                                                        "backgroundColor": "#FFFFFF",
+                                                        "boxSizing": "border-box",
+                                                        "fontSize": "14pt",
+                                                        "margin": "0",
+                                                        "padding": "0px 20px",
+                                                      }
+                                                    }
+                                                  >
+                                                    header
+                                                     Information
+                                                  </span>
+                                                </div>
+                                              </th>
+                                            </tr>
+                                          </tbody>
+                                        </table>
+                                      </th>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </th>
+                    </tr>
+                  </tbody>
+                </table>
+              </th>
+            </tr>
+          </tbody>
+        </table>
+        <table
+          align="center"
+          className="row"
+        >
+          <tbody>
+            <tr>
+              <th
+                align="center"
+                className="large-12 small-12 columns first last"
+              >
+                <table>
+                  <tbody>
+                    <tr>
+                      <th
+                        className="text-center small-text-center"
+                      >
+                        <div>
+                          <p>
+                            Your account is waiting for you and there are only a couple quick steps to complete.
+                          </p>
+                          <ol>
+                            <li>
+                              Click the button below to register your account.
+                            </li>
+                            <li>
+                              On the registration page simply enter a password for your new account and click "Register".
+                            </li>
+                          </ol>
+                        </div>
+                      </th>
+                    </tr>
+                  </tbody>
+                </table>
+              </th>
+            </tr>
+          </tbody>
+        </table>
+        <table
+          align="center"
+          className="row"
+        >
+          <tbody>
+            <tr>
+              <th
+                align="center"
+                className="large-12 small-12 columns first last"
+              >
+                <table>
+                  <tbody>
+                    <tr>
+                      <th
+                        className="text-center small-text-center"
+                      >
+                        <div>
+                          <p>
+                            You're ready to explore the new tools and resources you have access to.
+                          </p>
+                          <table>
+                            <tbody>
+                              <tr>
+                                <td>
+                                  <table
+                                    cellPadding="0"
+                                    cellSpacing="0"
+                                  >
+                                    <tr>
+                                      <td
+                                        align="center"
+                                        bgcolor="#2F4050"
+                                        height="40"
+                                        style={
+                                          Object {
+                                            "borderRadius": "5px",
+                                            "color": "#ffffff",
+                                            "display": "block",
+                                          }
+                                        }
+                                        width="300"
+                                      >
+                                        <a
+                                          href="#"
+                                          style={
+                                            Object {
+                                              "display": "inline-block",
+                                              "fontFamily": "sans-serif",
+                                              "fontSize": "16px",
+                                              "fontWeight": "bold",
+                                              "lineHeight": "40px",
+                                              "textDecoration": "none",
+                                              "width": "100%",
+                                            }
+                                          }
+                                        >
+                                          <span
+                                            style={
+                                              Object {
+                                                "color": "#FFFFFF",
+                                              }
+                                            }
+                                          >
+                                            Create Your Account
+                                          </span>
+                                        </a>
+                                      </td>
+                                    </tr>
+                                  </table>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </th>
+                    </tr>
+                  </tbody>
+                </table>
+              </th>
+            </tr>
+          </tbody>
+        </table>
+      </td>
+    </tr>
+  </tbody>
+</table>
 `;

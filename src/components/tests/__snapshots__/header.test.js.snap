@@ -3,57 +3,107 @@
 exports[`Header component tests creates and checks snapshot of Header html 1`] = `
 <table
   align="center"
-  border="0"
-  cellPadding={0}
-  cellSpacing={0}
-  className="emailHeader"
-  style={
-    Object {
-      "backgroundColor": "#F7F7F7",
-    }
-  }
-  valign="top"
-  width="100%"
+  className="container"
 >
   <tbody>
     <tr>
-      <td
-        align="center"
-      >
+      <td>
         <table
           align="center"
-          cellSpacing={0}
-          style={
-            Object {
-              "marginBottom": "20px",
-              "marginTop": "25px",
-              "maxWidth": "584px",
-              "padding": "15px",
-            }
-          }
+          className="row spacer"
         >
-          <tr
-            align="center"
-          >
-            <td
-              width="292px"
-            >
-              <img
-                alt="logo"
-                height={47}
-                src="https://assets.prolaera.com/prolaeraLogo_fullText.png"
-                style={
-                  Object {
-                    "border": "none",
-                    "display": "block",
-                    "outline": "none",
-                    "textDecoration": "none",
-                  }
-                }
-                width={200}
-              />
-            </td>
-          </tr>
+          <tbody>
+            <tr>
+              <th
+                className="large-12 small-12 columns first last"
+              >
+                <table>
+                  <tbody>
+                    <tr>
+                      <th>
+                        <table
+                          className="spacer"
+                        >
+                          <tbody>
+                            <tr>
+                              <td
+                                height="16px"
+                                style={
+                                  Object {
+                                    "fontSize": "16px",
+                                    "lineHeight": "16px",
+                                  }
+                                }
+                              >
+                                 
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </th>
+                    </tr>
+                  </tbody>
+                </table>
+              </th>
+            </tr>
+          </tbody>
+        </table>
+        <table
+          align="center"
+          className="row"
+        >
+          <tbody>
+            <tr>
+              <th
+                align="center"
+                className="small-12 large-12 columns first last float-center"
+              >
+                <table>
+                  <tbody>
+                    <tr>
+                      <th>
+                        <table
+                          className="spacer"
+                        >
+                          <tbody>
+                            <tr>
+                              <td
+                                height="16px"
+                                style={
+                                  Object {
+                                    "fontSize": "16px",
+                                    "lineHeight": "16px",
+                                  }
+                                }
+                              >
+                                 
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                        <center>
+                          <img
+                            alt="logo"
+                            height={47}
+                            src="https://assets.prolaera.com/prolaeraLogo_fullText.png"
+                            style={
+                              Object {
+                                "border": "none",
+                                "display": "block",
+                                "outline": "none",
+                                "textDecoration": "none",
+                              }
+                            }
+                            width={200}
+                          />
+                        </center>
+                      </th>
+                    </tr>
+                  </tbody>
+                </table>
+              </th>
+            </tr>
+          </tbody>
         </table>
       </td>
     </tr>
@@ -232,57 +282,107 @@ exports[`buildHeader image resizing tests resizes image successfully NHHco Logo 
 exports[`buildHeader image resizing tests resizes image successfully a-lign logo 1`] = `
 <table
   align="center"
-  border="0"
-  cellPadding={0}
-  cellSpacing={0}
-  className="emailHeader"
-  style={
-    Object {
-      "backgroundColor": "#F7F7F7",
-    }
-  }
-  valign="top"
-  width="100%"
+  className="container"
 >
   <tbody>
     <tr>
-      <td
-        align="center"
-      >
+      <td>
         <table
           align="center"
-          cellSpacing={0}
-          style={
-            Object {
-              "marginBottom": "20px",
-              "marginTop": "25px",
-              "maxWidth": "584px",
-              "padding": "15px",
-            }
-          }
+          className="row spacer"
         >
-          <tr
-            align="center"
-          >
-            <td
-              width="292px"
-            >
-              <img
-                alt="logo"
-                height={47}
-                src="https://prolaera.s3-us-west-2.amazonaws.com/sponsors/def4c2bf-0485-4eda-9b2b-0e4055ef0dbe.logo.png"
-                style={
-                  Object {
-                    "border": "none",
-                    "display": "block",
-                    "outline": "none",
-                    "textDecoration": "none",
-                  }
-                }
-                width={199.08130081300814}
-              />
-            </td>
-          </tr>
+          <tbody>
+            <tr>
+              <th
+                className="large-12 small-12 columns first last"
+              >
+                <table>
+                  <tbody>
+                    <tr>
+                      <th>
+                        <table
+                          className="spacer"
+                        >
+                          <tbody>
+                            <tr>
+                              <td
+                                height="16px"
+                                style={
+                                  Object {
+                                    "fontSize": "16px",
+                                    "lineHeight": "16px",
+                                  }
+                                }
+                              >
+                                 
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </th>
+                    </tr>
+                  </tbody>
+                </table>
+              </th>
+            </tr>
+          </tbody>
+        </table>
+        <table
+          align="center"
+          className="row"
+        >
+          <tbody>
+            <tr>
+              <th
+                align="center"
+                className="small-12 large-12 columns first last float-center"
+              >
+                <table>
+                  <tbody>
+                    <tr>
+                      <th>
+                        <table
+                          className="spacer"
+                        >
+                          <tbody>
+                            <tr>
+                              <td
+                                height="16px"
+                                style={
+                                  Object {
+                                    "fontSize": "16px",
+                                    "lineHeight": "16px",
+                                  }
+                                }
+                              >
+                                 
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                        <center>
+                          <img
+                            alt="logo"
+                            height={47}
+                            src="https://prolaera.s3-us-west-2.amazonaws.com/sponsors/def4c2bf-0485-4eda-9b2b-0e4055ef0dbe.logo.png"
+                            style={
+                              Object {
+                                "border": "none",
+                                "display": "block",
+                                "outline": "none",
+                                "textDecoration": "none",
+                              }
+                            }
+                            width={199.08130081300814}
+                          />
+                        </center>
+                      </th>
+                    </tr>
+                  </tbody>
+                </table>
+              </th>
+            </tr>
+          </tbody>
         </table>
       </td>
     </tr>
