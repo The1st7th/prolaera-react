@@ -1,119 +1,81 @@
 import React from 'react';
-import { Box, Item } from 'react-html-email';
-import Button from '../../components/button';
 import InfoHeader from '../infoHeader';
+import setInnerHtml from '../../helpers/domHelpers';
 
 class TrackInfo extends React.Component {
   render() {
     const { name = '', author = '', description = '', buttonText, profileId, trackId } = this.props;
 
     return (
-      <table align="center" class="container">
+      <table align="center" className="container">
         <tbody>
           <tr>
             <td>
-              <table class="row">
+              <table align="center" className="row">
                 <tbody>
                   <tr>
-                    <th class="small-12 large-12 columns first last">
+                    <th className="small-12 large-12 columns first last">
                       <table>
                         <tr>
-                          <th>
+                          <th className="text-center small-text-center">
                             <InfoHeader info={'Learning Track'} />
                           </th>
-                          <th class="expander" />
+                          <th className="expander" />
                         </tr>
                       </table>
                     </th>
                   </tr>
                 </tbody>
               </table>
-              <table class="row">
+              <table align="center" className="row">
                 <tbody>
                   <tr>
-                    <th class="small-12 large-12 columns first last">
+                    <th
+                      align="left"
+                      className="small-12 large-12 columns first last"
+                      style={{ paddingLeft: '40px', paddingRight: '40px' }}
+                    >
                       <table>
                         <tr>
                           <th>
-                            <span>name: </span>
+                            <p style={{ paddingTop: '5px', fontSize: '14pt', fontWeight: 'bold' }}>Track:</p>
+                            <div style={{ fontWeight: 'normal' }} dangerouslySetInnerHTML={setInnerHtml(name)} />
+                            <table className="spacer">
+                              <tbody>
+                                <tr>
+                                  <td height="16px" style={{ fontSize: '16px', lineHeight: '16px' }}>
+                                    &#xA0;
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                            <p style={{ paddingTop: '5px', fontSize: '14pt', fontWeight: 'bold' }}>Author:</p>
+                            <div style={{ fontWeight: 'normal' }} dangerouslySetInnerHTML={setInnerHtml(author)} />
+                            <table className="spacer">
+                              <tbody>
+                                <tr>
+                                  <td height="16px" style={{ fontSize: '16px', lineHeight: '16px' }}>
+                                    &#xA0;
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                            <p style={{ paddingTop: '5px', fontSize: '14pt', fontWeight: 'bold' }}>Description:</p>
+                            <div style={{ fontWeight: 'normal' }} dangerouslySetInnerHTML={setInnerHtml(description)} />
+                            <table className="spacer">
+                              <tbody>
+                                <tr>
+                                  <td height="16px" style={{ fontSize: '16px', lineHeight: '16px' }}>
+                                    &#xA0;
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                            <p style={{ paddingTop: '5px', fontSize: '12pt', fontWeight: 'normal' }}>
+                              More information about this track can be found by navigating to the Prolaera website.
+                            </p>
                           </th>
-                          <th class="expander" />
-                        </tr>
-                      </table>
-                    </th>
-                    <th class="small-12 large-12 columns first last">
-                      <table>
-                        <tr>
-                          <th>
-                            <span>{name}</span>
-                          </th>
-                          <th class="expander" />
-                        </tr>
-                      </table>
-                    </th>
-                  </tr>
-                </tbody>
-              </table>
-              <table class="row">
-                <tbody>
-                  <tr>
-                    <th class="small-12 large-12 columns first last">
-                      <table>
-                        <tr>
-                          <th>
-                            <span>Author: </span>
-                          </th>
-                          <th class="expander" />
-                        </tr>
-                      </table>
-                    </th>
-                    <th class="small-12 large-12 columns first last">
-                      <table>
-                        <tr>
-                          <th>
-                            <span>{author}</span>
-                          </th>
-                          <th class="expander" />
-                        </tr>
-                      </table>
-                    </th>
-                  </tr>
-                </tbody>
-              </table>
-              <table class="row">
-                <tbody>
-                  <tr>
-                    <th class="small-12 large-12 columns first last">
-                      <table>
-                        <tr>
-                          <th>
-                            <span>Description: </span>
-                          </th>
-                          <th class="expander" />
-                        </tr>
-                      </table>
-                    </th>
-                    <th class="small-12 large-12 columns first last">
-                      <table>
-                        <tr>
-                          <th>
-                            <span>{description}</span>
-                          </th>
-                          <th class="expander" />
-                        </tr>
-                      </table>
-                    </th>
-                  </tr>
-                </tbody>
-              </table>
-              <table class="row">
-                <tbody>
-                  <tr>
-                    <th class="columns first last">
-                      <table>
-                        <tr>
-                          <th>More information about this track can be found by navigating to the Prolaera website.</th>
-                          <th class="expander" />
+                          <th className="expander" />
                         </tr>
                       </table>
                     </th>
@@ -121,10 +83,19 @@ class TrackInfo extends React.Component {
                 </tbody>
               </table>
               {profileId ? (
-                <table class="row">
+                <table className="row">
                   <tbody>
                     <tr>
                       <th>
+                        <table className="spacer">
+                          <tbody>
+                            <tr>
+                              <td height="16px" style={{ fontSize: '16px', lineHeight: '16px' }}>
+                                &#xA0;
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
                         <center>
                           <table className="button float-center" style={{ borderCollapse: 'none' }}>
                             <tr>
@@ -150,6 +121,15 @@ class TrackInfo extends React.Component {
                             </tr>
                           </table>
                         </center>
+                        <table className="spacer">
+                          <tbody>
+                            <tr>
+                              <td height="16px" style={{ fontSize: '16px', lineHeight: '16px' }}>
+                                &#xA0;
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
                       </th>
                     </tr>
                   </tbody>
