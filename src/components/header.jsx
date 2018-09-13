@@ -20,58 +20,64 @@ class Header extends React.Component {
     const resizedHeight = 47;
 
     return (
-      <table align="center" className="container header collapse">
-        <tbody>
-          <tr>
-            <td>
-              <table align="center" className="row">
-                <tbody>
-                  <tr>
-                    <th align="center" className="small-12 large-12 columns first last">
-                      <table>
-                        <tbody>
-                          <tr>
-                            <th>
-                              <table className="spacer">
-                                <tbody>
-                                  <tr>
-                                    <td height="32px" style={{ fontSize: '32px', lineHeight: '32px' }}>
-                                      &#xA0;
-                                    </td>
-                                  </tr>
-                                </tbody>
-                              </table>
-                              <a href="https://app.prolaera.com">
-                                <center>
-                                  <Image
-                                    className="headerLogo"
-                                    alt="logo"
-                                    src={url}
-                                    width={resizedWidth}
-                                    height={resizedHeight}
-                                  />
-                                </center>
-                              </a>
-                              <table className="spacer">
-                                <tbody>
-                                  <tr>
-                                    <td height="32px" style={{ fontSize: '32px', lineHeight: '32px' }}>
-                                      &#xA0;
-                                    </td>
-                                  </tr>
-                                </tbody>
-                              </table>
-                            </th>
-                          </tr>
-                        </tbody>
-                      </table>
-                    </th>
-                  </tr>
-                </tbody>
-              </table>
-            </td>
-          </tr>
-        </tbody>
+      <table className="wrapper header" align="center">
+        <tr>
+          <td>
+            <table align="center" className="container">
+              <tbody>
+                <tr>
+                  <td>
+                    <table align="center" className="row collapse">
+                      <tbody>
+                        <tr>
+                          <th valign="middle" className="small-12 large-12 columns first last">
+                            <table>
+                              <tbody>
+                                <tr>
+                                  <th>
+                                    <table className="spacer">
+                                      <tbody>
+                                        <tr>
+                                          <td height="32px" style={{ fontSize: '32px', lineHeight: '32px' }}>
+                                            &#xA0;
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                    <a href="https://app.prolaera.com">
+                                      <center>
+                                        <Image
+                                          className="headerLogo"
+                                          alt="logo"
+                                          src={url}
+                                          width={resizedWidth}
+                                          height={resizedHeight}
+                                        />
+                                      </center>
+                                    </a>
+                                    <table className="spacer">
+                                      <tbody>
+                                        <tr>
+                                          <td height="32px" style={{ fontSize: '32px', lineHeight: '32px' }}>
+                                            &#xA0;
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </th>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </th>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
       </table>
     );
   }
