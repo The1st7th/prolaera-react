@@ -19,17 +19,6 @@ export default () => (
                   </tbody>
                 </table>
               </th>
-              {/* <th align="center" className="small-12 large-4 columns first last">
-                <table>
-                  <tbody>
-                    <tr>
-                      <th>
-                        <p className='text-center small-text-center'>&#xA0;</p>
-                      </th>
-                    </tr>
-                  </tbody>
-                </table>
-              </th> */}
               <th align="center" className="small-12 large-4 columns first last" style={{ verticalAlign: 'middle' }}>
                 <table>
                   <tbody>

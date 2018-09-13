@@ -3,7 +3,7 @@ import React from 'react';
 export default () => {
   return (
     <div>
-      <table class="gmail-app-fix">
+      <table className="gmail-app-fix">
         <tr>
           <td>
             <table cellpadding="0" cellspacing="0" border="0" align="center" width="600">

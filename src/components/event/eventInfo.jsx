@@ -266,16 +266,19 @@ class EventInfo extends React.Component {
                                 </tbody>
                               </table>
                               <center>
-                                <table className="button float-center" style={{ borderCollapse: 'none' }}>
+                                <table
+                                  className="float-center"
+                                  style={{ borderCollapse: 'none', paddingRight: '20px', paddingLeft: '20px' }}
+                                >
                                   <tr>
                                     <td
                                       className="text-center small-text-center"
                                       style={{
-                                        padding: '14px',
+                                        padding: '11px',
                                         fontSize: '14pt',
                                         backgroundColor: '#72C02C',
                                         border: '2px solid #72C02C',
-                                        borderRadius: '2px'
+                                        borderRadius: '3px'
                                       }}
                                     >
                                       {buttonText ? (
@@ -292,7 +295,7 @@ class EventInfo extends React.Component {
                               <table className="spacer">
                                 <tbody>
                                   <tr>
-                                    <td height="16px" style={{ fontSize: '16px', lineHeight: '16px' }}>
+                                    <td height="32px" style={{ fontSize: '32px', lineHeight: '32px' }}>
                                       &#xA0;
                                     </td>
                                   </tr>

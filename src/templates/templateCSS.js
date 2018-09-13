@@ -1,9 +1,31 @@
 const css = `
 
-.333333 {
-  background-color: #333333;
-  color: #FFFFFF;
+.header {
+  background: #8a8a8a;
 }
+
+.header .columns {
+  padding-bottom: 0;
+}
+
+.header p {
+  color: #FFFFFF;
+  margin-bottom: 0;
+}
+
+.header .wrapper-inner {
+  padding: 20px;
+  /*controls the height of the header*/
+}
+
+.header .container {
+  background: #8a8a8a;
+}
+
+.wrapper.secondary {
+  background: #f3f3f3;
+}
+
 .wrapper {
   width: 100%; }
 

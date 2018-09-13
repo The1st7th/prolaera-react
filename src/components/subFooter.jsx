@@ -20,6 +20,7 @@ class SubFooter extends React.Component {
                               <p>{text}</p>
                               <p>{subtext}</p>
                             </th>
+                            <th className="expander" />
                           </tr>
                         </tbody>
                       </table>

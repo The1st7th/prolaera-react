@@ -19,15 +19,6 @@ class TrackInfo extends React.Component {
                         <tr>
                           <th className="text-center small-text-center">
                             <InfoHeader info={'Learning Track'} />
-                            <table className="spacer">
-                              <tbody>
-                                <tr>
-                                  <td height="16px" style={{ fontSize: '16px', lineHeight: '16px' }}>
-                                    &#xA0;
-                                  </td>
-                                </tr>
-                              </tbody>
-                            </table>
                           </th>
                           <th className="expander" />
                         </tr>
@@ -92,58 +83,69 @@ class TrackInfo extends React.Component {
                 </tbody>
               </table>
               {profileId ? (
-                <table className="row">
+                <table align="center" className="row">
                   <tbody>
                     <tr>
-                      <th>
-                        <table className="spacer">
+                      <th align="center" className="large-12 small-12 columns first last">
+                        <table>
                           <tbody>
                             <tr>
-                              <td height="16px" style={{ fontSize: '16px', lineHeight: '16px' }}>
-                                &#xA0;
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
-                        <center>
-                          <table
-                            className="button float-center"
-                            style={{
-                              borderCollapse: 'none'
-                            }}
-                          >
-                            <tr>
-                              <td
-                                className="text-center small-text-center"
-                                style={{
-                                  padding: '14px',
-                                  fontSize: '14pt',
-                                  backgroundColor: '#72C02C',
-                                  border: '2px solid #72C02C',
-                                  borderRadius: '2px'
-                                }}
-                              >
-                                <a
-                                  style={{
-                                    color: '#FFFFFF',
-                                    textDecoration: 'none'
-                                  }}
-                                  href={
-                                    'https://app.prolaera.com/#/users/' + profileId + '/learning/track?track=' + trackId
-                                  }
-                                >
-                                  {buttonText}
-                                </a>
-                              </td>
-                            </tr>
-                          </table>
-                        </center>
-                        <table className="spacer">
-                          <tbody>
-                            <tr>
-                              <td height="16px" style={{ fontSize: '16px', lineHeight: '16px' }}>
-                                &#xA0;
-                              </td>
+                              <th>
+                                <table className="spacer">
+                                  <tbody>
+                                    <tr>
+                                      <td height="16px" style={{ fontSize: '16px', lineHeight: '16px' }}>
+                                        &#xA0;
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                                <center>
+                                  <table
+                                    className="float-center"
+                                    style={{ borderCollapse: 'none', paddingLeft: '20px', paddingRight: '20px' }}
+                                  >
+                                    <tbody>
+                                      <tr>
+                                        <th
+                                          className="text-center small-text-center"
+                                          style={{
+                                            padding: '11px',
+                                            fontSize: '14pt',
+                                            backgroundColor: '#72C02C',
+                                            border: '2 solid #72C02C',
+                                            borderRadius: '3px'
+                                          }}
+                                        >
+                                          <a
+                                            style={{
+                                              color: '#FFFFFF',
+                                              textDecoration: 'none'
+                                            }}
+                                            href={
+                                              'https://app.prolaera.com/#/users/' +
+                                              profileId +
+                                              '/learning/track?track=' +
+                                              trackId
+                                            }
+                                          >
+                                            {buttonText}
+                                          </a>
+                                        </th>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                </center>
+                                <table className="spacer">
+                                  <tbody>
+                                    <tr>
+                                      <td height="32px" style={{ fontSize: '32px', lineHeight: '32px' }}>
+                                        &#xA0;
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </th>
                             </tr>
                           </tbody>
                         </table>
