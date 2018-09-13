@@ -13,7 +13,7 @@ const css = `
 }
 
 .footer .columns {
-  padding: 20px;
+  padding-bottom: 0;
 }
 
 .header p {
@@ -21,15 +21,18 @@ const css = `
 }
 
 .footer p {
+  margin-bottom: 0;
   color: #FFFFFF;
+  font-weight: 100;
+  font-size: 10pt;
 }
 
 .header .wrapper-inner {
-  padding: 20px 20px 0px;
+  padding: 20px 0px 0px;
 }
 
 .footer .wrapper-inner {
-  padding: 0px 20px 20px
+  padding: 0px 20px 0px
 }
 
 .header .container {
