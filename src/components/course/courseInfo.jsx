@@ -38,11 +38,24 @@ class CourseInfo extends React.Component {
               <table align="center" className="row">
                 <tbody>
                   <tr>
-                    <th align="center" className="large-12 small-12 columns first last">
+                    <th
+                      align="center"
+                      className="large-12 small-12 columns first last"
+                      style={{ paddingLeft: '40px', paddingRight: '40px' }}
+                    >
                       <table>
                         <tbody>
                           <tr>
                             <th>
+                              <table className="spacer">
+                                <tbody>
+                                  <tr>
+                                    <td height="32px" style={{ fontSize: '32px', lineHeight: '32px' }}>
+                                      &#xA0;
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
                               <InfoHeader info={'Course'} />
                               <table className="spacer">
                                 <tbody>

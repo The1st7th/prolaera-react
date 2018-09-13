@@ -21,12 +21,12 @@ class InfoHeader extends React.Component {
                                 style={{
                                   width: '100%',
                                   height: '20px',
-                                  borderBottom: '1px solid grey',
+                                  borderBottom: '1px solid #474747',
                                   textAlign: 'center',
                                   boxSizing: 'border-box',
                                   position: 'relative',
                                   margin: 'auto',
-                                  padding: '10px 40px'
+                                  padding: '10px 0px'
                                 }}
                               >
                                 <span
