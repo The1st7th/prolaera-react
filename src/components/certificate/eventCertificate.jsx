@@ -33,8 +33,8 @@ class EventCertificate extends React.Component {
                       <table align="center">
                         <tr>
                           <th>
-                            <h3>{course_name}</h3>
-                            <h5>
+                            <h3 class="text-center small-text-left">{course_name}</h3>
+                            <h5 class="text-center small-text-left">
                               {PrettyDate(delivery_date)} - {PrettyDate(delivery_end_date)}
                             </h5>
                           </th>
