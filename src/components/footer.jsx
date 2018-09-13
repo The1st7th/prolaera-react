@@ -2,38 +2,44 @@ import React from 'react';
 
 var now = new Date();
 export default () => (
-  <table align="center" className="container" valign="middle">
-    <tbody>
-      <tr>
-        <td>
-          <table align="center" className="row">
+  <table className="wrapper footer" align="center">
+    <tr>
+      <td>
+        <table align="center" className="container">
+          <tbody>
             <tr>
-              <th align="center" className="small-12 large-4 columns first last" style={{ verticalAlign: 'middle' }}>
-                <table>
-                  <tbody>
-                    <tr>
-                      <th>
-                        <p className="text-left small-text-center">Powered By Prolaera</p>
-                      </th>
-                    </tr>
-                  </tbody>
+              <td>
+                <table align="center" className="row">
+                  <tr>
+                    <th align="center" className="small-12 large-6 columns first last" valign="middle">
+                      <table>
+                        <tbody>
+                          <tr>
+                            <th>
+                              <p className="text-left small-text-center">Powered By Prolaera</p>
+                            </th>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </th>
+                    <th align="center" className="small-12 large-6 columns first last" valign="middle">
+                      <table>
+                        <tbody>
+                          <tr>
+                            <th>
+                              <p className="text-right small-text-center">© Prolaera {now.getFullYear()}</p>
+                            </th>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </th>
+                  </tr>
                 </table>
-              </th>
-              <th align="center" className="small-12 large-4 columns first last" style={{ verticalAlign: 'middle' }}>
-                <table>
-                  <tbody>
-                    <tr>
-                      <th>
-                        <p className="text-right small-text-center">© Prolaera {now.getFullYear()}</p>
-                      </th>
-                    </tr>
-                  </tbody>
-                </table>
-              </th>
+              </td>
             </tr>
-          </table>
-        </td>
-      </tr>
-    </tbody>
+          </tbody>
+        </table>
+      </td>
+    </tr>
   </table>
 );

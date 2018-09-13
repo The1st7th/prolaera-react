@@ -13,13 +13,7 @@ export default function Email(props) {
         <table className="body">
           <tr>
             <td class="float-center" align="center" valign="top">
-              <center>
-                <table align="center" className="wrapper float-center">
-                  <tr>
-                    <td className="wrapper-inner">{props.children}</td>
-                  </tr>
-                </table>
-              </center>
+              <center>{props.children}</center>
             </td>
           </tr>
         </table>

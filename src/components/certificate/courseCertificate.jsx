@@ -145,8 +145,7 @@ class CourseCertificate extends React.Component {
                                         }}
                                         href={button1Link}
                                       >
-                                        {' '}
-                                        {button1Text}{' '}
+                                        {button1Text}
                                       </a>
                                     </td>
                                   </tr>
@@ -189,6 +188,7 @@ class CourseCertificate extends React.Component {
                                       }}
                                     >
                                       <a
+                                        id="outlook"
                                         style={{
                                           color: '#FFFFFF',
                                           textDecoration: 'none',
@@ -197,8 +197,7 @@ class CourseCertificate extends React.Component {
                                         }}
                                         href={button2Link}
                                       >
-                                        {' '}
-                                        {button2Text}{' '}
+                                        {button2Text}
                                       </a>
                                     </td>
                                   </tr>
