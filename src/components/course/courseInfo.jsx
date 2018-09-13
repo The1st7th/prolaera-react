@@ -44,18 +44,6 @@ class CourseInfo extends React.Component {
                           <tr>
                             <th>
                               <InfoHeader info={'Course'} />
-                              <h4
-                                className="text-center small-text-center"
-                                align="center"
-                                style={{ paddingTop: '15px', marginTop: '0px' }}
-                              >
-                                <a
-                                  href={'https://app.prolaera.com/#/courses/' + `${course_id}`}
-                                  style={{ textDecoration: 'underline', color: '#2F4050', height: '100%' }}
-                                >
-                                  <em>{name}</em>
-                                </a>
-                              </h4>
                               <table className="spacer">
                                 <tbody>
                                   <tr>
@@ -65,6 +53,14 @@ class CourseInfo extends React.Component {
                                   </tr>
                                 </tbody>
                               </table>
+                              <h4 className="text-center small-text-center" align="center">
+                                <a
+                                  href={'https://app.prolaera.com/#/courses/' + `${course_id}`}
+                                  style={{ textDecoration: 'underline', color: '#2F4050', height: '100%' }}
+                                >
+                                  <em>{name}</em>
+                                </a>
+                              </h4>
                             </th>
                             <th className="expander" />
                           </tr>
@@ -182,7 +178,7 @@ class CourseInfo extends React.Component {
                                 </tbody>
                               </table>
                               <p style={{ paddingTop: '5px', fontSize: '14pt', fontWeight: 'bold' }}>
-                                Target Audience:{' '}
+                                Target Audience:
                               </p>
                               <div
                                 style={{ fontWeight: 'normal' }}
@@ -216,6 +212,7 @@ class CourseInfo extends React.Component {
                               <p style={{ paddingTop: '5px', fontSize: '14pt', fontWeight: 'bold' }}>Prep: </p>
                               <div style={{ fontWeight: 'normal' }} dangerouslySetInnerHTML={setInnerHtml(prep)} />
                             </th>
+                            <th className="expander" />
                           </tr>
                         </tbody>
                       </table>
@@ -241,16 +238,19 @@ class CourseInfo extends React.Component {
                                 </tbody>
                               </table>
                               <center>
-                                <table className="button float-center" style={{ borderCollapse: 'none' }}>
+                                <table
+                                  className="float-center"
+                                  style={{ borderCollapse: 'none', paddingLeft: '20px', paddingRight: '20px' }}
+                                >
                                   <tr>
                                     <td
                                       className="text-center small-text-center"
                                       style={{
-                                        padding: '14px',
+                                        padding: '11px',
                                         fontSize: '14pt',
                                         backgroundColor: '#72C02C',
-                                        border: '2px solid #72C02C',
-                                        borderRadius: '2px'
+                                        border: '2 solid #72C02C',
+                                        borderRadius: '3px'
                                       }}
                                     >
                                       <a style={{ color: '#FFFFFF', textDecoration: 'none' }} href={newButtonLink}>
@@ -263,7 +263,7 @@ class CourseInfo extends React.Component {
                               <table className="spacer">
                                 <tbody>
                                   <tr>
-                                    <td height="16px" style={{ fontSize: '16px', lineHeight: '16px' }}>
+                                    <td height="32px" style={{ fontSize: '32px', lineHeight: '32px' }}>
                                       &#xA0;
                                     </td>
                                   </tr>

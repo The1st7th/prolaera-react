@@ -51,6 +51,15 @@ class GenericInfo extends React.Component {
                           </tr>
                         </tbody>
                       </table>
+                      <table className="spacer">
+                        <tbody>
+                          <tr>
+                            <td height="16px" style={{ fontSize: '16px', lineHeight: '16px' }}>
+                              &#xA0;
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
                     </th>
                   </tr>
                 </tbody>

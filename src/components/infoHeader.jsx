@@ -1,5 +1,4 @@
 import React from 'react';
-import { Box, Item } from 'react-html-email';
 
 class InfoHeader extends React.Component {
   render() {
@@ -7,7 +6,7 @@ class InfoHeader extends React.Component {
 
     return (
       <table className="container" align="center">
-        <tbody align="center">
+        <tbody>
           <tr>
             <td>
               <table align="center" className="row">

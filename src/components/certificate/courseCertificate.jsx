@@ -1,8 +1,6 @@
 import React from 'react';
-import { Box, Item } from 'react-html-email';
 // import deliveryHelper from '../../helpers/deliveryHelper';
 import { CycleDates, RangeDate, PrettyDate } from '../../helpers/dateHelpers';
-import Button from '../button';
 
 class CourseCertificate extends React.Component {
   render() {
@@ -26,94 +24,207 @@ class CourseCertificate extends React.Component {
     var now = new Date();
 
     return (
-      <div
-        id="courseCertificate"
-        style={{
-          display: 'block',
-          marginLeft: 'auto',
-          marginRight: 'auto',
-          marginTop: 'auto',
-          height: 'auto',
-          marginBottom: '0px',
-          textAlign: 'center',
-          backgroundColor: '#FFFFFF'
-        }}
-      >
-        <Box className="courseCertificate" align="center" width="100%">
-          <Item style={{ backgroundColor: '#FFFFFF', width: '100%' }}>
-            <a
-              href={'https://app.prolaera.com/#/courses/' + `${course_id}`}
-              style={{ textDecoration: 'none', color: '#333333' }}
-            >
-              <div
-                style={{
-                  padding: '25px 15px 15px',
-                  backgroundColor: '#FFFFFF',
-                  fontStyle: 'normal',
-                  fontWeight: '500'
-                }}
-              >
-                <p style={{ textAlign: 'center', fontSize: '28px', letterSpacing: '3px', marginBottom: '0px' }}>
-                  {name}
-                </p>
-                <p style={{ textAlign: 'center', fontSize: '18px', letterSpacing: '3px' }}>{PrettyDate(now)}</p>
-              </div>
-            </a>
-          </Item>
-          <Item align="center">
-            <table
-              style={{
-                textAlign: 'center',
-                fontSize: '14pt',
-                marginLeft: 'auto',
-                marginRight: 'auto'
-              }}
-            >
-              <tr>
-                <td>
-                  <p>{message}</p>
-                  <div style={{ boxSizing: 'border-box', padding: '0px 50px' }}>
-                    {profile_uid ? <p>{certMessage}</p> : <div />}
-                  </div>
-                </td>
-              </tr>
-            </table>
-          </Item>
-          <Item>
-            <p>{body}</p>
-          </Item>
-          <Item align="center">
-            <table
-              style={{
-                textAlign: 'center',
-                margin: 'auto',
-                borderSpacing: '10px'
-              }}
-            >
-              <tr className="center">
-                <td
-                  className="customButton"
-                  style={{
-                    width: '50%'
-                  }}
-                >
-                  <Button color={'#72C02C'} text={button1Text} link={button1Link} />
-                </td>
-                <td
-                  className="customButton"
-                  style={{
-                    borderRadius: '2px',
-
-                    width: '50%'
-                  }}
-                >
-                  <Button color={'#2F4050'} text={button2Text} link={button2Link} />
-                </td>
-              </tr>
-            </table>
-          </Item>
-        </Box>
-      </div>
+      <table className="container" align="center">
+        <tbody>
+          <tr>
+            <td>
+              <table align="center" className="row">
+                <tr>
+                  <th align="center" className="large-12 small-12 columns first last">
+                    <table>
+                      <tbody>
+                        <tr>
+                          <th>
+                            <a
+                              href={'https://app.prolaera.com/#/courses/' + `${course_id}`}
+                              style={{ textDecoration: 'none', color: '#333333' }}
+                            >
+                              <div
+                                style={{
+                                  padding: '25px 15px 15px',
+                                  backgroundColor: '#FFFFFF',
+                                  fontStyle: 'normal',
+                                  fontWeight: '500'
+                                }}
+                              >
+                                <p
+                                  style={{
+                                    textAlign: 'center',
+                                    fontSize: '26px',
+                                    letterSpacing: '3px',
+                                    marginBottom: '0px'
+                                  }}
+                                >
+                                  {name}
+                                </p>
+                                <p style={{ textAlign: 'center', fontSize: '16px', letterSpacing: '3px' }}>
+                                  {PrettyDate(now)}
+                                </p>
+                              </div>
+                            </a>
+                          </th>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </th>
+                </tr>
+              </table>
+              <table align="center" className="row">
+                <tbody>
+                  <tr>
+                    <th
+                      align="center"
+                      className="large-12 small-12 columns first last"
+                      style={{ paddingLeft: '40px', paddingRight: '40px' }}
+                    >
+                      <table>
+                        <tbody>
+                          <tr>
+                            <th className="text-center">
+                              <p>{message}</p>
+                              <p>{profile_uid ? <p>{certMessage}</p> : <div />}</p>
+                            </th>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </th>
+                  </tr>
+                </tbody>
+              </table>
+              <table align="center" className="row">
+                <tbody>
+                  <tr>
+                    <th
+                      className="large-12 small-12 columns first last"
+                      style={{ paddingLeft: '40px', paddingRight: '40px' }}
+                    >
+                      <table>
+                        <tbody>
+                          <tr>
+                            <th className="text-left small-text-left">
+                              <p>{body}</p>
+                            </th>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </th>
+                  </tr>
+                </tbody>
+              </table>
+              <table align="center" className="row">
+                <tbody>
+                  <tr>
+                    <th
+                      align="center"
+                      className="large-6 small-12 columns first"
+                      style={{ paddingLeft: '40px', paddingBottom: '0px' }}
+                    >
+                      <table>
+                        <tbody>
+                          <tr>
+                            <th>
+                              <center>
+                                <table style={{ borderCollapse: 'none' }}>
+                                  <tr>
+                                    <td
+                                      className="text-center small-text-center"
+                                      style={{
+                                        padding: '11px',
+                                        fontSize: '14pt',
+                                        backgroundColor: '#72C02C',
+                                        border: '2 solid #72C02C',
+                                        borderRadius: '3px'
+                                      }}
+                                    >
+                                      <a
+                                        style={{
+                                          color: '#FFFFFF',
+                                          textDecoration: 'none',
+                                          padding: '11px',
+                                          width: '100%'
+                                        }}
+                                        href={button1Link}
+                                      >
+                                        {' '}
+                                        {button1Text}{' '}
+                                      </a>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </center>
+                              <table className="spacer">
+                                <tbody>
+                                  <tr>
+                                    <td height="16px" style={{ fontSize: '16px', lineHeight: '16px' }}>
+                                      &#xA0;
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </th>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </th>
+                    <th
+                      align="center"
+                      className="large-6 small-12 columns last"
+                      style={{ paddingRight: '40px', paddingBottom: '0px' }}
+                    >
+                      <table>
+                        <tbody>
+                          <tr>
+                            <th>
+                              <center>
+                                <table style={{ borderCollapse: 'none' }}>
+                                  <tr>
+                                    <td
+                                      className="text-center small-text-center"
+                                      style={{
+                                        padding: '11px',
+                                        fontSize: '14pt',
+                                        backgroundColor: '#2F4050',
+                                        border: '2 solid #2F4050',
+                                        borderRadius: '3px'
+                                      }}
+                                    >
+                                      <a
+                                        style={{
+                                          color: '#FFFFFF',
+                                          textDecoration: 'none',
+                                          padding: '11px',
+                                          width: '100%'
+                                        }}
+                                        href={button2Link}
+                                      >
+                                        {' '}
+                                        {button2Text}{' '}
+                                      </a>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </center>
+                              <table className="spacer">
+                                <tbody>
+                                  <tr>
+                                    <td height="16px" style={{ fontSize: '16px', lineHeight: '16px' }}>
+                                      &#xA0;
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </th>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </th>
+                  </tr>
+                </tbody>
+              </table>
+            </td>
+          </tr>
+        </tbody>
+      </table>
     );
   }
 }

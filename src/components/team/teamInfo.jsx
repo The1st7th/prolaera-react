@@ -20,15 +20,6 @@ class teamInfo extends React.Component {
                           <tr>
                             <th>
                               <InfoHeader info={'Team'} />
-                              <table className="spacer">
-                                <tbody>
-                                  <tr>
-                                    <td height="16px" style={{ fontSize: '16px', lineHeight: '16px' }}>
-                                      &#xA0;
-                                    </td>
-                                  </tr>
-                                </tbody>
-                              </table>
                             </th>
                             <th className="expander" />
                           </tr>
@@ -41,7 +32,11 @@ class teamInfo extends React.Component {
               <table align="center" className="row">
                 <tbody>
                   <tr>
-                    <th align="left" className="large-12 small-12 columns first last" style={{ paddingLeft: '40px' }}>
+                    <th
+                      align="left"
+                      className="large-12 small-12 columns first last"
+                      style={{ paddingLeft: '40px', paddingRight: '40px' }}
+                    >
                       <table>
                         <tbody>
                           <tr>
@@ -62,26 +57,6 @@ class teamInfo extends React.Component {
                                 style={{ fontWeight: 'normal' }}
                                 dangerouslySetInnerHTML={setInnerHtml(description)}
                               />
-                            </th>
-                          </tr>
-                        </tbody>
-                      </table>
-                    </th>
-                  </tr>
-                </tbody>
-              </table>
-              <table align="center" className="row">
-                <tbody>
-                  <tr>
-                    <th
-                      align="left"
-                      className="large-12 small-12 columns first last"
-                      style={{ paddingLeft: '40px', paddingRight: '40px' }}
-                    >
-                      <table>
-                        <tbody>
-                          <tr>
-                            <th>
                               <table className="spacer">
                                 <tbody>
                                   <tr>
@@ -91,7 +66,7 @@ class teamInfo extends React.Component {
                                   </tr>
                                 </tbody>
                               </table>
-                              <p>
+                              <p style={{ paddingTop: '5px' }}>
                                 More information about your team can be found by navigating to the Prolaera website.
                               </p>
                             </th>
@@ -105,7 +80,7 @@ class teamInfo extends React.Component {
               <table align="center" className="row">
                 <tbody>
                   <tr>
-                    <th align="center" className="large-12 small-12 columns left right">
+                    <th align="center" className="large-12 small-12 columns first last">
                       <table>
                         <tbody>
                           <tr>
@@ -120,16 +95,19 @@ class teamInfo extends React.Component {
                                 </tbody>
                               </table>
                               <center>
-                                <table className="button float-center" style={{ borderCollapse: 'none' }}>
+                                <table
+                                  className="float-center"
+                                  style={{ borderCollapse: 'none', paddingLeft: '20px', paddingRight: '20px' }}
+                                >
                                   <tr>
                                     <td
                                       className="text-center small-text-center"
                                       style={{
-                                        padding: '14px',
+                                        padding: '11px',
                                         fontSize: '14pt',
                                         backgroundColor: '#72C02C',
-                                        border: '2px solid #72C02C',
-                                        borderRadius: '2px'
+                                        border: '2 solid #72C02C',
+                                        borderRadius: '3px'
                                       }}
                                     >
                                       <a
@@ -145,7 +123,7 @@ class teamInfo extends React.Component {
                               <table className="spacer">
                                 <tbody>
                                   <tr>
-                                    <td height="16px" style={{ fontSize: '16px', lineHeight: '16px' }}>
+                                    <td height="32px" style={{ fontSize: '32px', lineHeight: '32px' }}>
                                       &#xA0;
                                     </td>
                                   </tr>

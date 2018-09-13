@@ -38,7 +38,7 @@ class SubHeader extends React.Component {
                                 </tbody>
                               </table>
                               <p
-                                style={{ marginBottom: '0px', marginTop: '20px', fontSize: '14pt' }}
+                                style={{ marginBottom: '0px', fontSize: '14pt' }}
                                 className="text-center small-text-center subheader"
                               >
                                 {subText}
@@ -50,7 +50,7 @@ class SubHeader extends React.Component {
                                 {header}
                               </p>
                               <p
-                                style={{ marginBottom: '0px', marginTop: '0px', fontSize: '18pt' }}
+                                style={{ marginBottom: '0px', marginTop: '0px', fontSize: '14pt' }}
                                 className="text-center small-text-center"
                               >
                                 {message}

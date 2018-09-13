@@ -1,7 +1,5 @@
 import React from 'react';
-import { Box, Item } from 'react-html-email';
 import { PrettyDate } from '../../helpers/dateHelpers';
-import Button from '../button';
 
 class EventCertificate extends React.Component {
   render() {

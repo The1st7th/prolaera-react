@@ -1,6 +1,5 @@
 import React from 'react';
 import { Colorpick } from './colorpick';
-import { Box, Item } from 'react-html-email';
 
 class Button extends React.Component {
   render() {
