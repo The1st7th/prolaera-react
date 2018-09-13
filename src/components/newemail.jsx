@@ -12,7 +12,7 @@ export default function Email(props) {
       <body>
         <table className="body">
           <tr>
-            <td class="float-center" align="center" valign="top">
+            <td class="float-center small-float-center" align="center" valign="top">
               <center>{props.children}</center>
             </td>
           </tr>

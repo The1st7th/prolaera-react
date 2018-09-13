@@ -1,13 +1,13 @@
 import React from 'react';
 // import deliveryHelper from '../../helpers/deliveryHelper';
 import { CycleDates, RangeDate, PrettyDate } from '../../helpers/dateHelpers';
+import Message from '../Message';
 
 class CourseCertificate extends React.Component {
   render() {
     const {
       name = '',
       first = '',
-      body = '',
       profile_uid,
       course_id,
       pdf,
@@ -30,37 +30,47 @@ class CourseCertificate extends React.Component {
             <td>
               <table align="center" className="row">
                 <tr>
-                  <th align="center" className="large-12 small-12 columns first last">
+                  <th
+                    align="center"
+                    className="large-12 small-12 columns first last"
+                    style={{ paddingBottom: '16px', paddingTop: '16px' }}
+                  >
                     <table>
                       <tbody>
                         <tr>
-                          <th>
+                          <th
+                            style={{
+                              backgroundColor: '#FFFFFF',
+                              fontStyle: 'normal',
+                              fontWeight: '500'
+                            }}
+                          >
                             <a
                               href={'https://app.prolaera.com/#/courses/' + `${course_id}`}
                               style={{ textDecoration: 'none', color: '#333333' }}
                             >
-                              <div
+                              <p
                                 style={{
-                                  padding: '25px 15px 15px',
-                                  backgroundColor: '#FFFFFF',
-                                  fontStyle: 'normal',
-                                  fontWeight: '500'
+                                  textAlign: 'center',
+                                  fontSize: '26px',
+                                  letterSpacing: '3px',
+                                  marginBottom: '5px',
+                                  lineHeight: '32px'
                                 }}
                               >
-                                <p
-                                  style={{
-                                    textAlign: 'center',
-                                    fontSize: '26px',
-                                    letterSpacing: '3px',
-                                    marginBottom: '0px'
-                                  }}
-                                >
-                                  {name}
-                                </p>
-                                <p style={{ textAlign: 'center', fontSize: '16px', letterSpacing: '3px' }}>
-                                  {PrettyDate(now)}
-                                </p>
-                              </div>
+                                {name}
+                              </p>
+                              <p
+                                style={{
+                                  marginBottom: '0',
+                                  textAlign: 'center',
+                                  fontSize: '16px',
+                                  letterSpacing: '3px',
+                                  lineHeight: '16px'
+                                }}
+                              >
+                                {PrettyDate(now)}
+                              </p>
                             </a>
                           </th>
                         </tr>
@@ -75,34 +85,36 @@ class CourseCertificate extends React.Component {
                     <th
                       align="center"
                       className="large-12 small-12 columns first last"
-                      style={{ paddingLeft: '40px', paddingRight: '40px' }}
+                      style={{ paddingLeft: '40px', paddingRight: '40px', paddingBottom: '0px' }}
                     >
                       <table>
                         <tbody>
                           <tr>
                             <th className="text-center">
-                              <p>{message}</p>
-                              <p>{profile_uid ? <p>{certMessage}</p> : <div />}</p>
-                            </th>
-                          </tr>
-                        </tbody>
-                      </table>
-                    </th>
-                  </tr>
-                </tbody>
-              </table>
-              <table align="center" className="row">
-                <tbody>
-                  <tr>
-                    <th
-                      className="large-12 small-12 columns first last"
-                      style={{ paddingLeft: '40px', paddingRight: '40px' }}
-                    >
-                      <table>
-                        <tbody>
-                          <tr>
-                            <th className="text-left small-text-left">
-                              <p>{body}</p>
+                              {message ? <Message /> : <span />}
+                              <table className="spacer">
+                                <tr>
+                                  <td height="16px" style={{ fontSize: '16px', lineHeight: '16px' }}>
+                                    &#xA0;
+                                  </td>
+                                </tr>
+                              </table>
+                              <p>
+                                {profile_uid ? (
+                                  <p id="cert" style={{ marginBottom: '0' }}>
+                                    {certMessage}
+                                  </p>
+                                ) : (
+                                  <div />
+                                )}
+                              </p>
+                              <table className="spacer">
+                                <tr>
+                                  <td height="32px" style={{ fontSize: '32px', lineHeight: '32px' }}>
+                                    &#xA0;
+                                  </td>
+                                </tr>
+                              </table>
                             </th>
                           </tr>
                         </tbody>
@@ -117,7 +129,7 @@ class CourseCertificate extends React.Component {
                     <th
                       align="center"
                       className="large-6 small-12 columns first"
-                      style={{ paddingLeft: '40px', paddingBottom: '0px' }}
+                      style={{ paddingLeft: '40px', paddingBottom: '0px', boxSizing: 'border-box' }}
                     >
                       <table>
                         <tbody>
@@ -151,15 +163,6 @@ class CourseCertificate extends React.Component {
                                   </tr>
                                 </table>
                               </center>
-                              <table className="spacer">
-                                <tbody>
-                                  <tr>
-                                    <td height="16px" style={{ fontSize: '16px', lineHeight: '16px' }}>
-                                      &#xA0;
-                                    </td>
-                                  </tr>
-                                </tbody>
-                              </table>
                             </th>
                           </tr>
                         </tbody>
@@ -168,7 +171,7 @@ class CourseCertificate extends React.Component {
                     <th
                       align="center"
                       className="large-6 small-12 columns last"
-                      style={{ paddingRight: '40px', paddingBottom: '0px' }}
+                      style={{ paddingRight: '40px', paddingBottom: '0px', boxSizing: 'border-box' }}
                     >
                       <table>
                         <tbody>
@@ -203,15 +206,6 @@ class CourseCertificate extends React.Component {
                                   </tr>
                                 </table>
                               </center>
-                              <table className="spacer">
-                                <tbody>
-                                  <tr>
-                                    <td height="16px" style={{ fontSize: '16px', lineHeight: '16px' }}>
-                                      &#xA0;
-                                    </td>
-                                  </tr>
-                                </tbody>
-                              </table>
                             </th>
                           </tr>
                         </tbody>
