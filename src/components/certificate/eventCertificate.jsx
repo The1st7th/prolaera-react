@@ -1,7 +1,7 @@
 import React from 'react';
-import { Box, Item } from 'react-html-email';
+// import { Box, Item } from 'react-html-email';
 import { PrettyDate } from '../../helpers/dateHelpers';
-import Button from '../button';
+// import Button from '../button';
 
 class EventCertificate extends React.Component {
   render() {
@@ -22,74 +22,85 @@ class EventCertificate extends React.Component {
     } = this.props;
 
     return (
-      <div
-        id="subHeaderWrapper"
-        style={{
-          display: 'block',
-          marginLeft: 'auto',
-          marginRight: 'auto',
-          marginBottom: '0px',
-          textAlign: 'center',
-          borderRadius: '0px',
-          padding: '20px',
-          fontFamily: 'source-sans-pro, sans-serif',
-          backgroundColor: '#FFFFFF'
-        }}
-      >
-        <Box align="center" width="100%">
-          <Item>
-            <div
-              style={{
-                // maxWidth: '300px',
-                marginLeft: 'auto',
-                marginRight: 'auto'
-                // border: '1px solid lightgray',
-                // borderRadius: '8px',
-                // background: 'linear-gradient(to bottom right, #ffd11a, #fff0b3, #ffd633)',
-                // boxShadow: '1px 1px 8px darkgray'
-              }}
-            >
-              <h3 className="infoHeader" style={{ marginBottom: '5px' }}>
-                {course_name}
-              </h3>
-              <h5 style={{ marginTop: '0px', fontSize: '12pt' }}>
-                {PrettyDate(delivery_date)} - {PrettyDate(delivery_end_date)}
-              </h5>
-            </div>
-          </Item>
-          <Item>
-            <p>{body}</p>
-          </Item>
-          <Item align="center">
-            <table
-              style={{
-                textAlign: 'center',
-                margin: 'auto',
-                borderSpacing: '10px'
-              }}
-            >
-              <tr>
-                <td
-                  style={{
-                    margin: 'auto',
-                    width: '50%'
-                  }}
-                >
-                  <Button color={'#72C02C'} text={button1Text} link={button1Link} />
-                </td>
-                <td
-                  style={{
-                    margin: 'auto',
-                    width: '50%'
-                  }}
-                >
-                  <Button color={'#2F4050'} text={button2Text} link={button2Link} />
-                </td>
-              </tr>
-            </table>
-          </Item>
-        </Box>
-      </div>
+      <table align="center" class="container">
+        <tbody>
+          <tr>
+            <td>
+              <table class="row">
+                <tbody>
+                  <tr>
+                    <th align="center" class="small-12 large-12 columns first last">
+                      <table>
+                        <tr>
+                          <th>
+                            <center>
+                              <h3>{course_name}</h3>
+                            </center>
+                          </th>
+                          <th class="expander" />
+                        </tr>
+                      </table>
+                    </th>
+                  </tr>
+                </tbody>
+              </table>
+              <table class="row">
+                <tbody>
+                  <tr>{/* Columns go here   */}</tr>
+                </tbody>
+              </table>
+              <table class="row">
+                <tbody>
+                  <tr>
+                    <th class="columns first last">
+                      <table>
+                        <tr>
+                          <th
+                            className="text-center small-text-center"
+                            style={{
+                              padding: '11px',
+                              fontSize: '14pt',
+                              backgroundColor: '#72C02C',
+                              border: '2 solid #72C02C',
+                              borderRadius: '3px'
+                            }}
+                          >
+                            <a style={{ color: '#FFFFFF', textDecoration: 'none' }} href={button1Link}>
+                              {button1Text}
+                            </a>
+                          </th>
+                          <th class="expander" />
+                        </tr>
+                      </table>
+                    </th>
+                    <th class="columns first last">
+                      <table>
+                        <tr>
+                          <th
+                            className="text-center small-text-center"
+                            style={{
+                              padding: '11px',
+                              fontSize: '14pt',
+                              backgroundColor: '#2F4050',
+                              border: '2 solid #2F4050',
+                              borderRadius: '3px'
+                            }}
+                          >
+                            <a style={{ color: '#FFFFFF', textDecoration: 'none' }} href={button2Link}>
+                              {button2Text}
+                            </a>
+                          </th>
+                          <th class="expander" />
+                        </tr>
+                      </table>
+                    </th>
+                  </tr>
+                </tbody>
+              </table>
+            </td>
+          </tr>
+        </tbody>
+      </table>
     );
   }
 }
