@@ -1,25 +1,43 @@
 const css = `
 
 .header {
-  background: #8a8a8a;
+  background: #F3F3F3;
+}
+
+.footer {
+  background: #F3F3F3;
 }
 
 .header .columns {
   padding-bottom: 0;
 }
 
+.footer .columns {
+  padding: 20px;
+}
+
 .header p {
-  color: #FFFFFF;
   margin-bottom: 0;
 }
 
+.footer p {
+  color: #FFFFFF;
+}
+
 .header .wrapper-inner {
-  padding: 20px;
-  /*controls the height of the header*/
+  padding: 20px 20px 0px;
+}
+
+.footer .wrapper-inner {
+  padding: 0px 20px 20px
 }
 
 .header .container {
-  background: #8a8a8a;
+  background: #FFFFFF;
+}
+
+.footer .container {
+  background: #474747;
 }
 
 .wrapper.secondary {

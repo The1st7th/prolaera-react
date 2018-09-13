@@ -6,11 +6,11 @@ export default () => {
       <table className="gmail-app-fix">
         <tr>
           <td>
-            <table cellpadding="0" cellspacing="0" border="0" align="center" width="600">
+            <table cellPadding="0" cellSpacing="0" border="0" align="center" width="600">
               <tr>
                 <td
-                  cellpadding="0"
-                  cellspacing="0"
+                  cellPadding="0"
+                  cellSpacing="0"
                   border="0"
                   height="1"
                   style={{ lineHeight: '1px', minWidth: '200px' }}
@@ -23,8 +23,8 @@ export default () => {
                   />
                 </td>
                 <td
-                  cellpadding="0"
-                  cellspacing="0"
+                  cellPadding="0"
+                  cellSpacing="0"
                   border="0"
                   height="1"
                   style={{ lineHeight: '1px', minWidth: '200px' }}
@@ -37,8 +37,8 @@ export default () => {
                   />
                 </td>
                 <td
-                  cellpadding="0"
-                  cellspacing="0"
+                  cellPadding="0"
+                  cellSpacing="0"
                   border="0"
                   height="1"
                   style={{ lineHeight: '1px', minWidth: '200px' }}
