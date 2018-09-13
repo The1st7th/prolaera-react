@@ -30,7 +30,7 @@ class Header extends React.Component {
                     <table align="center" className="row collapse">
                       <tbody>
                         <tr>
-                          <th valign="middle" className="small-12 large-12 columns first last">
+                          <th valign="middle" className="small-6 small-offset-3 large-12 columns first last">
                             <table>
                               <tbody>
                                 <tr>

@@ -29,13 +29,14 @@ class EventCertificate extends React.Component {
               <table class="row">
                 <tbody>
                   <tr>
-                    <th align="center" class="small-12 large-12 columns first last">
-                      <table>
+                    <th class="small-12 large-12 columns first last">
+                      <table align="center">
                         <tr>
                           <th>
-                            <center>
-                              <h3>{course_name}</h3>
-                            </center>
+                            <h3>{course_name}</h3>
+                            <h5>
+                              {PrettyDate(delivery_date)} - {PrettyDate(delivery_end_date)}
+                            </h5>
                           </th>
                           <th class="expander" />
                         </tr>
