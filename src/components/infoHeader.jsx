@@ -19,14 +19,13 @@ class InfoHeader extends React.Component {
                             <th>
                               <div
                                 style={{
-                                  width: '100%',
                                   height: '20px',
                                   borderBottom: '1px solid #474747',
                                   textAlign: 'center',
                                   boxSizing: 'border-box',
                                   position: 'relative',
                                   margin: 'auto',
-                                  padding: '10px 0px'
+                                  padding: '10px 20px'
                                 }}
                               >
                                 <span

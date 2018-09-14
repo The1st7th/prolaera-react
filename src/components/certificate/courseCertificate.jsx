@@ -40,8 +40,6 @@ class CourseCertificate extends React.Component {
                         <tr>
                           <th
                             style={{
-                              backgroundColor: '#FFFFFF',
-                              fontStyle: 'normal',
                               fontWeight: '500'
                             }}
                           >
@@ -50,8 +48,8 @@ class CourseCertificate extends React.Component {
                               style={{ textDecoration: 'none', color: '#333333' }}
                             >
                               <p
+                                className="text-center small-text-center"
                                 style={{
-                                  textAlign: 'center',
                                   fontSize: '26px',
                                   letterSpacing: '3px',
                                   marginBottom: '5px',
@@ -61,9 +59,9 @@ class CourseCertificate extends React.Component {
                                 {name}
                               </p>
                               <p
+                                className="text-center small-text-center"
                                 style={{
                                   marginBottom: '0',
-                                  textAlign: 'center',
                                   fontSize: '16px',
                                   letterSpacing: '3px',
                                   lineHeight: '16px'
@@ -123,90 +121,100 @@ class CourseCertificate extends React.Component {
                   </tr>
                 </tbody>
               </table>
-              <table align="center" className="row">
+              <table align="left" className="row">
                 <tbody>
                   <tr>
                     <th
                       align="center"
-                      className="large-6 small-12 columns first"
-                      style={{ paddingLeft: '40px', paddingBottom: '0px', boxSizing: 'border-box' }}
+                      className="large-4 small-12 columns first"
+                      style={{
+                        paddingLeft: '40px',
+                        paddingRight: '8px',
+                        paddingBottom: '8px',
+                        boxSizing: 'border-box'
+                      }}
                     >
-                      <table>
+                      <table align="center">
                         <tbody>
                           <tr>
-                            <th>
-                              <center>
-                                <table style={{ borderCollapse: 'none' }}>
-                                  <tr>
-                                    <td
-                                      className="text-center small-text-center"
-                                      style={{
-                                        padding: '11px',
-                                        fontSize: '14pt',
-                                        backgroundColor: '#72C02C',
-                                        border: '2 solid #72C02C',
-                                        borderRadius: '3px'
-                                      }}
-                                    >
+                            <td>
+                              <table align="center">
+                                <tr>
+                                  <td
+                                    className="text-center small-text-center"
+                                    style={{
+                                      padding: '11px',
+                                      fontSize: '14pt',
+                                      backgroundColor: '#72C02C',
+                                      border: '2 solid #72C02C',
+                                      borderRadius: '3px'
+                                    }}
+                                  >
+                                    <center data-parsed="">
                                       <a
+                                        align="center"
+                                        className="float-center"
                                         style={{
                                           color: '#FFFFFF',
-                                          textDecoration: 'none',
-                                          padding: '11px',
-                                          width: '100%'
+                                          textDecoration: 'none'
                                         }}
                                         href={button1Link}
                                       >
                                         {button1Text}
                                       </a>
-                                    </td>
-                                  </tr>
-                                </table>
-                              </center>
-                            </th>
+                                    </center>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
                           </tr>
                         </tbody>
                       </table>
                     </th>
                     <th
                       align="center"
-                      className="large-6 small-12 columns last"
-                      style={{ paddingRight: '40px', paddingBottom: '0px', boxSizing: 'border-box' }}
+                      className="large-4 small-12 columns last"
+                      style={{
+                        paddingLeft: '8px',
+                        paddingRight: '40px',
+                        paddingBottom: '8px',
+                        boxSizing: 'border-box'
+                      }}
                     >
-                      <table>
+                      <table align="center">
                         <tbody>
                           <tr>
-                            <th>
-                              <center>
-                                <table style={{ borderCollapse: 'none' }}>
-                                  <tr>
-                                    <td
-                                      className="text-center small-text-center"
-                                      style={{
-                                        padding: '11px',
-                                        fontSize: '14pt',
-                                        backgroundColor: '#2F4050',
-                                        border: '2 solid #2F4050',
-                                        borderRadius: '3px'
-                                      }}
-                                    >
+                            <td>
+                              <table align="center">
+                                <tr>
+                                  <td
+                                    className="text-center small-text-center"
+                                    style={{
+                                      padding: '11px',
+                                      fontSize: '14pt',
+                                      backgroundColor: '#2F4050',
+                                      border: '2 solid #2F4050',
+                                      borderRadius: '3px'
+                                    }}
+                                  >
+                                    <center data-parsed="">
                                       <a
-                                        id="outlook"
+                                        align="center"
+                                        className="float-center"
                                         style={{
                                           color: '#FFFFFF',
-                                          textDecoration: 'none',
-                                          padding: '11px',
-                                          width: '100%'
+                                          textDecoration: 'none'
                                         }}
                                         href={button2Link}
                                       >
                                         {button2Text}
                                       </a>
-                                    </td>
-                                  </tr>
-                                </table>
-                              </center>
-                            </th>
+                                    </center>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                            <td className="expander" />
                           </tr>
                         </tbody>
                       </table>

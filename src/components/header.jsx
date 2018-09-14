@@ -20,17 +20,21 @@ class Header extends React.Component {
     const resizedHeight = 47;
 
     return (
-      <table className="wrapper header" align="center">
+      <table align="center" className="wrapper header">
         <tr>
           <td>
             <table align="center" className="container">
               <tbody>
                 <tr>
                   <td>
-                    <table align="center" className="row collapse">
+                    <table align="center" className="row">
                       <tbody>
                         <tr>
-                          <th valign="middle" className="small-6 small-offset-3 large-12 columns first last">
+                          <th
+                            valign="middle"
+                            className="small-6 small-offset-3 large-12 columns first last"
+                            style={{ paddingTop: '20px' }}
+                          >
                             <table>
                               <tbody>
                                 <tr>
@@ -47,7 +51,8 @@ class Header extends React.Component {
                                     <a href="https://app.prolaera.com">
                                       <center>
                                         <Image
-                                          className="headerLogo"
+                                          className="float-center small-float-center"
+                                          align="center"
                                           alt="logo"
                                           src={url}
                                           width={resizedWidth}
