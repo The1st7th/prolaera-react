@@ -1,5 +1,4 @@
 import React from 'react';
-// import { renderEmail } from 'react-html-email';
 import Email from '../../components/newemail';
 import CourseCertificate from '../../components/certificate/courseCertificate';
 import CourseInfo from '../../components/course/courseInfo';
