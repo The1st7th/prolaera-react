@@ -13,32 +13,73 @@ const firmInviteBuilder = async (completeUser, completeCompany, imageUrl) => {
   try {
     const headerText = '';
     const bodyText = (
-      <div>
-        <p align="center">Your account is waiting for you and there are only a couple quick steps to complete.</p>
-        <ol>
-          <li>Click the button below to register your account.</li>
-          <li>On the registration page simply enter a password for your new account and click "Register".</li>
-        </ol>
-      </div>
+      <table>
+        <tbody>
+          <tr>
+            <th>
+              <p align="center">Your account is waiting for you and there are only a couple quick steps to complete.</p>
+              <ol align="left">
+                <li>Click the button below to register your account.</li>
+                <li>On the registration page simply enter a password for your new account and click "Register".</li>
+              </ol>
+            </th>
+          </tr>
+        </tbody>
+      </table>
     );
     const footerText = (
-      <div align="center">
-        <p>That's it! You're ready to explore the new tools and resources you have access to.</p>
-        <div
-          style={{
-            display: 'inline-block',
-            backgroundColor: '#72C02C',
-            borderRadius: '3px',
-            margin: '0'
-          }}
-        >
-          <Button
-            color={'#72C02C'}
-            text={'Create Your Account'}
-            link={'https://app.prolaera.com/#/registration?email=${' + completeUser.email + '}' + "'"}
-          />
-        </div>
-      </div>
+      <table align="center" className="row">
+        <tbody>
+          <tr>
+            <th
+              align="center"
+              className="large-12 small-12 columns first last"
+              style={{ paddingLeft: '20px', paddingRight: '20px', paddingBottom: '16px' }}
+            >
+              <table>
+                <tbody>
+                  <tr>
+                    <th>
+                      <p>That's it! You're ready to explore the new tools and resources you have access to.</p>
+                      <table className="spacer">
+                        <tbody>
+                          <tr>
+                            <td height="16px" style={{ fontSize: '16px', lineHeight: '16px' }}>
+                              &#xA0;
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <table>
+                        <tr>
+                          <th
+                            style={{
+                              backgroundColor: '#72C02C',
+                              borderRadius: '3px',
+                              padding: '11px'
+                            }}
+                          >
+                            <center>
+                              <a
+                                style={{ color: '#FFFFFF', fontSize: '14pt' }}
+                                href={
+                                  'https://app.prolaera.com/#/registration?email=${' + completeUser.email + '}' + "'"
+                                }
+                              >
+                                Create Your Account
+                              </a>
+                            </center>
+                          </th>
+                        </tr>
+                      </table>
+                    </th>
+                  </tr>
+                </tbody>
+              </table>
+            </th>
+          </tr>
+        </tbody>
+      </table>
     );
     const Header = await builderHeader(imageUrl);
     return renderEmail(
