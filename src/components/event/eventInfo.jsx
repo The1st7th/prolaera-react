@@ -271,24 +271,24 @@ class EventInfo extends React.Component {
                                   style={{ borderCollapse: 'none', paddingRight: '20px', paddingLeft: '20px' }}
                                 >
                                   <tr>
-                                    <td
-                                      className="text-center small-text-center"
-                                      style={{
-                                        padding: '11px',
-                                        fontSize: '14pt',
-                                        backgroundColor: '#72C02C',
-                                        border: '2px solid #72C02C',
-                                        borderRadius: '3px'
-                                      }}
-                                    >
-                                      {buttonText ? (
+                                    {buttonText ? (
+                                      <td
+                                        className="text-center small-text-center"
+                                        style={{
+                                          padding: '11px',
+                                          fontSize: '14pt',
+                                          backgroundColor: '#72C02C',
+                                          border: '2px solid #72C02C',
+                                          borderRadius: '3px'
+                                        }}
+                                      >
                                         <a style={{ color: '#FFFFFF', textDecoration: 'none' }} href={buttonLink}>
                                           {buttonText}
                                         </a>
-                                      ) : (
-                                        <span />
-                                      )}
-                                    </td>
+                                      </td>
+                                    ) : (
+                                      <span />
+                                    )}
                                   </tr>
                                 </table>
                               </center>
