@@ -1,7 +1,5 @@
 import React from 'react';
-// import { Box, Item } from 'react-html-email';
 import { PrettyDate } from '../../helpers/dateHelpers';
-// import Button from '../button';
 
 class EventCertificate extends React.Component {
   render() {
@@ -53,7 +51,7 @@ class EventCertificate extends React.Component {
               <table class="row">
                 <tbody>
                   <tr>
-                    <th class="columns first last">
+                    <th class="large-6 small-12 columns first last">
                       <table>
                         <tr>
                           <th
@@ -74,7 +72,7 @@ class EventCertificate extends React.Component {
                         </tr>
                       </table>
                     </th>
-                    <th class="columns first last">
+                    <th class="large-6 small-12 columns first last">
                       <table>
                         <tr>
                           <th
