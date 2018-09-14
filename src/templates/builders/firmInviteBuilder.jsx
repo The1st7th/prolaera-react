@@ -44,7 +44,7 @@ const firmInviteBuilder = async (completeUser, completeCompany, imageUrl) => {
                       <table className="spacer">
                         <tbody>
                           <tr>
-                            <td height="32px" style={{ fontSize: '32px', lineHeight: '32px' }}>
+                            <td height="16px" style={{ fontSize: '16px', lineHeight: '16px' }}>
                               &#xA0;
                             </td>
                           </tr>
