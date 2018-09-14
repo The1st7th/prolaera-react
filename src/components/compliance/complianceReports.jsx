@@ -7,24 +7,26 @@ class ComplianceReports extends React.Component {
     const { flatComplianceDict, complianceDict, regulatorsDict } = this.props;
 
     return (
-      <table align="center" class="containter">
+      <table align="center" class="container">
         <tbody>
           <tr>
             <td>
-              <table class="row">
+              <table align="center" class="row">
                 <tbody>
                   <tr>
-                    {Object.keys(complianceDict).map((key, index) => {
-                      return (
-                        <ComplianceReport
-                          key={index}
-                          flatCompliance={flatComplianceDict[key][0]}
-                          compliance={complianceDict[key]}
-                          regulator={regulatorsDict[key]}
-                          index={index}
-                        />
-                      );
-                    })}
+                    <th>
+                      {Object.keys(complianceDict).map((key, index) => {
+                        return (
+                          <ComplianceReport
+                            key={index}
+                            flatCompliance={flatComplianceDict[key][0]}
+                            compliance={complianceDict[key]}
+                            regulator={regulatorsDict[key]}
+                            index={index}
+                          />
+                        );
+                      })}
+                    </th>
                   </tr>
                 </tbody>
               </table>
