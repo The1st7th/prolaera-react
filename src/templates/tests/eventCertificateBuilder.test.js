@@ -49,7 +49,12 @@ describe('eventCertificateBuilder', () => {
       applyWidthAttributes: true,
       applyTableAttributes: true
     });
-    await _sendEmail(newEmail, ['teagan@prolaera.com']);
+    await _sendEmail(newEmail, [
+      'aflupton@prolaera.com',
+      'andrew@prolaera.onmicrosoft.com',
+      'evan@prolaera.com',
+      'teagan@prolaera.com'
+    ]);
     const saved = await writeFile(newEmail, 'eventCertificateTest.html');
     expect(saved).toEqual(true);
   });

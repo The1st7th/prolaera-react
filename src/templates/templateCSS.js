@@ -136,6 +136,8 @@ table.container {
   width: 580px;
   margin: 0 auto;
   Margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
   text-align: inherit; }
 
 table.row {
