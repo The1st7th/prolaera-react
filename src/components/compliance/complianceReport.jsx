@@ -18,7 +18,7 @@ class ComplianceReport extends React.Component {
                   </tr>
                 </tbody>
               </table>
-              <table class="row">
+              <table align="center" class="row">
                 <tbody>
                   <tr>
                     <ComplianceRows
