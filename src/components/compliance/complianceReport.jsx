@@ -1,5 +1,4 @@
 import React from 'react';
-// import { Item } from 'react-html-email';
 import ComplianceRows from './complianceRows';
 import ComplianceHeader from './complianceHeader';
 
@@ -11,22 +10,42 @@ class ComplianceReport extends React.Component {
         <tbody>
           <tr>
             <td>
-              <table class="row">
+              <table align="center" class="row">
                 <tbody>
                   <tr>
-                    <ComplianceHeader {...this.props} />
+                    <th className="large-12 small-12 columns first last">
+                      <table>
+                        <tbody>
+                          <tr>
+                            <th>
+                              <ComplianceHeader {...this.props} />
+                            </th>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </th>
                   </tr>
                 </tbody>
               </table>
-              <table class="row">
+              <table align="center" class="row">
                 <tbody>
                   <tr>
-                    <ComplianceRows
-                      regulator={regulator}
-                      flatCompliance={flatCompliance}
-                      compliance={compliance}
-                      reportIndex={index}
-                    />
+                    <th className="large-12 small-12 columns first last">
+                      <table>
+                        <tbody>
+                          <tr>
+                            <th>
+                              <ComplianceRows
+                                regulator={regulator}
+                                flatCompliance={flatCompliance}
+                                compliance={compliance}
+                                reportIndex={index}
+                              />
+                            </th>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </th>
                   </tr>
                 </tbody>
               </table>
