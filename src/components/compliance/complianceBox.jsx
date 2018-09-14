@@ -7,15 +7,20 @@ class ComplianceBox extends React.Component {
     const style = {
       color: '#FFFFFF',
       backgroundColor: colors[color % 7],
-      padding: '20px 14px',
-      borderLeft: '5px solid #FFFFFF',
-      textAlign: 'center'
+      padding: '20px 14px'
     };
     return (
-      <td {...style} style={{ paddingRight: '10px' }}>
-        <div style={{ fontSize: '14px' }}> {text} </div>
-        <div style={{ fontSize: '36px' }}> {hours} </div>
-      </td>
+      <th
+        {...style}
+        style={{
+          paddingRight: '5px',
+          borderRight: '1px solid #333333',
+          borderBottom: '2px solid #333333'
+        }}
+      >
+        <p style={{ textAlign: 'center', fontSize: '14px' }}>{text}</p>
+        <p style={{ textAlign: 'center', fontSize: '30px' }}>{hours}</p>
+      </th>
     );
   }
 }

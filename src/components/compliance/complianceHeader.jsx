@@ -37,7 +37,8 @@ class ComplianceHeader extends React.Component {
                                 style={{
                                   textAlign: 'center',
                                   fontSize: '28px',
-                                  paddingBottom: '5px'
+                                  paddingBottom: '5px',
+                                  borderBottom: '3px solid #333333'
                                 }}
                               >
                                 {name}
