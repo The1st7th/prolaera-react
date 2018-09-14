@@ -50,7 +50,7 @@ describe('Email compliance Report', () => {
       applyWidthAttributes: true,
       applyTableAttributes: true
     });
-    // await _sendEmail(newEmail, ['aflupton@gmail.com', 'andrew@prolaera.onmicrosoft.com']);
+    await _sendEmail(newEmail, ['aflupton@gmail.com', 'andrew@prolaera.onmicrosoft.com', 'teagan@prolaera.com']);
     const saved = await writeFile(newEmail, 'userComplianceTest.html');
     expect(saved).toEqual(true);
   });

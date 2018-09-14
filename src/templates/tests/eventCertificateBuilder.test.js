@@ -49,7 +49,7 @@ describe('eventCertificateBuilder', () => {
       applyWidthAttributes: true,
       applyTableAttributes: true
     });
-    await _sendEmail(newEmail, ['emmanuel.nicolas@outlook.com']);
+    await _sendEmail(newEmail, ['teagan@prolaera.com']);
     const saved = await writeFile(newEmail, 'eventCertificateTest.html');
     expect(saved).toEqual(true);
   });

@@ -16,11 +16,10 @@ class SubFooter extends React.Component {
                       <table>
                         <tbody>
                           <tr>
-                            <th className="text-center small-text-center">
-                              <p>{text}</p>
-                              <p>{subtext}</p>
+                            <th style={{ paddingLeft: '20px', paddingRight: '20px', paddingBottom: '16px' }}>
+                              <p className="text-center small-text-center">{text}</p>
+                              <p className="text-center small-text-center">{subtext}</p>
                             </th>
-                            <th className="expander" />
                           </tr>
                         </tbody>
                       </table>
