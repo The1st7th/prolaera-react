@@ -13,10 +13,10 @@ class CategoryRow extends React.Component {
     return (
       <div>
         <tr>
-          <td style={{ fontSize: '16px', verticalAlign: 'top' }}>
-            <span>
-              <h5>{categoryName(category)}</h5>
-            </span>
+          <td style={{ verticalAlign: 'middle' }}>
+            <p style={{ fontSize: '14pt', fontWeight: '400', width: '100%', textAlign: 'center' }}>
+              {categoryName(category)}:
+            </p>
           </td>
           <ComplianceBox text="Hours Earned" hours={hoursEarned} color={reportIndex} />
           <ComplianceBox text="Hours Applied" hours={hoursApplied} color={reportIndex} />
