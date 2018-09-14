@@ -69,7 +69,7 @@ describe('eventCertificateBuilder', () => {
     //     </tr>
     // </table></body></html>`;
     //     const newEmail = email.split('</body>').join(`${gmailfix}</body>`);
-    await _sendEmail(newEmail, ['aflupton@gmail.com', 'andrew@prolaera.onmicrosoft.com']);
+    await _sendEmail(newEmail, ['aflupton@gmail.com', 'andrew@prolaera.onmicrosoft.com', 'teagan@prolaera.com']);
 
     const saved = await writeFile(newEmail, 'courseCertificateTest.html');
     expect(saved).toEqual(true);
