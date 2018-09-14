@@ -1,5 +1,4 @@
 import React from 'react';
-// import { Email, renderEmail } from 'react-html-email';
 import EventInfo from '../../components/event/eventInfo';
 import Footer from '../../components/footer';
 import builderHeader from '../../components/header';

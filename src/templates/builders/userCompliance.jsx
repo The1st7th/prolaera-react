@@ -1,5 +1,4 @@
 import * as React from 'react';
-// import { Email, renderEmail } from 'react-html-email';
 import ComplianceReports from '../../components/compliance/complianceReports';
 import Footer from '../../components/footer';
 import buildHeader from '../../components/header';
@@ -12,7 +11,7 @@ const email = async (completeCompliance, imageUrl) => {
     const Header = await buildHeader(imageUrl);
     return renderEmail(
       <Email title="Compliance Report" headCSS={css}>
-        <Header text="compliance report" />
+        <Header text="Compliance Report" />
         <ComplianceReports {...completeCompliance} />
         <Footer />
       </Email>
