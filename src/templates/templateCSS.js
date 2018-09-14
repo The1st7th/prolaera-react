@@ -51,7 +51,8 @@ const css = `
   width: 100%; }
 
 #outlook a {
-  padding: 0; }
+  padding: 0; 
+}
 
 body {
   width: 100% !important;
@@ -61,6 +62,8 @@ body {
   margin: 0;
   Margin: 0;
   padding: 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
