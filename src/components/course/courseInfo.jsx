@@ -240,11 +240,7 @@ class CourseInfo extends React.Component {
               <table align="center" className="row">
                 <tbody>
                   <tr>
-                    <th
-                      align="left"
-                      className="large-12 small-12 columns first last"
-                      style={{ boxSizing: 'border-box' }}
-                    >
+                    <th align="left" className="large-6 small-6 columns first last" style={{ boxSizing: 'border-box' }}>
                       <table align="center">
                         <tbody>
                           <tr>
