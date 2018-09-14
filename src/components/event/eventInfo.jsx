@@ -248,7 +248,7 @@ class EventInfo extends React.Component {
                   </tr>
                 </tbody>
               </table>
-              <table align="center" className="row" style={{ marginTop: '10px' }}>
+              <table align="center" className="row">
                 <tbody>
                   <tr>
                     <th align="center" className="large-12 small-12 columns first last">
@@ -268,7 +268,7 @@ class EventInfo extends React.Component {
                               <center>
                                 <table
                                   className="float-center"
-                                  style={{ borderCollapse: 'none', paddingRight: '20px', paddingLeft: '20px' }}
+                                  style={{ boxSizing: 'border-box', paddingRight: '20px', paddingLeft: '20px' }}
                                 >
                                   <tr>
                                     {buttonText ? (

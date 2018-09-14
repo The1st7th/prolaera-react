@@ -240,8 +240,12 @@ class CourseInfo extends React.Component {
               <table align="center" className="row">
                 <tbody>
                   <tr>
-                    <th align="left" className="large-6 small-6 columns first last" style={{ boxSizing: 'border-box' }}>
-                      <table align="center">
+                    <th
+                      align="center"
+                      className="large-12 small-12 columns first last"
+                      style={{ padding: '0px 20px', boxSizing: 'border-box' }}
+                    >
+                      <table>
                         <tbody>
                           <tr>
                             <th>
@@ -255,7 +259,7 @@ class CourseInfo extends React.Component {
                                 </tbody>
                               </table>
                               <center>
-                                <table className="float-center">
+                                <table className="float-center" style={{ boxSizing: 'border-box' }}>
                                   <tr>
                                     <td
                                       className="text-center small-text-center"
@@ -267,11 +271,9 @@ class CourseInfo extends React.Component {
                                         borderRadius: '3px'
                                       }}
                                     >
-                                      <center>
-                                        <a style={{ color: '#FFFFFF', textDecoration: 'none' }} href={newButtonLink}>
-                                          {buttonText}
-                                        </a>
-                                      </center>
+                                      <a style={{ color: '#FFFFFF', textDecoration: 'none' }} href={newButtonLink}>
+                                        {buttonText}
+                                      </a>
                                     </td>
                                   </tr>
                                 </table>

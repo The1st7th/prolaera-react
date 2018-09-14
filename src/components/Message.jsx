@@ -13,6 +13,7 @@ class Message extends React.Component {
                 <tbody>
                   <tr>
                     <th
+                      align="center"
                       className="large-12 small-12 columns first last"
                       style={{ paddingLeft: '40px', paddingRight: '40px' }}
                     >

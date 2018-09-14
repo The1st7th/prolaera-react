@@ -24,15 +24,15 @@ class EventCertificate extends React.Component {
         <tbody>
           <tr>
             <td>
-              <table class="row">
+              <table align="center" class="row">
                 <tbody>
                   <tr>
-                    <th class="small-12 large-12 columns first last">
+                    <th align="center" class="small-12 large-12 columns first last">
                       <table align="center">
                         <tr>
                           <th>
-                            <h3 class="text-center small-text-left">{course_name}</h3>
-                            <h5 class="text-center small-text-left">
+                            <h3 class="text-center small-text-center">{course_name}</h3>
+                            <h5 class="text-center small-text-center">
                               {PrettyDate(delivery_date)} - {PrettyDate(delivery_end_date)}
                             </h5>
                           </th>
@@ -43,12 +43,7 @@ class EventCertificate extends React.Component {
                   </tr>
                 </tbody>
               </table>
-              <table class="row">
-                <tbody>
-                  <tr>{/* Columns go here   */}</tr>
-                </tbody>
-              </table>
-              <table class="row">
+              <table align="center" class="row">
                 <tbody>
                   <tr>
                     <th class="large-6 small-12 columns first last">
