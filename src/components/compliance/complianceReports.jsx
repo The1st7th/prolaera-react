@@ -7,7 +7,7 @@ class ComplianceReports extends React.Component {
     const { flatComplianceDict, complianceDict, regulatorsDict } = this.props;
 
     return (
-      <table align="center" class="containter">
+      <table align="center" class="container">
         <tbody>
           <tr>
             <td>
