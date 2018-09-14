@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Box, Item } from 'react-html-email';
+// import { Box, Item } from 'react-html-email';
 import ComplianceReport from './complianceReport';
 
 class ComplianceReports extends React.Component {
@@ -7,23 +7,31 @@ class ComplianceReports extends React.Component {
     const { flatComplianceDict, complianceDict, regulatorsDict } = this.props;
 
     return (
-      <Box align="center" width="100%" height="auto" style={{ backgroundColor: '#F7F7F7' }}>
-        <Item>
-          <Box cellSpacing={0} cellPadding={20} align="center" width="100%">
-            {Object.keys(complianceDict).map((key, index) => {
-              return (
-                <ComplianceReport
-                  key={index}
-                  flatCompliance={flatComplianceDict[key][0]}
-                  compliance={complianceDict[key]}
-                  regulator={regulatorsDict[key]}
-                  index={index}
-                />
-              );
-            })}
-          </Box>
-        </Item>
-      </Box>
+      <table align="center" class="containter">
+        <tbody>
+          <tr>
+            <td>
+              <table class="row">
+                <tbody>
+                  <tr>
+                    {Object.keys(complianceDict).map((key, index) => {
+                      return (
+                        <ComplianceReport
+                          key={index}
+                          flatCompliance={flatComplianceDict[key][0]}
+                          compliance={complianceDict[key]}
+                          regulator={regulatorsDict[key]}
+                          index={index}
+                        />
+                      );
+                    })}
+                  </tr>
+                </tbody>
+              </table>
+            </td>
+          </tr>
+        </tbody>
+      </table>
     );
   }
 }
