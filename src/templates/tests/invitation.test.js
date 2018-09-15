@@ -47,7 +47,7 @@ describe('invitation Email', () => {
       applyWidthAttributes: true,
       applyTableAttributes: true
     });
-    await _sendEmail(newEmail, ['eric.e.nicolas@gmail.com', 'emmanuel.nicolas@outlook.com']);
+    // await _sendEmail(newEmail, ['eric.e.nicolas@gmail.com', 'emmanuel.nicolas@outlook.com']);
     const saved = await writeFile(newEmail, 'inviteTest.html');
     expect(saved).toEqual(true);
   });

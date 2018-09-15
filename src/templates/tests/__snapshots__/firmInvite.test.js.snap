@@ -26,9 +26,7 @@ exports[`Firm Invite component creates and checks snapshot of FirmInvite compone
                           align="center"
                           className="container"
                         >
-                          <tbody
-                            align="center"
-                          >
+                          <tbody>
                             <tr>
                               <td>
                                 <table
@@ -48,14 +46,13 @@ exports[`Firm Invite component creates and checks snapshot of FirmInvite compone
                                                 <div
                                                   style={
                                                     Object {
-                                                      "borderBottom": "1px solid grey",
+                                                      "borderBottom": "1px solid #474747",
                                                       "boxSizing": "border-box",
                                                       "height": "20px",
                                                       "margin": "auto",
-                                                      "padding": "10px 40px",
+                                                      "padding": "10px 20px",
                                                       "position": "relative",
                                                       "textAlign": "center",
-                                                      "width": "100%",
                                                     }
                                                   }
                                                 >
@@ -206,6 +203,25 @@ exports[`Firm Invite component creates and checks snapshot of FirmInvite compone
                           </table>
                         </div>
                       </th>
+                    </tr>
+                  </tbody>
+                </table>
+                <table
+                  className="spacer"
+                >
+                  <tbody>
+                    <tr>
+                      <td
+                        height="16px"
+                        style={
+                          Object {
+                            "fontSize": "16px",
+                            "lineHeight": "16px",
+                          }
+                        }
+                      >
+                         
+                      </td>
                     </tr>
                   </tbody>
                 </table>

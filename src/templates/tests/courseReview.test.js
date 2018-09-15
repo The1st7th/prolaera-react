@@ -50,11 +50,11 @@ describe('courseReview Email', () => {
       applyWidthAttributes: true,
       applyTableAttributes: true
     });
-    const send = await _sendEmail(newEmail, [
-      'aflupton@gmail.com',
-      'andrew@prolaera.onmicrosoft.com',
-      'teagan@prolaera.com'
-    ]);
+    // await _sendEmail(newEmail, [
+    //   'aflupton@gmail.com',
+    //   'andrew@prolaera.onmicrosoft.com',
+    //   'teagan@prolaera.com'
+    // ]);
     const saved = await writeFile(newEmail, 'courseReviewTest.html');
     expect(saved).toEqual(true);
   });
