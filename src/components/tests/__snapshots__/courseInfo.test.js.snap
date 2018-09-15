@@ -17,18 +17,41 @@ exports[`CourseInfo component custom input tests creates and checks a snapshot o
               <th
                 align="center"
                 className="large-12 small-12 columns first last"
+                style={
+                  Object {
+                    "paddingLeft": "40px",
+                    "paddingRight": "40px",
+                  }
+                }
               >
                 <table>
                   <tbody>
                     <tr>
                       <th>
                         <table
+                          className="spacer"
+                        >
+                          <tbody>
+                            <tr>
+                              <td
+                                height="32px"
+                                style={
+                                  Object {
+                                    "fontSize": "32px",
+                                    "lineHeight": "32px",
+                                  }
+                                }
+                              >
+                                 
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                        <table
                           align="center"
                           className="container"
                         >
-                          <tbody
-                            align="center"
-                          >
+                          <tbody>
                             <tr>
                               <td>
                                 <table
@@ -48,14 +71,13 @@ exports[`CourseInfo component custom input tests creates and checks a snapshot o
                                                 <div
                                                   style={
                                                     Object {
-                                                      "borderBottom": "1px solid grey",
+                                                      "borderBottom": "1px solid #474747",
                                                       "boxSizing": "border-box",
                                                       "height": "20px",
                                                       "margin": "auto",
-                                                      "padding": "10px 40px",
+                                                      "padding": "10px 20px",
                                                       "position": "relative",
                                                       "textAlign": "center",
-                                                      "width": "100%",
                                                     }
                                                   }
                                                 >
@@ -86,15 +108,28 @@ exports[`CourseInfo component custom input tests creates and checks a snapshot o
                             </tr>
                           </tbody>
                         </table>
+                        <table
+                          className="spacer"
+                        >
+                          <tbody>
+                            <tr>
+                              <td
+                                height="16px"
+                                style={
+                                  Object {
+                                    "fontSize": "16px",
+                                    "lineHeight": "16px",
+                                  }
+                                }
+                              >
+                                 
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
                         <h4
                           align="center"
                           className="text-center small-text-center"
-                          style={
-                            Object {
-                              "marginTop": "0px",
-                              "paddingTop": "15px",
-                            }
-                          }
                         >
                           <a
                             href="https://app.prolaera.com/#/courses/1234-1234-1234-1234"
@@ -112,6 +147,9 @@ exports[`CourseInfo component custom input tests creates and checks a snapshot o
                           </a>
                         </h4>
                       </th>
+                      <th
+                        className="expander"
+                      />
                     </tr>
                   </tbody>
                 </table>
@@ -130,6 +168,7 @@ exports[`CourseInfo component custom input tests creates and checks a snapshot o
                 className="large-12 small-12 columns first last"
                 style={
                   Object {
+                    "boxSizing": "border-box",
                     "paddingLeft": "40px",
                   }
                 }
@@ -446,7 +485,6 @@ exports[`CourseInfo component custom input tests creates and checks a snapshot o
                           }
                         >
                           Target Audience:
-                           
                         </p>
                         <div
                           dangerouslySetInnerHTML={
@@ -547,6 +585,9 @@ exports[`CourseInfo component custom input tests creates and checks a snapshot o
                           }
                         />
                       </th>
+                      <th
+                        className="expander"
+                      />
                     </tr>
                   </tbody>
                 </table>
@@ -557,17 +598,18 @@ exports[`CourseInfo component custom input tests creates and checks a snapshot o
         <table
           align="center"
           className="row"
-          style={
-            Object {
-              "marginTop": "10px",
-            }
-          }
         >
           <tbody>
             <tr>
               <th
                 align="center"
                 className="large-12 small-12 columns first last"
+                style={
+                  Object {
+                    "boxSizing": "border-box",
+                    "padding": "0px 20px",
+                  }
+                }
               >
                 <table>
                   <tbody>
@@ -594,10 +636,10 @@ exports[`CourseInfo component custom input tests creates and checks a snapshot o
                         </table>
                         <center>
                           <table
-                            className="button float-center"
+                            className="float-center"
                             style={
                               Object {
-                                "borderCollapse": "none",
+                                "boxSizing": "border-box",
                               }
                             }
                           >
@@ -607,10 +649,10 @@ exports[`CourseInfo component custom input tests creates and checks a snapshot o
                                 style={
                                   Object {
                                     "backgroundColor": "#72C02C",
-                                    "border": "2px solid #72C02C",
-                                    "borderRadius": "2px",
+                                    "border": "2 solid #72C02C",
+                                    "borderRadius": "3px",
                                     "fontSize": "14pt",
-                                    "padding": "14px",
+                                    "padding": "11px",
                                   }
                                 }
                               >
@@ -635,11 +677,11 @@ exports[`CourseInfo component custom input tests creates and checks a snapshot o
                           <tbody>
                             <tr>
                               <td
-                                height="16px"
+                                height="32px"
                                 style={
                                   Object {
-                                    "fontSize": "16px",
-                                    "lineHeight": "16px",
+                                    "fontSize": "32px",
+                                    "lineHeight": "32px",
                                   }
                                 }
                               >
